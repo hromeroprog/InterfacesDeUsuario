@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Theory of Errors</title>
 <link rel = "icon" href =  "./assets/images/logo.png" 
         type = "image/x-icon">
@@ -11,32 +12,52 @@
 <link type="text/css" rel="stylesheet" href="./assets/css/main.css">
 <link type="text/css" rel="stylesheet" href="./assets/css/right-aside.css">
 <link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_tablet.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/material-icons.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/all.css">
 <link type="text/css" rel="stylesheet" href="./assets/css/style-grades.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
-<div class="page">
 <body>
+  <div class="page">
   <header>
+    
     <a href="./index.html" class="logo">
       <i class="material-icons" id = "bug_report">bug_report</i>
-      <nav id = "logo_theory_of">THEORY OF</nav>
-      <nav id="logo_errors"> ERRORS</nav>
+      <nav id= "logo_theory_of">THEORY OF</nav>
+      <nav id= "logo_errors"> ERRORS</nav>
     </a>
-    <div class="menu-toggle"></div>
+
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+  <h2 class="asignatura-movil">COURSE</h2>
+  
+    <nav class="nav-movil">
+      <ul>
+        <li> <a href="./students.html"> <i class="fa fa-users"></i> <span class="link-name">STUDENT LIST</span> </a> </li>
+        <li> <a href="#"> <i class="far fa-comment-dots"></i> <span class="link-name">FORUM</span> </a></li>
+        <li> <a href="./grades.html"> <i class="fas fa-table"></i> <span class="link-name">CALIFICATIONS</span> </a></li>
+        <li> <a href="#"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span> </a> </li>
+        <li> <a href="#"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW EVENTS</span> </a> </li>
+      </ul>
+    </nav>
+
     <nav class="nav_top">
-<ul>
-    <li><a href="#">SUBJECT</a></li>
-    <li><a href="#">DATA</a></li>
-    <li><a href="#">CONTACT</a></li>
-</ul>
+      <ul>
+        <li><a href="#">SUBJECT</a></li>
+        <li><a href="#">DATA</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
     </nav>  
     <div class="clearfix"></div>
-</header>
+  </header>
 
   <div class="container">
-   
     <nav class="nav_left">
       <div class = "sticky-div">
       <h2 class="asignatura">COURSE</h2>
@@ -120,27 +141,33 @@
             </table>
         </div>
     
-
     </main>
 
-    <aside>
-<div id="lastnews">
-  <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i> Last News</h4>
-  <ul>
-    <li>10/10 - New videos uploaded</li>
-    <li>09/11 - New topic added</li>
-    <li>09/10 - New messages in the forum</li>
-  </ul>
-</div>
 
-<div id="newevents">
-  <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> New Events</h4>
-  <ul>
-    <li>20/10 - Assignment due date</li>
-    <li>15/11 - Group meeting</li>
-    <li>20/10 - Examn topic 1</li>
-  </ul>
-</div>
+    <!--  RIGHT ASIDE  -->
+
+    <aside>
+      <div class="sticky-div">
+      <div id="lastnews">
+        <i class="far fa-newspaper"></i>
+        <h4>LAST NEWS</h4>
+        <ul>
+          <li>10/10 - New videos uploaded</li>
+          <li>09/11 - New topic added</li>
+          <li>09/10 - New messages in the forum</li>
+        </ul> 
+      </div>
+
+      <div id="newevents">
+        <i class="far fa-calendar-alt"></i> 
+        <h4>NEW EVENTS</h4>
+        <ul>
+          <li>20/10 - Assignment due date</li>
+          <li>15/11 - Group meeting</li>
+          <li>20/10 - Exam topic 1</li>
+        </ul>
+      </div>
+      </div>
     </aside>
 
   </div>
@@ -160,3 +187,10 @@
  
 </body>
 </html>
+
+
+
+
+
+
+
