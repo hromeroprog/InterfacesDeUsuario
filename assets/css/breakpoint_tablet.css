@@ -72,7 +72,7 @@
         margin-left: 8px;
     }
 
-    .container main img {
+    .container main .left-image {
         display: none;
     }
 
@@ -104,7 +104,8 @@
     footer div a {
         padding: 15px 10px;
     }
- 
+
+
 	
 }
 
@@ -115,5 +116,7 @@
     .asignatura-movil{
         display: none;
     }
+
+    
 }
  

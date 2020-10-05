@@ -2,11 +2,11 @@
 
 @media (max-width: 600px)
 {
-    .nav_left{
+    .nav_left,.logo,
+    .box-image, #line-foto1,
+     #line-foto2,#line-foto3, 
+     .right-text-video p{
         display: none;
-    }
-    .logo{
-    display: none;
     }
       /* menu icon */
       
@@ -16,6 +16,7 @@
         padding: 28px 20px;
         position: relative;
         user-select: none;
+        background-color: rgba(0, 0, 0, 0.3);
       }
       
       .menu-icon .navicon {
@@ -112,7 +113,6 @@
       .container main{
         width: 100%;
       }
-    
 }
  
 @media (min-width: 601px) {
