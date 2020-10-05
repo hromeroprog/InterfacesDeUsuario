@@ -17,7 +17,7 @@ header {
   .logo
 {
     font-family: Impact, Charcoal, sans-serif;
-    height: 60px;
+    height: 65px;
     width: 210px;
     padding: 0 5px;
     /*text-align: center;*/
@@ -28,6 +28,7 @@ header {
     font-weight: 100;
     color: #ecbf17;
     margin-top: -5px;
+    overflow: hidden;
 }
 
 .logo:hover #bug_report,
@@ -43,6 +44,7 @@ header {
 #bug_report{
     font-size: 60px;
     padding-top: 5px;
+    
 }
 
 .material-icons{
