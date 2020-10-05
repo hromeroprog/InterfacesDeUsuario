@@ -9,12 +9,6 @@
     margin: 0 10px 0 5px;
   }
 
-.sticky-div{
-    padding: 10px 0 10px 0;
-    position: sticky;
-    top: 0;
-  }
-
 .nav_left ul li a.active,
 .nav_left li a:hover
 {
@@ -81,6 +75,7 @@
 }
 
 .bug-looking-darken{
+    margin-top: 5px;
     position: absolute;
     bottom: 0;
     left: 10%;

@@ -5,13 +5,13 @@
 <title>Theory of Errors</title>
 <link rel = "icon" href =  "./assets/images/logo.png" 
         type = "image/x-icon">
-<link type="text/css" rel="stylesheet" href="general.css">
-<link type="text/css" rel="stylesheet" href="header.css">
-<link type="text/css" rel="stylesheet" href="left-aside.css">
-<link type="text/css" rel="stylesheet" href="main.css">
-<link type="text/css" rel="stylesheet" href="right-aside.css">
-<link type="text/css" rel="stylesheet" href="footer.css">
-<link type="text/css" rel="stylesheet" href="./style-grades.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/general.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/header.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/left-aside.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/main.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/right-aside.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/style-grades.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -38,21 +38,56 @@
   <div class="container">
    
     <nav class="nav_left">
-      <div class="asignatura">Theory Of Errors</div>
+      <div class = "sticky-div">
+      <h2 class="asignatura">COURSE</h2>
+      <div class="clearfix"></div>
+      <div class="main-white-line"></div>
+      <div class="white-line" id="main-white-line"></div>
       <ul>
-        <li><a href="./students.html">
-          <i class="fa fa-users"></i>
-          <span>lista de estudiantes</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fa fa-commenting-o"></i>
-          <span>foro de la asignatura</span>
-        </a></li>
-        <li><a href="./grades.html">
-          <i class="fa fa-table"></i>
-          <span>calificaciones</span>
-        </a></li>
-    </ul>
+        
+        <li>
+          <a href="./students.html">
+            <i class="fa fa-users"></i>
+            <span class="link-name">STUDENT LIST</span>
+          </a>
+          <div class="white-line"></div>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class="far fa-comment-dots"></i>
+            <span class="link-name">FORUM</span>
+          </a>
+          <div class="white-line"></div>
+        </li>
+        
+        <li>
+          <a href="./grades.html">
+            <i class="fas fa-table"></i>
+            <span class="link-name">CALIFICATIONS</span>
+          </a>
+          <div class="white-line"></div>
+        </li>
+        
+        <li class="responsive-hidden">
+          <a href="#">
+            <i class="far fa-newspaper"></i>
+            <span class="link-name">LAST NEWS</span>
+          </a>
+          <div class="white-line-responsive"></div>
+        </li>
+        
+        <li class="responsive-hidden">
+          <a href="#">
+            <i class="far fa-calendar-alt"></i>
+            <span class="link-name">NEW EVENTS</span>
+          </a>
+          <div class="white-line-responsive"></div>
+        </li>
+        
+      </ul>
+    </div>
+        <img class="bug-looking-darken" src="./assets/background-images/bug-looking-darken.png" alt="Looking for bugs" />
     </nav>
 
 
@@ -112,11 +147,14 @@
   
 </div>
 <footer>
-  <div> <a href="https://www.uc3m.es">https://www.uc3m.es</a></div>
+  <div><a href="index.html">COPYRIGHT</a></div>
   <div class="line-vert"></div>
-  <div><p>Copyright</p></div>
+  <div> <a href="https://www.uc3m.es">
+          <img src="assets/images/universidad-carlos-iii-white.png" alt="uc3m-logo" class="uc3m-logo"/> 
+        </a>
+  </div>
   <div class="line-vert"></div>
-  <div><p>Política de privacidad</p></div>
+  <div><a href = "index.html">PRIVACY</a></div>
 </footer>
 
  
