@@ -1,63 +1,119 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Theory of Errors</title>
 <link rel = "icon" href =  "./assets/images/logo.png" 
         type = "image/x-icon">
-<link type="text/css" rel="stylesheet" href="general.css">
-<link type="text/css" rel="stylesheet" href="header.css">
-<link type="text/css" rel="stylesheet" href="left-aside.css">
-<link type="text/css" rel="stylesheet" href="main.css">
-<link type="text/css" rel="stylesheet" href="right-aside.css">
-<link type="text/css" rel="stylesheet" href="footer.css">
-<link type="text/css" rel="stylesheet" href="./style-students.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/general.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/header.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/left-aside.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/main.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/right-aside.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_tablet.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/material-icons.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/all.css">
+<link type="text/css" rel="stylesheet" href="./assets/css/style-students.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
-<div class="page">
 <body>
+  <div class="page">
   <header>
+    
     <a href="./index.html" class="logo">
       <i class="material-icons" id = "bug_report">bug_report</i>
-      <nav id = "logo_theory_of">THEORY OF</nav>
-      <nav id="logo_errors"> ERRORS</nav>
+      <div id="name-logo">
+      <nav id= "logo_theory_of">THEORY OF</nav>
+      <nav id= "logo_errors"> ERRORS</nav>
+    </div>
     </a>
-    <div class="menu-toggle"></div>
+
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+  <h2 class="asignatura-movil">COURSE</h2>
+  
+    <nav class="nav-movil">
+      <ul>
+        <li> <a href="./students.html"> <i class="fa fa-users"></i> <span class="link-name">STUDENT LIST</span> </a> </li>
+        <li> <a href="#"> <i class="far fa-comment-dots"></i> <span class="link-name">FORUM</span> </a></li>
+        <li> <a href="./grades.html"> <i class="fas fa-table"></i> <span class="link-name">CALIFICATIONS</span> </a></li>
+        <li> <a href="#"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span> </a> </li>
+        <li> <a href="#"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW EVENTS</span> </a> </li>
+      </ul>
+    </nav>
+
     <nav class="nav_top">
-<ul>
-    <li><a href="#">SUBJECT</a></li>
-    <li><a href="#">DATA</a></li>
-    <li><a href="#">CONTACT</a></li>
-</ul>
+      <ul>
+        <li><a href="#">SUBJECT</a></li>
+        <li><a href="#">DATA</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
     </nav>  
     <div class="clearfix"></div>
-</header>
+  </header>
 
   <div class="container">
-   
     <nav class="nav_left">
-      <div class="asignatura">Theory Of Errors</div>
+      <h2 class="asignatura">COURSE</h2>
+      <div class="clearfix"></div>
+      <div class="main-white-line"></div>
+      <div class="white-line" id="main-white-line"></div>
       <ul>
-        <li><a href="./students.html">
-          <i class="fa fa-users"></i>
-          <span>lista de estudiantes</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fa fa-commenting-o"></i>
-          <span>foro de la asignatura</span>
-        </a></li>
-        <li><a href="./grades.html">
-          <i class="fa fa-table"></i>
-          <span>calificaciones</span>
-        </a></li>
-    </ul>
+        
+        <li>
+          <a href="./students.html">
+            <i class="fa fa-users"></i>
+            <span class="link-name">STUDENT LIST</span>
+          </a>
+          <div class="white-line"></div>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class="far fa-comment-dots"></i>
+            <span class="link-name">FORUM</span>
+          </a>
+          <div class="white-line"></div>
+        </li>
+        
+        <li>
+          <a href="./grades.html">
+            <i class="fas fa-table"></i>
+            <span class="link-name">CALIFICATIONS</span>
+          </a>
+          <div class="white-line"></div>
+        </li>
+        
+        <li class="responsive-hidden">
+          <a href="#">
+            <i class="far fa-newspaper"></i>
+            <span class="link-name">LAST NEWS</span>
+          </a>
+          <div class="white-line-responsive"></div>
+        </li>
+        
+        <li class="responsive-hidden">
+          <a href="#">
+            <i class="far fa-calendar-alt"></i>
+            <span class="link-name">NEW EVENTS</span>
+          </a>
+          <div class="white-line-responsive"></div>
+        </li>
+        
+      </ul>
+        <img class="bug-looking-darken" src="./assets/background-images/bug-looking-darken.png" alt="Looking for bugs" />
     </nav>
 
 
     <main>
-  
+     
       <div class="list_students">
     
         <table class="table_students" id="participants">
@@ -70,54 +126,71 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="student" id="user-1"><td class="foto_student"><img src="./assets/images/justin.jpg" alt="Imagen de JOSE ALVAREZ SANCHEZ" title="Imagen de JOSE ALVAREZ SANCHEZ" /> JOSE ALVAREZ SANCHEZ</a></td><td>100386347@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-2"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=241939&amp;r=26a770c825f42411d89e45c2a5e3327d" alt="Imagen de PAULA ALVAREZ REY" title="Imagen de PAULA ALVAREZ REY" /> PAULA ALVAREZ REY</a></td><td>100386127@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-3"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254623&amp;r=3703a14c60e58ec002eed4436242ef86" alt="Imagen de ALEX ARRIETA EGUIA" title="Imagen de ALEX ARRIETA EGUIA" /> ALEX ARRIETA EGUIA</a></td><td>100383227@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-4"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254575&amp;r=f28ab683ad23d0e74a70ec03d890170c" alt="Imagen de JULIAN BERNABE CALVO" title="Imagen de JULIAN BERNABE CALVO" /> JULIAN BERNABE CALVO</a></td><td>100386483@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-5"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=241902&amp;r=f98cddf80eb962550b4d0dc27e050ad3" alt="Imagen de MARINA BOYERO TORRENTE" title="Imagen de MARINA BOYERO TORRENTE" /> MARINA BOYERO TORRENTE</a></td><td>100386483@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-6"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=241953&amp;r=e223d892080a5f52e3bfe8d2b19ebca4" alt="Imagen de SERGIO CALVO MONASTERIO" title="Imagen de SERGIO CALVO MONASTERIO" /> SERGIO CALVO MONASTERIO</a></td><td>100386292@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-7"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254557&amp;r=e1183d5228accf90f20bbcf7d320466f" alt="Imagen de CARLOS CASTREJON SANCHEZ" title="Imagen de CARLOS CASTREJON SANCHEZ" /> CARLOS CASTREJON SANCHEZ</a></td><td>100384723@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-8"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=242006&amp;r=377e4aba099c86fa11634796daa70e62" alt="Imagen de DAVID CAVADA BUENASMAÑANAS" title="Imagen de DAVID CAVADA BUENASMAÑANAS" /> DAVID CAVADA BUENASMAÑANAS</a></td><td>100386498@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-9"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254564&amp;r=0b584724675d608d78a87e01d9f5f766" alt="Imagen de RAMSES CONTRERAS SULBARAN" title="Imagen de RAMSES CONTRERAS SULBARAN" /> RAMSES CONTRERAS SULBARAN</a></td><td>100382245@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-10"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=255083&amp;r=29b3516a91eed4660811da70eb9c65e7" alt="Imagen de DANIEL CRESPO GARRIDO" title="Imagen de DANIEL CRESPO GARRIDO" /> DANIEL CRESPO GARRIDO</a></td><td>10038890@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
-                <tr class="student" id="user-11"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254609&amp;r=678f2b77705daaea6c9abf6aedfe2104" alt="Imagen de KHAOULA EL MOURTAQI SAYED" title="Imagen de KHAOULA EL MOURTAQI SAYED" /> KHAOULA EL MOURTAQI SAYED</td><td>100389086@alumnos.uc3m.es</td><td class="message"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></td></tr>
+                <tr class="student" id="user-1"><td class="foto_student"><img src="./assets/images/justin.jpg" alt="Imagen de JOSE ALVAREZ SANCHEZ" title="Imagen de JOSE ALVAREZ SANCHEZ" /> JOSE ALVAREZ SANCHEZ</a></td><td>100386347@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-2"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=241939&amp;r=26a770c825f42411d89e45c2a5e3327d" alt="Imagen de PAULA ALVAREZ REY" title="Imagen de PAULA ALVAREZ REY" /> PAULA ALVAREZ REY</a></td><td>100386127@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-3"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254623&amp;r=3703a14c60e58ec002eed4436242ef86" alt="Imagen de ALEX ARRIETA EGUIA" title="Imagen de ALEX ARRIETA EGUIA" /> ALEX ARRIETA EGUIA</a></td><td>100383227@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-4"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254575&amp;r=f28ab683ad23d0e74a70ec03d890170c" alt="Imagen de JULIAN BERNABE CALVO" title="Imagen de JULIAN BERNABE CALVO" /> JULIAN BERNABE CALVO</a></td><td>100386483@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-5"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=241902&amp;r=f98cddf80eb962550b4d0dc27e050ad3" alt="Imagen de MARINA BOYERO TORRENTE" title="Imagen de MARINA BOYERO TORRENTE" /> MARINA BOYERO TORRENTE</a></td><td>100386483@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-6"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=241953&amp;r=e223d892080a5f52e3bfe8d2b19ebca4" alt="Imagen de SERGIO CALVO MONASTERIO" title="Imagen de SERGIO CALVO MONASTERIO" /> SERGIO CALVO MONASTERIO</a></td><td>100386292@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-7"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254557&amp;r=e1183d5228accf90f20bbcf7d320466f" alt="Imagen de CARLOS CASTREJON SANCHEZ" title="Imagen de CARLOS CASTREJON SANCHEZ" /> CARLOS CASTREJON SANCHEZ</a></td><td>100384723@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-8"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=242006&amp;r=377e4aba099c86fa11634796daa70e62" alt="Imagen de DAVID CAVADA BUENASMAÑANAS" title="Imagen de DAVID CAVADA BUENASMAÑANAS" /> DAVID CAVADA BUENASMAÑANAS</a></td><td>100386498@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-9"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254564&amp;r=0b584724675d608d78a87e01d9f5f766" alt="Imagen de RAMSES CONTRERAS SULBARAN" title="Imagen de RAMSES CONTRERAS SULBARAN" /> RAMSES CONTRERAS SULBARAN</a></td><td>100382245@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-10"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=255083&amp;r=29b3516a91eed4660811da70eb9c65e7" alt="Imagen de DANIEL CRESPO GARRIDO" title="Imagen de DANIEL CRESPO GARRIDO" /> DANIEL CRESPO GARRIDO</a></td><td>10038890@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
+                <tr class="student" id="user-11"><td class="foto_student"><img src="https://aplicaciones.uc3m.es/fotoTarin/obtenerFoto.uc3m?i=254609&amp;r=678f2b77705daaea6c9abf6aedfe2104" alt="Imagen de KHAOULA EL MOURTAQI SAYED" title="Imagen de KHAOULA EL MOURTAQI SAYED" /> KHAOULA EL MOURTAQI SAYED</td><td>100389086@alumnos.uc3m.es</td><td class="message"><i class="fab fa-telegram-plane"></i></td></tr>
                 </tbody>
             </table>
         </div>
     
     </main>
 
-    <aside>
-<div id="lastnews">
-  <h4><i class="fa fa-newspaper-o" aria-hidden="true"></i> Last News</h4>
-  <ul>
-    <li>10/10 - New videos uploaded</li>
-    <li>09/11 - New topic added</li>
-    <li>09/10 - New messages in the forum</li>
-  </ul>
-</div>
 
-<div id="newevents">
-  <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> New Events</h4>
-  <ul>
-    <li>20/10 - Assignment due date</li>
-    <li>15/11 - Group meeting</li>
-    <li>20/10 - Examn topic 1</li>
-  </ul>
-</div>
+    <!--  RIGHT ASIDE  -->
+
+    <aside>
+      <div class="sticky-div">
+      <div id="lastnews">
+        <i class="far fa-newspaper"></i>
+        <h4>LAST NEWS</h4>
+        <ul>
+          <li>10/10 - New videos uploaded</li>
+          <li>09/11 - New topic added</li>
+          <li>09/10 - New messages in the forum</li>
+        </ul> 
+      </div>
+
+      <div id="newevents">
+        <i class="far fa-calendar-alt"></i> 
+        <h4>NEW EVENTS</h4>
+        <ul>
+          <li>20/10 - Assignment due date</li>
+          <li>15/11 - Group meeting</li>
+          <li>20/10 - Exam topic 1</li>
+        </ul>
+      </div>
+      </div>
     </aside>
 
   </div>
   
 </div>
 <footer>
-  <div> <a href="https://www.uc3m.es">https://www.uc3m.es</a></div>
+  <div><a href="index.html">COPYRIGHT</a></div>
   <div class="line-vert"></div>
-  <div><p>Copyright</p></div>
+  <div> <a href="https://www.uc3m.es">
+          <img src="assets/images/universidad-carlos-iii-white.png" alt="uc3m-logo" class="uc3m-logo"/> 
+        </a>
+  </div>
   <div class="line-vert"></div>
-  <div><p>Política de privacidad</p></div>
+  <div><a href = "index.html">PRIVACY</a></div>
 </footer>
 
  
 </body>
 </html>
+
+
+
+
+
+
+
