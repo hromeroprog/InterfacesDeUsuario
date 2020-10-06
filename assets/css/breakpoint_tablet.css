@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     
     .page{
         margin: 0;
@@ -26,7 +26,6 @@
 #logo_theory_of,
 .asignatura,
 #main-white-line{
-
     display: none;
 }
 
@@ -109,13 +108,17 @@
 	
 }
 
-@media all and (min-width: 769px) {
+@media (min-width: 769px) {
     #events, #news {
         visibility:hidden
     }
     .asignatura-movil{
         display: none;
     }
+    #logo_errors,
+#logo_theory_of{
+    display: block;
+}
 
     
 }
