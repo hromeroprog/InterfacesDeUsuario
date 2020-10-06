@@ -35,6 +35,7 @@
     padding: 0;
     text-align: center;
     margin-top: 40px;
+
 }
 
 .white-line{
@@ -77,6 +78,7 @@
 .bug-looking-darken{
     margin-top: 5px;
     position: absolute;
+    z-index: -1;
     bottom: 0;
     left: 10%;
     opacity: 0.25;

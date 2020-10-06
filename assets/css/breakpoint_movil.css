@@ -76,6 +76,7 @@
       .nav-movil{
           position: absolute;
           margin-left: -70%;
+          z-index: 1;
       }
       
       .nav-movil li a:hover,

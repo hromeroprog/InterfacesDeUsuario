@@ -1,22 +1,13 @@
-.foto_student img {
-    width: 35px;
-    height:35px; 
-    margin-right: .5rem;
-    border-radius: 50%;
-    border-style: none;
-    vertical-align: middle;
-}
-.foto_student{
-    text-align: left;
-}
 
-.student{
+
+.messages{
     font-size: 15px;
     font-weight: 100;
     line-height : 25px;
+    border: 1px solid #dee2e6;
 }
 
-.table_students{
+.table_forum{
     width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
@@ -24,6 +15,8 @@
     min-height: 10em;
     border-collapse: collapse;
     border-spacing: 2px;
+    text-align: center;
+    
 }
 
 
@@ -32,12 +25,8 @@ thead {
     vertical-align: middle;
 }
 
-#participants {
-    text-align: center;
-}
 
-
-#participants th {
+.table_forum th {
     text-align: center;
     padding: 4px;
     display: table-cell;
@@ -46,17 +35,22 @@ thead {
     color: #ecbf17;
 }
 
-#participants td {
+.header-c1{
+    width: 120px;
+    
+}
+
+.table_forum td {
     padding: 4px;
     vertical-align: middle;
     padding: .75rem;
     border-top: 1px solid #dee2e6;
 }
 
-.message{
+.forums, .num-message, .time-message{
     text-align: center; 
     vertical-align: middle;
-    font-size: 30px;
+    border: 1px solid #dee2e6;
 }
 
 tr:nth-child(even) {
@@ -64,7 +58,9 @@ tr:nth-child(even) {
 }
 
 
-
+table {
+    border-collapse: collapse;
+  }
 
 
 
