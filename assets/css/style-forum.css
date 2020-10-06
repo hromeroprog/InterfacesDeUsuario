@@ -19,6 +19,9 @@
     
 }
 
+.list_forum{
+    overflow: auto;
+}
 
 thead {
     display: table-header-group;
