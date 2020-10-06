@@ -10,6 +10,10 @@
     text-align: left;
 }
 
+.list_students{
+    overflow: hidden;
+}
+
 .student{
     font-size: 15px;
     font-weight: 100;
@@ -24,7 +28,6 @@
     min-height: 10em;
     border-collapse: collapse;
     border-spacing: 2px;
-    overflow: hidden;
 }
 
 
