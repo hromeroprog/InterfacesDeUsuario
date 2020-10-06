@@ -114,6 +114,74 @@
       .container main{
         width: 100%;
       }
+
+      #participants,#grades-act {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+    
+
+      #participants  thead,
+      #grades-act thead{
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+      
+      #participants  tr,
+      #grades-act tr{
+        border-bottom: 3px solid #0c0d0e;
+        display: block;
+        margin-bottom: .625em;
+        border: 1px solid #ddd;
+        padding: .35em;
+      }
+      
+      #participants td,
+      #grades-act td{
+        display: block;
+        text-align: right;
+      }
+      
+      #participants  td::before,
+      #grades-act td::before{
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #ecbf17;
+      }
+      
+      #participants td:last-child,
+      #grades-act td:last-child{
+        border-bottom: 0;
+      }
+
+      #participants .foto_student,
+      #grades-act .foto_student{
+        text-align: right;
+    }
+    #participants .message {
+      padding-right: 100px;
+    }
+
+    #grades-act .act-1,
+    #grades-act .act-2,
+    #grades-act .act-3 {
+      padding-right: 100px;
+    }
+
+
+  
 }
  
 @media (min-width: 601px) {

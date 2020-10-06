@@ -10,10 +10,6 @@
     text-align: left;
 }
 
-.list_students{
-    overflow-x:auto;
-}
-
 .student{
     font-size: 15px;
     font-weight: 100;
@@ -29,7 +25,9 @@
     border-collapse: collapse;
     border-spacing: 2px;
 }
-
+.list_students {
+    overflow: auto;
+}
 
 thead {
     display: table-header-group;

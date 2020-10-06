@@ -27,11 +27,9 @@
     border-spacing: 2px;
     text-align: center;
 }
-
 .list_grades{
-    overflow-x:auto;
+    overflow: auto;
 }
-
 thead {
     display: table-header-group;
     vertical-align: middle;
