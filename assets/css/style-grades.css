@@ -28,6 +28,9 @@
     text-align: center;
 }
 
+.list_grades{
+    overflow-x:auto;
+}
 
 thead {
     display: table-header-group;

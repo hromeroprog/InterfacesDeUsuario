@@ -35,6 +35,10 @@ thead {
     color: #ecbf17;
 }
 
+.list_forum{
+    overflow-x:auto;
+}
+
 .header-c1{
     width: 120px;
     

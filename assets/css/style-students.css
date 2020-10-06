@@ -11,7 +11,7 @@
 }
 
 .list_students{
-    overflow: hidden;
+    overflow-x:auto;
 }
 
 .student{
