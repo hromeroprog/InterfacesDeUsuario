@@ -40,12 +40,13 @@ thead {
 
 
 #participants th {
+    font-weight: 100;
     text-align: center;
     padding: 4px;
     display: table-cell;
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
-    color: #ecbf17;
+    color: rgba(233, 200, 80, 0.8);
 }
 
 #participants td {
