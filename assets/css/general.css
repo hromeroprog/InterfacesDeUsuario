@@ -22,7 +22,7 @@
   .page{
       display: flex;
       flex-direction: column;
-      margin: .5px 40px;
+      margin: 5px 40px;
       min-height: calc(100vh - 75px);
   }
 
