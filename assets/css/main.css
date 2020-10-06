@@ -23,6 +23,7 @@ main h2{
 }
 
 .left-image{
+    object-fit: contain;
     width: 30%;
     height: auto;
     margin-right: 20px;
