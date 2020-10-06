@@ -88,7 +88,7 @@
 
       .nav-movil{
           position: absolute;
-          margin-left: -70%;
+          margin-left: -100%;
           z-index: 1;
       }
       
