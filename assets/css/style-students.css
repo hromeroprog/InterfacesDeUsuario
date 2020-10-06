@@ -24,6 +24,7 @@
     min-height: 10em;
     border-collapse: collapse;
     border-spacing: 2px;
+    overflow: hidden;
 }
 
 
