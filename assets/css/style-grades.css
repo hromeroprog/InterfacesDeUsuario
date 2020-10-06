@@ -18,7 +18,7 @@
 }
 
 .table_grades{
-    width: 100%;
+    width: calc(100% - 1px);
     max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent;
@@ -37,12 +37,13 @@ thead {
 
 
 .table_grades th {
+    font-weight: 200;
     text-align: center;
     padding: 4px;
     display: table-cell;
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
-    color: #ecbf17;
+    color: rgba(233, 200, 80, 0.8);
 }
 
 .table_grades td {
