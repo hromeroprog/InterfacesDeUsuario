@@ -1,191 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Theory of Errors</title>
-<link rel = "icon" href =  "./assets/images/logo.png" 
-        type = "image/x-icon">
-<link type="text/css" rel="stylesheet" href="./assets/css/general.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/header.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/left-aside.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/main.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/right-aside.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_tablet.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/material-icons.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/all.css">
-<link type="text/css" rel="stylesheet" href="./assets/css/style-forum.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-</head>
-
-<body>
-  <div class="page">
-  <header>
-    
-    <a href="./index.html" class="logo">
-      <i class="material-icons" id = "bug_report">bug_report</i>
-      <nav id= "logo_theory_of">THEORY OF</nav>
-      <nav id= "logo_errors"> ERRORS</nav>
-    </a>
-
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-
-  <a href="./index.html">
-  <h2 class="asignatura-movil">COURSE</h2></a>
-  
-    <nav class="nav-movil">
-      <ul>
-        <li> <a href="./students.html"> <i class="fa fa-users"></i> <span class="link-name">STUDENT LIST</span> </a> </li>
-        <li> <a href="#"> <i class="far fa-comment-dots"></i> <span class="link-name">FORUM</span> </a></li>
-        <li> <a href="./grades.html"> <i class="fas fa-table"></i> <span class="link-name">CALIFICATIONS</span> </a></li>
-        <li> <a href="#"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span> </a> </li>
-        <li> <a href="#"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW EVENTS</span> </a> </li>
-      </ul>
-    </nav>
-
-    <nav class="nav_top">
-      <ul>
-        <li><a href="#">SUBJECT</a></li>
-        <li><a href="#">DATA</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>  
-    <div class="clearfix"></div>
-  </header>
-
-  <div class="container">
-    <nav class="nav_left">
-      <div class = "sticky-div">
-      <h2 class="asignatura">COURSE</h2>
-      <div class="clearfix"></div>
-      <div class="main-white-line"></div>
-      <div class="white-line" id="main-white-line"></div>
-      <ul>
-        
-        <li>
-          <a href="./students.html">
-            <i class="fa fa-users"></i>
-            <span class="link-name">STUDENT LIST</span>
-          </a>
-          <div class="white-line"></div>
-        </li>
-        
-        <li>
-          <a href="./forum.html">
-            <i class="far fa-comment-dots"></i>
-            <span class="link-name">FORUM</span>
-          </a>
-          <div class="white-line"></div>
-        </li>
-        
-        <li>
-          <a href="./grades.html">
-            <i class="fas fa-table"></i>
-            <span class="link-name">CALIFICATIONS</span>
-          </a>
-          <div class="white-line"></div>
-        </li>
-        
-        <li class="responsive-hidden">
-          <a href="#">
-            <i class="far fa-newspaper"></i>
-            <span class="link-name">LAST NEWS</span>
-          </a>
-          <div class="white-line-responsive"></div>
-        </li>
-        
-        <li class="responsive-hidden">
-          <a href="#">
-            <i class="far fa-calendar-alt"></i>
-            <span class="link-name">NEW EVENTS</span>
-          </a>
-          <div class="white-line-responsive"></div>
-        </li>
-        
-      </ul>
-    </div>
-        <img class="bug-looking-darken" src="./assets/background-images/bug-looking-darken.png" alt="Looking for bugs" />
-    </nav>
-
-
-    <main>
-    
-        <div class="list_forum">
-    
-            <table class="table_forum">
-                
-                <thead>
-                    <tr>
-                        <th class="header-c0">Titulo</th>
-                        <th class="header-c1">Número de mensajes</th>
-                        <th class="header-c2">Último mensaje</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="messages" id="topic-1"><td class="forums">Topic 1</td><td class="num-message">5</td><td class="time-message">lun, 5 de oct de 2020, 19:40</td></tr>
-                    <tr class="messages" id="topic-2"><td class="forums">Topic 2</td><td class="num-message">3</td><td class="time-message">dom, 4 de oct de 2020, 16:50</td></tr>
-                    <tr class="messages" id="topic-3"><td class="forums">Topic 3</td><td class="num-message">11</td><td class="time-message">sab, 3 de oct de 2020, 15:49</td></tr>
-                    <tr class="messages" id="topic-4"><td class="forums">Topic 4</td><td class="num-message">2</td><td class="time-message">mar, 29 de sep de 2020, 12:42</td></tr>
-                    <tr class="messages" id="topic-5"><td class="forums">Topic 5</td><td class="num-message">3</td><td class="time-message">lun, 28 de sep de 2020, 11:21</td></tr>
-                    <tr class="messages" id="topic-6"><td class="forums">Topic 6</td><td class="num-message">1</td><td class="time-message">mié, 16 de sep de 2020, 20:37	</td></tr>
-                   </tbody>
-                </table>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Theory of Errors</title>
+        <link rel = "icon" href =  "./assets/images/logo.png" 
+            type = "image/x-icon">
+        <link type="text/css" rel="stylesheet" href="./assets/css/general.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/header.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/left-aside.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/main.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/right-aside.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_tablet.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/material-icons.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/all.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/style-forum.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <a href="./index.html" class="logo">
+                    <i class="material-icons" id = "bug_report">bug_report</i>
+                    <nav id= "logo_theory_of">THEORY OF</nav>
+                    <nav id= "logo_errors"> ERRORS</nav>
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <a href="./index.html">
+                    <h2 class="asignatura-movil">COURSE</h2>
+                </a>
+                <nav class="nav-movil">
+                    <ul>
+                        <li> <a href="./students.html"> <i class="fa fa-users"></i> <span class="link-name">STUDENT LIST</span> </a> </li>
+                        <li> <a href="#"> <i class="far fa-comment-dots"></i> <span class="link-name">FORUM</span> </a></li>
+                        <li> <a href="./grades.html"> <i class="fas fa-table"></i> <span class="link-name">CALIFICATIONS</span> </a></li>
+                        <li> <a href="#"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span> </a> </li>
+                        <li> <a href="#"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW EVENTS</span> </a> </li>
+                    </ul>
+                </nav>
+                <nav class="nav_top">
+                    <ul>
+                        <li><a href="#">SUBJECT</a></li>
+                        <li><a href="#">DATA</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </header>
+            <div class="container">
+                <nav class="nav_left">
+                    <div class = "sticky-div">
+                        <h2 class="asignatura">COURSE</h2>
+                        <div class="clearfix"></div>
+                        <div class="main-white-line"></div>
+                        <div class="white-line" id="main-white-line"></div>
+                        <ul>
+                            <li>
+                                <a href="./students.html">
+                                <i class="fa fa-users"></i>
+                                <span class="link-name">STUDENT LIST</span>
+                                </a>
+                                <div class="white-line"></div>
+                            </li>
+                            <li>
+                                <a href="./forum.html">
+                                <i class="far fa-comment-dots"></i>
+                                <span class="link-name">FORUM</span>
+                                </a>
+                                <div class="white-line"></div>
+                            </li>
+                            <li>
+                                <a href="./grades.html">
+                                <i class="fas fa-table"></i>
+                                <span class="link-name">CALIFICATIONS</span>
+                                </a>
+                                <div class="white-line"></div>
+                            </li>
+                            <li class="responsive-hidden">
+                                <a href="#">
+                                <i class="far fa-newspaper"></i>
+                                <span class="link-name">LAST NEWS</span>
+                                </a>
+                                <div class="white-line-responsive"></div>
+                            </li>
+                            <li class="responsive-hidden">
+                                <a href="#">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="link-name">NEW EVENTS</span>
+                                </a>
+                                <div class="white-line-responsive"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="bug-looking-darken" src="./assets/background-images/bug-looking-darken.png" alt="Looking for bugs" />
+                </nav>
+                <main>
+                    <div class="list_forum">
+                        <table class="table_forum">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">Titulo</th>
+                                    <th class="header-c1">Número de mensajes</th>
+                                    <th class="header-c2">Último mensaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="messages" id="topic-1">
+                                    <td class="forums">Topic 1</td>
+                                    <td class="num-message">5</td>
+                                    <td class="time-message">lun, 5 de oct de 2020, 19:40</td>
+                                </tr>
+                                <tr class="messages" id="topic-2">
+                                    <td class="forums">Topic 2</td>
+                                    <td class="num-message">3</td>
+                                    <td class="time-message">dom, 4 de oct de 2020, 16:50</td>
+                                </tr>
+                                <tr class="messages" id="topic-3">
+                                    <td class="forums">Topic 3</td>
+                                    <td class="num-message">11</td>
+                                    <td class="time-message">sab, 3 de oct de 2020, 15:49</td>
+                                </tr>
+                                <tr class="messages" id="topic-4">
+                                    <td class="forums">Topic 4</td>
+                                    <td class="num-message">2</td>
+                                    <td class="time-message">mar, 29 de sep de 2020, 12:42</td>
+                                </tr>
+                                <tr class="messages" id="topic-5">
+                                    <td class="forums">Topic 5</td>
+                                    <td class="num-message">3</td>
+                                    <td class="time-message">lun, 28 de sep de 2020, 11:21</td>
+                                </tr>
+                                <tr class="messages" id="topic-6">
+                                    <td class="forums">Topic 6</td>
+                                    <td class="num-message">1</td>
+                                    <td class="time-message">mié, 16 de sep de 2020, 20:37	</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+                <!--  RIGHT ASIDE  -->
+                <aside>
+                    <div class="sticky-div">
+                        <div id="lastnews">
+                            <i class="far fa-newspaper"></i>
+                            <h4>LAST NEWS</h4>
+                            <ul>
+                                <li>10/10 - New videos uploaded</li>
+                                <li>09/11 - New topic added</li>
+                                <li>09/10 - New messages in the forum</li>
+                            </ul>
+                        </div>
+                        <div id="newevents">
+                            <i class="far fa-calendar-alt"></i> 
+                            <h4>NEW EVENTS</h4>
+                            <ul>
+                                <li>20/10 - Assignment due date</li>
+                                <li>15/11 - Group meeting</li>
+                                <li>20/10 - Exam topic 1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
             </div>
-    </main>
-
-
-    <!--  RIGHT ASIDE  -->
-
-    <aside>
-      <div class="sticky-div">
-      <div id="lastnews">
-        <i class="far fa-newspaper"></i>
-        <h4>LAST NEWS</h4>
-        <ul>
-          <li>10/10 - New videos uploaded</li>
-          <li>09/11 - New topic added</li>
-          <li>09/10 - New messages in the forum</li>
-        </ul> 
-      </div>
-
-      <div id="newevents">
-        <i class="far fa-calendar-alt"></i> 
-        <h4>NEW EVENTS</h4>
-        <ul>
-          <li>20/10 - Assignment due date</li>
-          <li>15/11 - Group meeting</li>
-          <li>20/10 - Exam topic 1</li>
-        </ul>
-      </div>
-      </div>
-    </aside>
-
-  </div>
-  
-</div>
-<footer>
-  <div><a href="index.html">COPYRIGHT</a></div>
-  <div class="line-vert"></div>
-  <div> <a href="https://www.uc3m.es">
-          <img src="assets/images/universidad-carlos-iii-white.png" alt="uc3m-logo" class="uc3m-logo"/> 
-        </a>
-  </div>
-  <div class="line-vert"></div>
-  <div><a href = "index.html">PRIVACY</a></div>
-</footer>
-
- 
-</body>
+        </div>
+        <footer>
+            <div><a href="index.html">COPYRIGHT</a></div>
+            <div class="line-vert"></div>
+            <div> <a href="https://www.uc3m.es">
+                <img src="assets/images/universidad-carlos-iii-white.png" alt="uc3m-logo" class="uc3m-logo"/> 
+                </a>
+            </div>
+            <div class="line-vert"></div>
+            <div><a href = "index.html">PRIVACY</a></div>
+        </footer>
+    </body>
 </html>
-
-
-
-
-
-
-
