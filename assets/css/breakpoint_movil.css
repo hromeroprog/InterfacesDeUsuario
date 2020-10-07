@@ -209,4 +209,10 @@
 #menu-btn {
     display: none;
 }
+#grades-act .act-1,
+#grades-act .act-2,
+#grades-act .act-3{
+  width: 15%;
+}
+
 }

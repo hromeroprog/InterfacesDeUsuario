@@ -37,9 +37,9 @@ thead {
 
 
 .table_grades th {
-    font-weight: 200;
+    font-size: 90%;
     text-align: center;
-    padding: 4px;
+    padding: 2px;
     display: table-cell;
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
