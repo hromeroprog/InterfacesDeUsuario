@@ -23,6 +23,11 @@
     overflow: auto;
 }
 
+.list_forum::-webkit-scrollbar {
+    display: none;
+  }
+
+
 thead {
     display: table-header-group;
     vertical-align: middle;
@@ -30,12 +35,14 @@ thead {
 
 
 .table_forum th {
+    font-size: 90%;
+    font-weight: 100;
     text-align: center;
     padding: 4px;
     display: table-cell;
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
-    color: #ecbf17;
+    color: rgba(233, 200, 80, 0.8);
 }
 
 .header-c1{

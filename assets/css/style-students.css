@@ -17,7 +17,7 @@
 }
 
 .table_students{
-    width: 100%;
+    width: calc(100% - 1px);
     max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent;
@@ -28,6 +28,10 @@
 .list_students {
     overflow: auto;
 }
+
+.list_students::-webkit-scrollbar {
+    display: none;
+  }
 
 thead {
     display: table-header-group;
@@ -40,6 +44,7 @@ thead {
 
 
 #participants th {
+    font-size: 90%;
     font-weight: 100;
     text-align: center;
     padding: 4px;
