@@ -175,7 +175,7 @@
         font-weight: 200;
         text-transform: uppercase;
         font-size: 15px;
-        color: #ecbf17;
+        color: rgba(233, 200, 80, 0.8);
       }
       
       #participants td:last-child,
@@ -199,8 +199,6 @@
     #forum-messages .num-message {
       padding-right: 100px;
     }
-
-
   
 }
  
