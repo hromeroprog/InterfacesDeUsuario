@@ -4,7 +4,6 @@ header {
     padding: 10px;
     background-color: #1A1A1A;
     font-family: Plain,Helvetica Neue,Arial,Noto Sans,sans-serif;
-    font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     border-style: solid;
@@ -53,8 +52,9 @@ header {
 }
 
 .nav_top ul li a{
+    font-size: 13px;
     display: block;
-    margin: 10px 0;
+    margin: 10px 3px;
     padding: 10px 20px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
@@ -89,7 +89,7 @@ header {
     float: right;
     font-weight: 100;
     font-size: 12px;
-    letter-spacing: .40em;
+    letter-spacing: .35em;
     font-size: 0.94vw;
 }
 .nav_top ul{
