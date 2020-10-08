@@ -71,6 +71,29 @@ tr:nth-child(even) {
     background-color: rgba(0,0,0,.2);
 }
 
+.list_students h3{
+    padding: 10px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: .2em;
+    
+    border-bottom: solid 1px rgba(255, 255, 255, .7);
+}
+
+.table_students .message .fas{
+    color: rgba(255,255,255,0.9);
+    font-size: 20px;
+}
+
+.table_students .message .fas:hover{
+    color: rgba(233, 200, 80);
+    font-size: 20px;
+}
+
+
+
 
 
 
