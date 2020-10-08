@@ -48,14 +48,13 @@ aside .far{
 }
 
 
+#newevents,
 #lastnews{
-  position: absolute;
-  top: 290px;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 0px;
+  padding: 0;
+  text-align: center;
 }
+
 
 
 #lastnews h4,
