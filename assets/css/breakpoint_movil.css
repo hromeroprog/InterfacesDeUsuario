@@ -176,6 +176,7 @@
         text-transform: uppercase;
         font-size: 15px;
         color: rgba(233, 200, 80, 0.8);
+        margin-right: 10px;
       }
       
       #participants td:last-child,
