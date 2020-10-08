@@ -80,9 +80,6 @@ tr:nth-child(even) {
     background-color: rgba(0,0,0,.2);
 }
 
-
-
-
 .table_students .message .fas,
 .table_references .message_link .fas{
     color: rgba(255,255,255,0.9);
