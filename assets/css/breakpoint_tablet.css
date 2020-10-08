@@ -114,6 +114,17 @@
 
     aside {
         width: 100%;
+    }  
+
+    #newevents ul li, #lastnews ul li {
+        animation-duration: 0s;
+    }
+
+    #lastnews{
+        position: relative;
+        top: unset;
+        left: unset;
+        right: unset;
     }
 
     footer div a {
