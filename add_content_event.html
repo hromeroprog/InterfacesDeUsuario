@@ -8,7 +8,7 @@
             type = "image/x-icon">
         <link type="text/css" rel="stylesheet" href="./assets/css/general.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/header.css">
-        <link type="text/css" rel="stylesheet" href="./assets/css/copyright.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/add-content-display.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_tablet.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
@@ -49,9 +49,24 @@
                 <div class="clearfix"></div>
             </header>
             <div class="container">
-                <main>
-                    YOUR PRIVACY IS VERY IMPORTANT FOR US.<br><br>
-                    CUSTOMER INFORMATION WILL NOT BE COLLECTED WITHOUT YOUR EXPRESS CONSENT.<br><br> ALL THE FUNDAMENTAL RIGHTS OF DATA PRIVACY INCLUDED IN THE LAW OF USERS AND CONSUMERS,<br> SUCH AS THE RIGHT TO BE FORGOTTEN, GOVERN THIS PLATFORM.
+                <h3>ADDING NEW EVENT</h3>
+                <main id="add-content-main">
+                        <div>
+                            <form>
+                                <label for="event-date">DATE</label>
+                                <input type="date" id="event-date" name="event-date">
+                                <label for="event-title">TITLE</label>
+                                <input type="text" id="event-title" name="event-text" placeholder="Resume the event...">
+                                <label for="event-text">DESCRIPTION</label>
+                                <input type="text" id="event-text" name="event-text" placeholder="Describe the new event...">
+                                <input type="submit" value="PUBLISH">
+                            </form>
+                        </div>
+                    <a href="add_content_news.html" >
+                        <div>
+                            <h4>NEWS</h4>
+                        </div>
+                    </a>
                 </main>
             </div>
         </div>
