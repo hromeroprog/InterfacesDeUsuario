@@ -55,6 +55,10 @@
         flex-wrap: wrap;
     }
 
+    .container #add-content-main{
+        flex-direction: column;
+    }
+
    .container main {
         width:calc(80% - 15px);
         margin: 5px 5px 10px 5px;

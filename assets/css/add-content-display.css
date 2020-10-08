@@ -15,6 +15,7 @@
 
 main a{
     text-decoration: none;
+ 
 }
 .container{
     display: block;
@@ -26,8 +27,8 @@ main div{
     background-color: #141517;
     width: 400px;
     height: 400px;
-    max-height: calc(60vh - 80px);
-    max-width: calc(60vh - 80px);
+    min-height: calc(60vh - 80px);
+    min-width: calc(60vh - 80px);
     margin: 20px;
 
     display: flex;
@@ -117,6 +118,14 @@ input[type=submit]:hover{
 
 #event-title{
     height: 30px;
+}
+
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
