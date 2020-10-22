@@ -77,7 +77,7 @@
         padding-left: 0;
     }
 
-    .nav_left ul li a{
+    .nav_left ul li a, .nav_left ul button{
         font-size: 11px;
         text-decoration: none;
         display: block; 

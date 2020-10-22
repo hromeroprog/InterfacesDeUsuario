@@ -65,7 +65,7 @@ aside .far{
  border-width: 0 0 1px 0;
  border-color: rgba(255, 255, 255, 0.8);
 }
-
+/*
 @keyframes news_1{
   0%{color: rgba(233, 200, 80, 0.8);
     font-size: 14px;
@@ -77,4 +77,5 @@ aside .far{
   100%{color: rgba(233, 200, 80, 0.8);
     font-size: 14px;
   }
-}
+}*/
+
