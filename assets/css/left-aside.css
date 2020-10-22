@@ -9,14 +9,12 @@
     margin: 0 10px 0 5px;
   }
 
-.nav_left ul li a.active,
-.nav_left li a:hover
-{
-    color: #ecbf17;
-    transition: 0.5s;
-}
 
-.nav_left ul li a{
+  .nav_left li button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
     font-size: 1rem;
     letter-spacing: 1em;
     display: block;
@@ -29,14 +27,33 @@
     color: rgba(255,255, 255, 0.7);
     letter-spacing: .02em;
     text-align: center;
-}
+  }
+  
+  .nav_left button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: #ecbf17;
+    transition: 0.5s;
+  }
+  
+  .nav_left button:active {
+    outline: none;
+    border: none;
+  }
+  
+  .nav_left button:focus {
+    outline: 0;
+  }
 
-.nav_left ul{
+  .nav_left ul{
     padding: 0;
     text-align: center;
     margin-top: 40px;
 
 }
+
 
 .white-line{
     background-color: white;

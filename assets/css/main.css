@@ -99,3 +99,7 @@ main .subject-theme:hover h2{
     text-align: justify;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.list_students, .list_forum, .list_grades {
+    display: none;
+}

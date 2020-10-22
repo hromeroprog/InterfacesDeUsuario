@@ -16,8 +16,13 @@
         <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/material-icons.css">
         <link type="text/css" rel="stylesheet" href="./assets/css/all.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/style-students-references.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/style-forum.css">
+        <link type="text/css" rel="stylesheet" href="./assets/css/style-grades.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./assets/js/script.js"></script>
     </head>
     <body>
         <div class="page">
@@ -59,27 +64,30 @@
                         <div class="white-line" id="main-white-line"></div>
                         <ul>
                             <li>
-                                <a href="./students.html">
-                                <i class="fa fa-users"></i>
-                                <span class="link-name">STUDENT LIST</span>
-                                </a>
+                                <button class="main_button"><i class="fas fa-home"></i>
+                                <span class="link-name">THEORY OF ERRORS</span></button>
                                 <div class="white-line"></div>
+                           </li>
+                            <li>
+                                <button class="student_button"><i class="fa fa-users"></i>
+                                <span class="link-name">STUDENT LIST</span></button>
+                                <div class="white-line"></div>
+                           </li>
+                            <li>
+                                <button class="forum_button"><i class="far fa-comment-dots"></i>
+                                    <span class="link-name">FORUM</span></button>
+                                    <div class="white-line"></div>
+
                             </li>
                             <li>
-                                <a href="./forum.html">
-                                <i class="far fa-comment-dots"></i>
-                                <span class="link-name">FORUM</span>
-                                </a>
-                                <div class="white-line"></div>
-                            </li>
-                            <li>
-                                <a href="./grades.html">
-                                <i class="fas fa-table"></i>
-                                <span class="link-name">CALIFICATIONS</span>
-                                </a>
-                                <div class="white-line"></div>
+
+                                <button class="grades_button"> <i class="fas fa-table"></i>
+                                    <span class="link-name">CALIFICATIONS</span></button>
+                                    <div class="white-line"></div>
+
                             </li>
                             <li class="responsive-hidden">
+
                                 <a href="#lastnews">
                                 <i class="far fa-newspaper"></i>
                                 <span class="link-name">LAST NEWS</span>
@@ -98,6 +106,7 @@
                     <img class="bug-looking-darken" src="./assets/background-images/bug-looking-darken.png" alt="Looking for bugs" />
                 </nav>
                 <main>
+                    <div class="principal_page">
                     <!--  TEMA 1  -->
                     <div class="subject-theme">
                         <h2>TYPES OF ERRORS</h2>
@@ -259,6 +268,205 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+
+                     <!--  PAGINA DE ESTUDIANTES  -->
+                    <div class="list_students">
+                        <table class="table_students" id="participants">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">STUDENT</th>
+                                    <th class="header-c1">EMAIL</th>
+                                    <th class="header-c2">MESSAGE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="student" id="user-1">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg" alt="Imagen de JUSTIN ALVAREZ SANCHEZ" title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
+                                    <td data-label="EMAIL">100386347@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-2">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/emma.jpg" alt="Imagen de EMMA ALVAREZ ALVAREZ" title="Imagen de EMMA ALVAREZ ALVAREZ" /> EMMA ALVAREZ ALVAREZ</td>
+                                    <td data-label="EMAIL">100386127@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-3">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
+                                    <td data-label="EMAIL">100383227@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-4">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" /> THEO BERMUDEZ CALVO</td>
+                                    <td data-label="EMAIL">100386483@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-5">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO" title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
+                                    <td data-label="EMAIL">100386483@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-6">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ" title="Imagen de SERGIO CANO FERNÁNDEZ" /> SERGIO CANO FERNÁNDEZ</td>
+                                    <td data-label="EMAIL">100386292@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-7">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ" title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
+                                    <td data-label="EMAIL">100384723@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-8">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/elizabeth.jpg" alt="Imagen de FERNANDA CONDE ALVAREZ" title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
+                                    <td data-label="EMAIL">100386498@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-9">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/daniel.jpg" alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" /> DANIEL DÍAZ LOBO</td>
+                                    <td data-label="EMAIL">100382245@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-10">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/chase.jpg" alt="Imagen de CHASE DOMINGUEZ GARRIDO" title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
+                                    <td data-label="EMAIL">10038890@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                                <tr class="student" id="user-11">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/sofia.jpg" alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA PINO REYES</td>
+                                    <td data-label="EMAIL">100389086@alumnos.uc3m.es</td>
+                                    <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                     <!--  PAGINA FORUM -->
+                    <div class="list_forum">
+                        <table class="table_forum" id="forum-messages">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">TITLE</th>
+                                    <th class="header-c1">TOTAL MESSAGES</th>
+                                    <th class="header-c2">LAST POST</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="messages" id="topic-1">
+                                    <td class="forums" data-label="TITLE">DON'T INVENT THE WHEEL</td>
+                                    <td class="num-message" data-label="TOTAL MESSAGES">5</td>
+                                    <td class="time-message" data-label="LAST POST">MON, october 5th 2020, 19:40</td>
+                                </tr>
+                                <tr class="messages" id="topic-2">
+                                    <td class="forums" data-label="TITLE">DEBUG THE PROPER WAY</td>
+                                    <td class="num-message" data-label="TOTAL MESSAGES">3</td>
+                                    <td class="time-message" data-label="LAST POST">SUN, october 4th 2020, 16:50</td>
+                                </tr>
+                                <tr class="messages" id="topic-3">
+                                    <td class="forums" data-label="TITLE">OTHER PERSPECTIVE</td>
+                                    <td class="num-message" data-label="TOTAL MESSAGES">11</td>
+                                    <td class="time-message" data-label="LAST POST">SAT, october 3rd 2020, 15:49</td>
+                                </tr>
+                                <tr class="messages" id="topic-4">
+                                    <td class="forums" data-label="TITLE">WHAT IS HANDLING ERRORS?</td>
+                                    <td class="num-message" data-label="TOTAL MESSAGES">2</td>
+                                    <td class="time-message" data-label="LAST POST">TUES, september 29th 2020, 12:42</td>
+                                </tr>
+                                <tr class="messages" id="topic-5">
+                                    <td class="forums" data-label="TITLE">DIFFERENT ERRORS</td>
+                                    <td class="num-message" data-label="TOTAL MESSAGES">3</td>
+                                    <td class="time-message" data-label="LAST POST">MON, september 28th 2020, 11:21</td>
+                                </tr>
+                                <tr class="messages" id="topic-6">
+                                    <td class="forums" data-label="TITLE">ERRORS IN PYTHON</td>
+                                    <td class="num-message" data-label="TOTAL MESSAGES">1</td>
+                                    <td class="time-message" data-label="LAST POST">WED, septemebr 16th 2020, 20:37	</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                     <!--  PAGINA NOTAS  -->
+                    <div class="list_grades" id="grades-act">
+                        <table class="table_grades">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">STUDENT</th>
+                                    <th class="header-c1">TASK 1</th>
+                                    <th class="header-c2">TASK 2</th>
+                                    <th class="header-c3">TASK 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="student" id="user-1">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg" alt="Imagen de JUSTIN ALVAREZ SANCHEZ" title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
+                                    <td class="act-1" data-label="TASK 1">10.0</td>
+                                    <td class="act-2" data-label="TASK 2">9.0</td>
+                                    <td class="act-3" data-label="TASK 3">6.0</td>
+                                </tr>
+                                <tr class="student" id="user-2">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/emma.jpg" alt="Imagen de EMMA ALVAREZ ALVAREZ" title="Imagen de EMMA ALVAREZ ALVAREZ" /> EMMA ALVAREZ ALVAREZ</td>
+                                    <td class="act-1" data-label="TASK 1">9.0</td>
+                                    <td class="act-2" data-label="TASK 2">10.0</td>
+                                    <td class="act-3" data-label="TASK 3">9.8</td>
+                                </tr>
+                                <tr class="student" id="user-3">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
+                                    <td class="act-1" data-label="TASK 1">8.0</td>
+                                    <td class="act-2" data-label="TASK 2">8.3</td>
+                                    <td class="act-3" data-label="TASK 3">7.8</td>
+                                </tr>
+                                <tr class="student" id="user-4">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" /> THEO BERMUDEZ CALVO</td>
+                                    <td class="act-1" data-label="TASK 1">7.3</td>
+                                    <td class="act-2" data-label="TASK 2">6.2</td>
+                                    <td class="act-3" data-label="TASK 3">7.3</td>
+                                </tr>
+                                <tr class="student" id="user-5">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO" title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
+                                    <td class="act-1" data-label="TASK 1">8.7</td>
+                                    <td class="act-2" data-label="TASK 2">10.0</td>
+                                    <td class="act-3" data-label="TASK 3">6.4</td>
+                                </tr>
+                                <tr class="student" id="user-6">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ" title="Imagen de SERGIO CANO FERNÁNDEZ" /> SERGIO CANO FERNÁNDEZ</td>
+                                    <td class="act-1" data-label="TASK 1">9.8</td>
+                                    <td class="act-2" data-label="TASK 2">5.3</td>
+                                    <td class="act-3" data-label="TASK 3">7.2</td>
+                                </tr>
+                                <tr class="student" id="user-7">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ" title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
+                                    <td class="act-1" data-label="TASK 1">10.0</td>
+                                    <td class="act-2" data-label="TASK 2">9.6</td>
+                                    <td class="act-3" data-label="TASK 3">9.8</td>
+                                </tr>
+                                <tr class="student" id="user-8">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/elizabeth.jpg" alt="Imagen de FERNANDA CONDE ALVAREZ" title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
+                                    <td class="act-1" data-label="TASK 1">4.0</td>
+                                    <td class="act-2" data-label="TASK 2">3.6</td>
+                                    <td class="act-3" data-label="TASK 3">1.9</td>
+                                </tr>
+                                <tr class="student" id="user-9">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/daniel.jpg" alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" /> DANIEL DÍAZ LOBO</td>
+                                    <td class="act-1" data-label="TASK 1">7.2</td>
+                                    <td class="act-2" data-label="TASK 2">9.0</td>
+                                    <td class="act-3" data-label="TASK 3">5.7</td>
+                                </tr>
+                                <tr class="student" id="user-10">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/chase.jpg" alt="Imagen de CHASE DOMINGUEZ GARRIDO" title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
+                                    <td class="act-1" data-label="TASK 1">6.0</td>
+                                    <td class="act-2" data-label="TASK 2">7.5</td>
+                                    <td class="act-3" data-label="TASK 3">1.2</td>
+                                </tr>
+                                <tr class="student" id="user-11">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/sofia.jpg" alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA PINO REYES</td>
+                                    <td class="act-1" data-label="TASK 1">8.0</td>
+                                    <td class="act-2" data-label="TASK 2">8.0</td>
+                                    <td class="act-3" data-label="TASK 3">9.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </main>
                 <!--  RIGHT ASIDE  -->
                 <aside>
