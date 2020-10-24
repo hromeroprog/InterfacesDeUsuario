@@ -16,7 +16,6 @@
     border: 0px solid transparent;
     text-shadow: 0px 0px 0px transparent;
     font-size: 1rem;
-    letter-spacing: 1em;
     display: block;
     width: 80%;
     margin: 20px auto;
@@ -25,7 +24,7 @@
     font-weight: 200;
     text-decoration: none;
     color: rgba(255,255, 255, 0.7);
-    letter-spacing: .02em;
+    letter-spacing: .04em;
     text-align: center;
   }
   
@@ -53,7 +52,6 @@
     margin-top: 40px;
 
 }
-
 
 .white-line{
     background-color: white;

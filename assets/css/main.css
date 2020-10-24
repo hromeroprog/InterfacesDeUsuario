@@ -5,6 +5,7 @@ main {
     overflow:hidden;
     height:1%;
     background-color: #141517;
+    font-family: Plain,Helvetica Neue,Arial,Noto Sans,sans-serif;
 }
 
 main h2{

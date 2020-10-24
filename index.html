@@ -21,8 +21,15 @@
         <link type="text/css" rel="stylesheet" href="./assets/css/style-grades.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="./assets/css/evo-calendar.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/css/evo-calendar.min.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/css/evo-calendar.midnight-blue.min.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/css/evo-calendar.midnight-blue.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./assets/js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./assets/js/evo-calendar.js"></script>
+        <script src="./assets/js/evo-calendar.min.js"></script>
+        
     </head>
     <body>
         <div class="page">
@@ -472,8 +479,19 @@
                 <aside>
                     <div class="sticky-div">
                         <div id="lastnews">
-                            <i class="far fa-newspaper"></i>
-                            <h4>LAST NEWS</h4>
+                            <!-- Trigger/Open pop up-->
+                            <button id="myBtn"><i class="far fa-newspaper"></i>
+                                <h4>LAST NEWS</h4>
+                            </button>
+                            <!-- The Pop Up -->
+
+                            <div id="myModal" class="modal">
+                                    <!-- Pop Up content -->
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div id="calendar_news"></div>
+                        </div>
+                        </div>
                             <ul>
                                 <li>10/10 - New videos uploaded</li>
                                 <li>09/11 - New topic added</li>
@@ -481,8 +499,20 @@
                             </ul>
                         </div>
                         <div id="newevents">
+                            <!-- Trigger/Open pop up-->
+                            <button id="myBtn1">
                             <i class="far fa-calendar-alt"></i> 
                             <h4>NEW EVENTS</h4>
+                            </button>
+                            <!-- The Pop Up -->
+                            <div id="myModal1" class="modal">
+                                    <!-- Pop Up content -->
+                            <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div id="calendar_events"></div>
+                        </div>
+                        </div>
+                            
                             <ul>
                                 <li>20/10 - Assignment due date</li>
                                 <li>15/11 - Group meeting</li>
@@ -504,4 +534,5 @@
             <div><a href = "privacy-policy.html">PRIVACY</a></div>
         </footer>
     </body>
+    <script src="./assets/js/script.js"></script>
 </html>
