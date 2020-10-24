@@ -1,0 +1,305 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login</title>
+</head>
+
+<body>
+<h1>Ingresa Tus Datos 
+</h1> 
+<form name="login"> 
+     <table> 
+       <tr> 
+         <th scope="row"><h2>Usuario</h2></th> 
+         <td><span class="cnt"> 
+           <input name="usuario" type="text" class="Input" value="" size="20" /> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th height="33" scope="row"><h2>Clave</h2></th> 
+         <td><span class="cnt"> 
+           <input name="password" type="password" class="Input" value="" size="20" /> 
+         </span></td> 
+         <td><span class="cnt"> 
+           <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
+         </span></td> 
+       </tr> 
+       <tr> 
+         <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th> 
+       </tr> 
+     </table> 
+</form> 
+
+<script language="JavaScript"> 
+function Login(){ 
+var done=0; 
+var usuario=document.login.usuario.value; 
+var password=document.login.password.value; 
+if (usuario=="USUARIO1" && password=="CONTRASEÑA1") { 
+window.location="TU_PAGINA_WEB.HTML"; 
+} 
+if (usuario=="USUARIO2" && password=="CONTRASEÑA2") { 
+window.location="TU_PAGINA_WEB.HTML"; 
+} 
+if (usuario=="" && password=="") { 
+window.location="errorpopup.html"; 
+} 
+} 
+        </script> 
+<script language="Javascript"> 
+document.oncontextmenu = function(){return false} 
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/login.css"/>
+</head>
+
+<body>
+  	<div class="login-panel">
+        
+        <div class="login-info-box">
+			<h2>Have an account?</h2>
+			<p>Lorem ipsum dolor sit amet</p>
+			<label id="label-register" for="log-reg-show">Login</label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+			<h2>Don't have an account?</h2>
+			<p>Lorem ipsum dolor sit amet</p>
+			<label id="label-login" for="log-login-show">Register</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+							
+		<div class="white-panel">
+            
+            <div class="login-show">
+				<h2>LOGIN</h2>
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<input type="button" value="Login">
+			<!--<a href="">Forgot password?</a>-->
+            </div>
+            
+			<div class="register-show">
+                <h2>REGISTER</h2>
+                <h4>Account Information</h4>
+                <input type="text" placeholder="User">
+                <input type="text" placeholder="NIA">
+				<input type="password" placeholder="Password">
+                <!--<input type="password" placeholder="Confirm Password">-->
+                
+                <h4>Personal Information</h4>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="date" placeholder="Birthdate">
+                <input type="text" placeholder="DNI">
+
+                <label for="rol">Rol </label>
+                <select id="rol" name="rol">
+                    <option value="" selected="selected">- select -</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="administrator">Administrator</option>
+                </select>
+
+                <div id="grade_box">
+                <label for="grade">Grade </label>
+                <select id="grade" name="grade">
+                    <option value="" selected="selected">- select -</option>
+                    <option value="computer">BACHELOR IN COMPUTER SCIENCE AND ENGINEERING</option>
+                    <option value="law">BACHELOR IN LAW</option>
+                    <option value="mechanical">BACHELOR IN MECHANICAL ENGINEERING</option>
+                </select>
+            </div>
+
+                <input type="text" placeholder="university" value="Carlos III" readonly>
+
+                <label for="language">Language </label>
+                <select id="language" name="language">
+                    <option value="" selected="selected">- select -</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="english">English</option>
+                    <option value="italian">Italian</option>
+                </select> </br>
+
+
+
+				<input type="button" value="Register">
+            </div>
+            
+		</div>
+    </div>
+    
+
+
+
+
+
+  <script>
+    $(document).ready(function(){
+    $('.login-info-box').fadeOut();
+    $('.login-show').addClass('show-log-panel');
+});
+
+
+$('.login-panel input[type="radio"]').on('change', function() {
+    if($('#log-login-show').is(':checked')) {
+        $('.register-info-box').fadeOut(); 
+        $('.login-info-box').fadeIn();
+        
+        $('.white-panel').addClass('right-log');
+        $('.register-show').addClass('show-log-panel');
+        $('.login-show').removeClass('show-log-panel');
+        
+    }
+    else if($('#log-reg-show').is(':checked')) {
+        $('.register-info-box').fadeIn();
+        $('.login-info-box').fadeOut();
+        
+        $('.white-panel').removeClass('right-log');
+        
+        $('.login-show').addClass('show-log-panel');
+        $('.register-show').removeClass('show-log-panel');
+    }
+});
+
+
+document.getElementById('rol').addEventListener('change', function (e) {
+  if (e.target.value === "student") {
+    $("#grade_box").show();
+  }
+  else {
+    $("#grade_box").hide();
+  }
+});
+    
+    
+</script>
+</body>
+</html>
