@@ -206,6 +206,7 @@ span.psw {
             </div>
             
 			<div class="register-show">
+                <form id="myForm">
                 <h2>REGISTER</h2>
                 <h4>Account Information</h4>
                 <input type="text" placeholder="User">
@@ -220,19 +221,21 @@ span.psw {
                 <input type="date" placeholder="Birthdate">
                 <input type="text" placeholder="DNI">
 
-                <label for="rol">Rol </label>
+                <div id="rol_box">
+                <label for="rol">Rol</label>
                 <select id="rol" name="rol">
                     <option value="" selected="selected">- select -</option>
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                    <option value="administrator">Administrator</option>
+                    <option value="student">STUDENT</option>
+                    <option value="teacher">TEACHER</option>
+                    <option value="administrator">ADMINISTRATOR</option>
                 </select>
+            </div>
 
                 <div id="grade_box">
                 <label for="grade">Grade </label>
                 <select id="grade" name="grade">
                     <option value="" selected="selected">- select -</option>
-                    <option value="computer">BACHELOR IN COMPUTER SCIENCE AND ENGINEERING</option>
+                    <option value="computer">BACHELOR IN COMPUTER SCIENCE</option>
                     <option value="law">BACHELOR IN LAW</option>
                     <option value="mechanical">BACHELOR IN MECHANICAL ENGINEERING</option>
                 </select>
@@ -243,23 +246,22 @@ span.psw {
                 <label for="language">Language </label>
                 <select id="language" name="language">
                     <option value="" selected="selected">- select -</option>
-                    <option value="spanish">Spanish</option>
-                    <option value="english">English</option>
-                    <option value="italian">Italian</option>
+                    <option value="spanish">SPANISH</option>
+                    <option value="english">ENGLISH</option>
+                    <option value="italian">ITALIAN</option>
                 </select> </br>
 
+                <input type="button" value="Save">
+                <input type="button" onclick="ResetForm()" value="Reset">
 
-
-				<input type="button" value="Register">
+                
+                
+            </form>
             </div>
             
 		</div>
     </div>
     
-
-
-
-
 
   <script>
     $(document).ready(function(){
@@ -299,7 +301,9 @@ document.getElementById('rol').addEventListener('change', function (e) {
   }
 });
     
-    
+function ResetForm() {
+        document.getElementById("myForm").reset();
+      }
 </script>
 </body>
 </html>
