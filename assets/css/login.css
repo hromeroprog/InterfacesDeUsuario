@@ -112,7 +112,7 @@ a{
 }
 
 .register-show input[type="text"], .register-show input[type="password"], .register-show input[type="email"],
-.register-show input[type="date"]{
+.register-show input[type="date"],.register-show select, option {
     width: 100%;
     display: block;
     margin:20px 0;
@@ -153,11 +153,103 @@ a{
     display: none;
 }
 
-.register-show select, option {
-    width: 70%;
-    display: inline block;
-    margin:20px 0 20px 20px;
-    padding: 15px;
-    border: 1px solid #b5b5b5;
-    outline: none;
+
+.form-input, .gui-input {
+    font-family:Arial, FontAwesome;
 }
+
+.rol_selected , select:first-child , ::placeholder, input[type=date]:invalid::-webkit-datetime-edit{
+    color: #ecbf17;
+}
+
+
+.register-show .field, .gui-file {
+    display:block;
+    position:relative;
+
+}
+
+.section input[type="text"]{
+    margin-left: 100px;
+    width: 70%;
+}
+
+
+.section .button {
+    background-color: #ecbf17;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px 0 0px 10px;
+}
+
+.section input[type="file"]{
+    display: none;
+}
+
+
+.state-error {
+    color: red;
+    font-size: 15px;
+}
+
+
+  /*
+
+.smart-forms .radio,.smart-forms .button,.smart-forms .tooltip,.smart-forms .checkbox,.smart-forms .gui-input,.smart-forms .notification,.smart-forms .gui-textarea,.smart-forms .select>select,.smart-forms .select-multiple select,
+.register-show input[type="button"].button,
+.register-show input[type="submit"].button,
+.register-show input[type="search"].gui-input{
+    
+    -webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;border-radius:3px;outline:none}
+
+
+
+.gui-input,
+.select>select,
+.smart-forms .select-multiple select{
+    background:#fff;position:relative;
+    vertical-align:top;
+    border:2px solid #BDC3C7;
+    display:-moz-inline-stack;
+    display:inline-block;
+    display:inline;
+    color:#34495E;
+    outline:none;height:42px;
+    width:100%;*zoom:1}
+
+.smart-forms .gui-input,.smart-forms .gui-textarea{padding:10px}
+
+
+
+.smart-forms .gui-input:hover,.smart-forms .gui-textarea:hover,.smart-forms .select>select:hover,.smart-forms .select-multiple select:hover,.smart-forms .gui-input:hover~.input-hint,.smart-forms .file .gui-file:hover + .gui-input,.smart-forms .gui-textarea:hover~.input-hint{border-color:#62D0BA}
+
+.smart-forms .gui-input:focus,.smart-forms .gui-textarea:focus,.smart-forms .select>select:focus,.smart-forms .select-multiple select:focus{border-color:#1ABC9C;color:#3C3C3C}
+
+.smart-forms .gui-textarea:focus{height:120px}
+
+.smart-forms .select>select:focus{z-index:10;z-index:20\9}.smart-forms .gui-input:focus~.field-icon i,.smart-forms .gui-textarea:focus~.field-icon i{color:#1ABC9C}
+
+.smart-forms .select-multiple select:focus,.smart-forms .gui-input:focus~.input-hint,.smart-forms .gui-textarea:focus~.input-hint,.smart-forms .file .gui-file:focus + .gui-input{border-color:#1ABC9C}
+
+
+
+.smart-forms .file{display:block;width:100%}.smart-forms .file .gui-file{width:100%;height:100%;cursor:pointer;padding:8px 10px;position:absolute;-moz-opacity:0;opacity:0;z-index:11;bottom:0;right:0}
+
+
+.smart-forms .gui-input:hover,.smart-forms .gui-textarea:hover,.smart-forms .select>select:hover,.smart-forms .select-multiple select:hover,.smart-forms .gui-input:hover~.input-hint,.smart-forms .file .gui-file:hover + .gui-input,.smart-forms .gui-textarea:hover~.input-hint{border-color:#62D0BA}
+
+
+.smart-forms .select-multiple select:focus,.smart-forms .gui-input:focus~.input-hint,.smart-forms .gui-textarea:focus~.input-hint,.smart-forms .file .gui-file:focus + .gui-input{border-color:#1ABC9C}
+
+.smart-forms .state-success .gui-input~.input-hint,.smart-forms .state-success.file .gui-file:hover + .gui-input,.smart-forms .state-success .gui-textarea~.input-hint{border-color:#2ecc71}
+
+
+.smart-forms .file .gui-file{width:100%;height:100%;cursor:pointer;padding:8px 10px;position:absolute;-moz-opacity:0;opacity:0;z-index:11;bottom:0;right:0}
+
+.smart-forms .state-success.file .gui-file:hover + .gui-input,.smart-forms .state-success .gui-textarea~.input-hint{border-color:#2ecc71}
+
+.smart-forms .section{margin-bottom:22px}*/
