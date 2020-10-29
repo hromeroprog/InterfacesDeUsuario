@@ -101,14 +101,14 @@
                         <div class="input-icon"><i class="fas fa-envelope"></i></div>
                     </div>
 
-                    <p>
-                        <input class="registerform-input" id="register_date" name="date" type="date" required/>
-                    </p>
-
                     <div class="input-group input-group-icon">
                         <input class="registerform-input" id="register_dni" name="dni" type="text" placeholder="DNI" required/>  
                         <div class="input-icon"><i class="fas fa-id-card"></i></div>
                     </div>
+
+                    <p>
+                        <input class="registerform-input" id="register_date"  placeholder="Put your birthdate" name="date" type="date" required/>
+                    </p>
 
                     <div id="rol_box">
                             <select id="rol" name="rol" required>
@@ -129,9 +129,9 @@
                         </div>
 
                 
-                        <p>
+                        <div class="input-group">
                             <input class="registerform-input" id="register_university" name="university" type="text" placeholder="university" value="Carlos III" readonly required/>
-                        </p>
+                        </div>
                    
                         <div id="language_box">
                                 <select id="language" name="language">
@@ -147,10 +147,11 @@
                         
                         
                         <div class="input-group">
-                            <label for="terms">I have read and agree to the Terms and Conditions</label>
-                            <input type="checkbox" class="checkbox" id="terms" name="terms" required>
-                            
+                            <label id="label_checkbox" for="terms" style="white-space: nowrap;"> <input type="checkbox" class="checkbox" id="terms" name="terms" required> 
+                                I have read and agree to the Terms and Conditions</label>
                           </div>
+
+                          
 
                         <input class="submit" id="save_button" type="submit" value="Save"/>
                         <input class="reset" id="reset_button" type="reset" value="Reset"/>

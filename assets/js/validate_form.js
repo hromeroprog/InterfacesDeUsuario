@@ -2,6 +2,16 @@
 
 $().ready(function(){
 
+    $.validator.setDefaults({
+        errorPlacement: function (error, element) {
+          if (element.prop('type') === 'checkbox') {
+            error.insertAfter(element.parent());
+          } else {
+            error.insertAfter(element);
+          }
+        }
+      });
+
     $.validator.addMethod( "lettersonly", function( value, element ) {
         return this.optional( element ) || /^[a-z]+$/i.test( value );
     });
@@ -187,7 +197,7 @@ $().ready(function(){
 
             terms : "Please accept our Terms and Conditions"
         
-    } 
+    }, 
         });
     });
 });
