@@ -4,7 +4,7 @@ $().ready(function(){
 
     $.validator.setDefaults({
         errorPlacement: function (error, element) {
-          if (element.prop('type') === 'checkbox') {
+          if (element.prop('type') === 'file') {
             error.insertAfter(element.parent());
           } else {
             error.insertAfter(element);
@@ -102,6 +102,7 @@ $().ready(function(){
             //falta la imagen format: extension "jpg" etc..
 
             file1:{
+                required:true,
               extension: "jpg|png|gif|bmp|tiff"  
             },
             email: {
@@ -166,6 +167,7 @@ $().ready(function(){
             },
             
             file1:{
+                required:"dfghjk",
                 extension: "Image has to be jpg|png|gif|bmp|tiff"  
               },
 

@@ -124,23 +124,18 @@ margin-left: 20px;
 }
 input[type="text"],input[type="email"],input[type="date"],input[type="password"],
 input[type="radio"] + label,
-select option,
+select option, .element-file .file_text, .element-file #file-name,
 select {
   width: 100%;
   padding: 1em;
   line-height: 1.4;
   background-color: #f9f9f9;
   border: 1px solid #e5e5e5;
-  border-radius: 3px;
   transition: 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
   border-radius: 12px;
 }
 
-.register-show .gui-input{
-   
-    border-radius: 0 12px 12px 0 !important;
-}
 
 .register-show input[type="submit"] ,
 .register-show input[type="reset"]{
@@ -173,23 +168,6 @@ select {
     display:block;
     position:relative;
 
-}
-
-.section input[type="text"]{
-    float:left; display:inline; width: 55%;}
-
-.section .button {
-    background-color: #ecbf17;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10px 0 0px 10px;
-    float: left;
-    margin:20px 0;
-    padding: 11.5px;
-}
-
-.section input[type="file"]{
-    display: none;
 }
 
 .state-error {
@@ -379,36 +357,57 @@ input:checked + label:before {
 
 /*fileeeeeeeeeeeeeeeeeeeeeee*/
 
+
+.large{
+	width: 100%;
+	*width: 94%;
+}
+
+
+ input[type=button],
+.btn,
+input[type=submit] ,
+.element-file .button{
+	color: inherit;
+	padding: 5px;
+}
+
+
+
+ .element-file .button {
+  background: #ecbf17;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #1598d9;
+  font-size: 1em;
+	font-family: inherit;
+  color: #ffffff;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  padding: 11.5px;
+  border-radius: 12px;
+
+}
+
+ .element-file .button:hover,.element-file .button:active {
+  background-color: #3288b3;
+}
+
 #file-input {
-    display: none;
+  opacity: 0;
+  position: absolute;
 }
 
-#file-input-error{
-display: block !important;
+#file-name {
+  margin-left: 20px;
 }
 
-input#file-input + label {
-    background-color: #ecbf17;
-    padding: 8px;
-    color: #fff;
-    border: 2px solid #ecbf17;
-    border-radius: 9px;
-}
+  #label_picture{
+    width: 100%;
+  }
 
-
-#image_section {
-    margin: 25px 1px;
-}
-#file-name{
-  width: 60%;
-  float: right;
-}
-
-input#file-input + label:hover {
-    background-color:#e7cb64;
-    border-color: #e7cb64;
-    cursor: pointer;
-}
 
 
 input[type="date"]:before {
@@ -429,3 +428,4 @@ input[type="date"]:valid:before {
     padding-right: 0;
   }
 }
+

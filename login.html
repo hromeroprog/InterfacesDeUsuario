@@ -89,11 +89,22 @@
                         <div class="input-icon"><i class="fa fa-user"></i></div>
                     </div>
 
-                    <div id="image_section">
-                      <input type="file" id="file-input" name="file1">
-                      <label for="file-input"><i class="far fa-image"></i> Choose picture for profile</label>
-                      <span id="file-name"> ...</span>
+                    <div class="input-group input-group-icon">
+                        <input class="registerform-input" id="register_last_name" name="last_name" type="text" placeholder="Last Name" required/>   
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
                     </div>
+
+                    
+                    <div class="input-group input-group-icon">
+                    <div id="image_section" class="element-file">
+                      <label id="label_picture">
+                          <div class="button"><span><i class="far fa-image"></i> Choose File</span></div>
+                          <input type="file" id="file-input" name="file1"/>
+                          <div class="file_text" id="file-name">Profile Photo</div>
+                        </label>
+                    </div>
+                </div>
+                  
 
                     <div class="input-group input-group-icon">
                         <input class="registerform-input" id="register_email" name="email" type="email" placeholder="Email" required/>   
