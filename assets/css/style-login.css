@@ -397,7 +397,11 @@ input#file-input + label {
 
 
 #image_section {
-    margin: 25px 10px;
+    margin: 25px 1px;
+}
+#file-name{
+  width: 60%;
+  float: right;
 }
 
 input#file-input + label:hover {
