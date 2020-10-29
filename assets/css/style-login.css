@@ -354,14 +354,7 @@ input:checked + label:before {
 }
 
 
-/*fileeeeeeeeeeeeeeeeeeeeeee*/
-
-
-.large{
-	width: 100%;
-	*width: 94%;
-}
-
+/*-------------------------file------------------------*/
 
  input[type=button],
 .btn,
@@ -371,26 +364,23 @@ input[type=submit] ,
 	padding: 5px;
 }
 
-
-
  .element-file .button {
   background: #ecbf17;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border-color: #1598d9;
+  border-color: #ecbf17;
   font-size: 1em;
 	font-family: inherit;
   color: #ffffff;
   z-index: 1;
   position: absolute;
-  padding: 0.9em;
+  padding: 0.92em;
   text-align: center;
   cursor: pointer;
   border-radius: 12px;
-
 }
 
  .element-file .button:hover,.element-file .button:active {
-  background-color: #3288b3;
+  background-color: #bb9613;
 }
 
 #file-input {
@@ -401,15 +391,15 @@ input[type=submit] ,
 #file-name {
   padding-left: 130px;
   overflow: hidden;
-  color: #aaa;
+  color: #757575;
+  white-space: nowrap;
 }
 
-#label_picture {
-overflow: hidden;
-}
+/*--------------------------Date----------------------------------*/
+
 input[type="date"]:before {
   content: attr(placeholder) !important;
-  color: #aaa;
+  color: #757575;
   margin-right: 0.5em;
 }
 
@@ -418,6 +408,7 @@ input[type="date"]:valid:before {
   content: "";
 }
 
+/*------------------------------MEdia-Size--------------------------*/
 
 @media only screen and (max-width: 540px) {
   .col-half {

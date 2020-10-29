@@ -27,7 +27,7 @@ $().ready(function(){
 
 
     $.validator.addMethod( "nia_start", function( value, element ) {
-        return this.optional( element ) ||  /^100+$/i.test( value );
+        return this.optional( element ) ||  /^100.*$/i.test( value );
     });
 
     $.validator.addMethod("valueNotEquals", function(value, element, arg){
@@ -102,8 +102,7 @@ $().ready(function(){
             //falta la imagen format: extension "jpg" etc..
 
             file1:{
-                required:true,
-              extension: "jpg|png|gif|bmp|tiff"  
+              extension: "jpg|png|gif"  
             },
             email: {
                 required:true,
@@ -167,8 +166,7 @@ $().ready(function(){
             },
             
             file1:{
-                required:"dfghjk",
-                extension: "Image has to be jpg|png|gif|bmp|tiff"  
+                extension: "Image has to be jpg|png|gif|"  
               },
 
             email: {
