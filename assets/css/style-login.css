@@ -124,7 +124,7 @@ margin-left: 20px;
 }
 input[type="text"],input[type="email"],input[type="date"],input[type="password"],
 input[type="radio"] + label,
-select option, .element-file .file_text, .element-file #file-name,
+select option, .element-file .file_text, .element-file .file-text,
 select {
   width: 100%;
   padding: 1em;
@@ -191,7 +191,6 @@ select {
   	border: 0;
 	border-radius: 0;
 	background: #ffffff;
-	color: #7b7b7b;
 	color: #999;
 	border:2px solid rgba(0,0,0,0.2);
     border-radius: 12px;
@@ -383,10 +382,9 @@ input[type=submit] ,
   color: #ffffff;
   z-index: 1;
   position: absolute;
-  height: 100%;
+  padding: 0.9em;
   text-align: center;
   cursor: pointer;
-  padding: 11.5px;
   border-radius: 12px;
 
 }
@@ -401,15 +399,14 @@ input[type=submit] ,
 }
 
 #file-name {
-  margin-left: 20px;
+  padding-left: 130px;
+  overflow: hidden;
+  color: #aaa;
 }
 
-  #label_picture{
-    width: 100%;
-  }
-
-
-
+#label_picture {
+overflow: hidden;
+}
 input[type="date"]:before {
   content: attr(placeholder) !important;
   color: #aaa;
