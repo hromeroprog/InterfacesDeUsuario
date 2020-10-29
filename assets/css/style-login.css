@@ -204,7 +204,6 @@ select {
  
 .register-show select, option{
     display: block;
-    margin:20px 0 0 0;
     padding: 15px;
 	width: 100%;
 	cursor: pointer;
@@ -237,13 +236,14 @@ select {
 
 }
 
-input.error, textarea.error {
-    border: 1px dashed #f31010;
-    color: #f31010;
+#terms.checkbox.error{
+    float: inherit;
+    width: inherit;
 }
 
-#register_university{
-  margin: 20px 0px 0px 0px;
+input.error, textarea.error {
+    border: 1px dashed #f31010;
+    color: #000000;
 }
 
 input:focus {
@@ -284,9 +284,7 @@ input[type="radio"] + label i {
   padding-right: 0.4em;
 }
 input[type="radio"]:checked + label,
-input:checked + label:before,
-select:focus,
-select:active {
+input:checked + label:before {
   background-color:#ecbf17;
   color: #fff;
   border-color:#ecbf17;
