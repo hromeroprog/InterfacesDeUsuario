@@ -30,11 +30,6 @@ $().ready(function(){
         return this.optional( element ) ||  /^100.*$/i.test( value );
     });
 
-    $.validator.addMethod("valueNotEquals", function(value, element, arg){
-        return arg !== value;
-       }, "Value must not equal arg.");
-      
-
     jQuery(document).ready(function ($) {
         $("#login_form").validate({
         
@@ -119,11 +114,11 @@ $().ready(function(){
             },
 
             rol:{
-                valueNotEquals: "default" 
+                required:true
             },
 
             grade:{
-                valueNotEquals: "default" 
+                required:true
             },
 
             //falta rol y grade box
@@ -184,18 +179,18 @@ $().ready(function(){
         },
 
         rol: {
-            valueNotEquals:"Select a Rol is required"
+            required:"Select a Rol is required"
         },
 
         grade:{
-            valueNotEquals:"Select a Rol is required"
+            required:"Select a Rol is required"
         },
 
         university: "University Name is required",
 
             //falta lenguage
 
-            terms : "Please accept our Terms and Conditions"
+        terms : "Please accept our Terms and Conditions"
         
     }, 
         });

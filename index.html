@@ -28,171 +28,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="./assets/js/evo-calendar.js"></script>
-        <script src="./assets/js/evo-calendar.min.js"></script>   
+        <script src="./assets/js/evo-calendar.min.js"></script>
+        
     </head>
     <body>
-
-        <!-----------------------------------Login--------------------------------------------------------->
-
-        <div id="login_page">
-
-            <div class="login-panel">   
-                <div class="login-info-box">
-                    <h2>Have an account?</h2>
-                    <p>Login with your account</p>
-                    <label id="label-register" for="log-reg-show">Login</label>
-                    <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
-                </div>
-                                    
-                <div class="register-info-box">
-                    <h2>Don't have an account?</h2>
-                    <p>Please Register</p>
-                    <label id="label-login" for="log-login-show">Register</label>
-                    <input type="radio" name="active-log-panel" id="log-login-show">
-                </div>
-                        
-            
-                <div class="white-panel">
-                    
-                    <div class="login-show">
-                        <h2>LOGIN</h2>
-                        <form class="start_form" id="login_form"  autocomplete="off">
-        
-                                <div class="input-group input-group-icon">
-                                    <input id="login_email" type="email" name="email" placeholder="Email*" required/> 
-                                    <div class="input-icon"><i class="fas fa-envelope-square"></i></div>
-                                </div>
-        
-                                <div class="input-group input-group-icon">
-                                    <input id="login_password" type="password" name="password" placeholder="Password*" required/>
-                                    <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
-                                </div>
-                                <input class="submit" type="submit" value="Login"/>
-                        </form>
-                    </div>
-        
-                    <div class="register-show">
-                        <h2>REGISTER</h2>
-                        <form class="start_form" id="register_form" autocomplete="off">
-                            <h4>Account Information</h4>
-                                
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_user" name="user" type="text" placeholder="User Name*" required/>
-                                <div class="input-icon"><i class="fa fa-user"></i></div>
-                            </div>
-        
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_nia" name="nia" type="text" placeholder="NIA*" required/>
-                                <div class="input-icon"><i class="fas fa-id-badge"></i></div>
-                            </div>
-                            
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_password" name="password" type="password" placeholder="Password*" required/>   
-                                <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
-                            </div>
-        
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_confirm_password" name="confirm_password" type="password" placeholder="Confirm Password*" required/>   
-                                <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
-                            </div>
-        
-                            <h4>Personal Information</h4>
-        
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_first_name" name="first_name" type="text" placeholder="Name*" required/>   
-                                <div class="input-icon"><i class="fa fa-user"></i></div>
-                            </div>
-        
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_last_name" name="last_name" type="text" placeholder="Last Name*" required/>   
-                                <div class="input-icon"><i class="fa fa-user"></i></div>
-                            </div>
-        
-                            
-                            <div class="input-group input-group-icon">
-                            <div id="image_section" class="element-file">
-                              <label id="label_picture">
-                                  <div class="button"><span><i class="far fa-image"></i> Choose File</span></div>
-                                  <div class="file_text" id="file-name">Profile Photo</div>
-                                  <input type="file" id="file-input" name="file1"/>
-                                </label>
-                               
-                            </div>
-                        </div>
-                          
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_email" name="email" type="email" placeholder="Email*" required/>   
-                                <div class="input-icon"><i class="fas fa-envelope"></i></div>
-                            </div>
-        
-                            <div class="input-group input-group-icon">
-                                <input class="registerform-input" id="register_dni" name="dni" type="text" placeholder="DNI*" required/>  
-                                <div class="input-icon"><i class="fas fa-id-card"></i></div>
-                            </div>
-        
-                            <div class="input-group">
-                                <input class="registerform-input" id="register_date"  placeholder="Put your birthdate*" name="date" type="date" required/>
-                            </div>
-        
-                            <div class="input-group input-group-icon">
-                            <div id="rol_box">
-                                    <select id="rol" name="rol" required>
-                                        <option disabled="disabled" value="default" selected="selected">Rol...</option>
-                                        <option value="student">STUDENT</option>
-                                        <option value="teacher">TEACHER</option>
-                                        <option value="administrator">ADMINISTRATOR</option>
-                                    </select>
-                                </div>
-                            </div>
-                    
-                                <div class="input-group input-group-icon">
-                                <div id="grade_box">
-                                    <select id="grade" name="grade" required>
-                                        <option value="default" disabled="disabled" selected="selected">Grade...</option>
-                                        <option value="computer">BACHELOR IN COMPUTER SCIENCE</option>
-                                        <option value="law">BACHELOR IN LAW</option>
-                                        <option value="mechanical">BACHELOR IN MECHANICAL ENGINEERING</option>
-                                    </select>
-                                </div>
-                            </div>
-        
-                                <div class="input-group input-group-icon">
-                                    <input class="registerform-input" id="register_university" name="university" type="text" placeholder="university" value="Carlos III" readonly required/>
-                                    <div class="input-icon"><i class="fas fa-school"></i></div>
-                                </div>
-                           
-                                <div class="input-group input-group-icon">
-                                <div id="language_box">
-                                        <select id="language" name="language">
-                                        <option value="" disabled="disabled" selected="selected">Lenguaje...</option>
-                                        <option value="EN">English</option>
-                                        <option value="FR">French</option>
-                                        <option value="SP">Spanish</option>
-                                        <option value="CH">Chinese</option>
-                                        <option value="JP">Japanese</option>
-                                        </select>
-                                </div> 
-                            </div> 
-                                
-                                <div class="input-group">
-                                    <label id="label_checkbox" for="terms" style="white-space: nowrap;"> <input type="checkbox" class="checkbox" id="terms" name="terms" required> 
-                                        I have read and agree to the Terms and Conditions</label>
-                                  </div>
-        
-                                  
-        
-                                <input class="submit" id="save_button" type="submit" value="Save"/>
-                                <input class="reset" id="reset_button" type="reset" value="Reset"/>
-                               
-                        </form>
-                    </div>
-                </div>
-            </div>  
-            
-        </div>
-
-        <!-----------------------------------Page--------------------------------------------------------->
-        <div class="page" id="index_page">
+        <div class="page">
             <header>
                 <a href="./index.html" class="logo">
                     <i class="material-icons" id = "bug_report">bug_report</i>
@@ -683,7 +523,6 @@
                 </aside>
             </div>
         </div>
-
         <footer>
             <div><a href="copyright.html">COPYRIGHT</a></div>
             <div class="line-vert"></div>

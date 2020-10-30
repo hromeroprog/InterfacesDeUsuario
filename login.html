@@ -21,8 +21,12 @@
 </head>
 
 <body>
-  	<div class="login-panel">
-        
+
+
+
+
+    
+  	<div class="login-panel">   
         <div class="login-info-box">
 			<h2>Have an account?</h2>
 			<p>Login with your account</p>
@@ -98,8 +102,8 @@
                     <div class="input-group input-group-icon">
                     <div id="image_section" class="element-file">
                       <label id="label_picture">
-                          <div class="button"><span><i class="far fa-image"></i> Choose File</span></div>
-                          <div class="file_text" id="file-name">Profile Photo</div>
+                          <div class="button"><span><i class="far fa-image"></i> Profile Photo</span></div>
+                          <div class="file_text" id="file-name"></div>
                           <input type="file" id="file-input" name="file1"/>
                         </label>
                        
@@ -123,7 +127,7 @@
                     <div class="input-group input-group-icon">
                     <div id="rol_box">
                             <select id="rol" name="rol" required>
-                                <option disabled="disabled" value="default" selected="selected">Rol...</option>
+                                <option disabled="" value="default" selected="selected">Rol...</option>
                                 <option value="student">STUDENT</option>
                                 <option value="teacher">TEACHER</option>
                                 <option value="administrator">ADMINISTRATOR</option>
@@ -134,7 +138,7 @@
                         <div class="input-group input-group-icon">
                         <div id="grade_box">
                             <select id="grade" name="grade" required>
-                                <option value="default" disabled="disabled" selected="selected">Grade...</option>
+                                <option value="" disabled="disabled" selected="selected">Grade...</option>
                                 <option value="computer">BACHELOR IN COMPUTER SCIENCE</option>
                                 <option value="law">BACHELOR IN LAW</option>
                                 <option value="mechanical">BACHELOR IN MECHANICAL ENGINEERING</option>
@@ -177,12 +181,7 @@
     
     
     <script>
-        let inputFile = document.getElementById('file-input');
-        let fileNameField = document.getElementById('file-name');
-        inputFile.addEventListener('change',function(event){
-            let uploadedFileName = event.target.files[0].name;
-            fileNameField.textContent = uploadedFileName;
-        })
+       
 
     </script>
 </body>
