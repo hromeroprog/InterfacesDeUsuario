@@ -117,6 +117,8 @@ $('#calendar_events').evoCalendar('addCalendarEvent', [
 ]);
 });
 
+
+$(document).ready(function(){
  // Get the modal
  var modal = document.getElementById("myModal");
  var modal1 = document.getElementById("myModal1");
@@ -145,7 +147,6 @@ $('#calendar_events').evoCalendar('addCalendarEvent', [
     modal1.style.display = "none";
   }
   
- 
  // When the user clicks anywhere outside of the modal, close it
  window.onclick = function(event) {
    if (event.target == modal) {
@@ -159,7 +160,7 @@ $('#calendar_events').evoCalendar('addCalendarEvent', [
     }
   }
 
-
+});
 
 
   
