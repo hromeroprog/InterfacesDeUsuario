@@ -2,17 +2,19 @@
   margin: 0;
   padding: 0;
 }
- 
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+
  body {
     margin: 0;
-    font-size: 20px;
-    font-weight: 100;
-    font-family: Plain,Helvetica Neue,Arial,Noto Sans,sans-serif;
     color: white;
     background-image: url(../background-images/yellow\ smoke\ hard\ darkened\ bg.png);
     background-color: black;
     background-size: contain;
     background-repeat: repeat;
+    font-family: 'Mukta', sans-serif;
+    height:100vh;
+    min-height:550px;
+  
   }
 
   .responsive-hidden{
@@ -65,8 +67,15 @@
   top: 0;
 }
 
-#index_page{
-  display: none;
+#main_page 
+{
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
 }
 
+
+#footer_main{
+  display: flex;
+}
 

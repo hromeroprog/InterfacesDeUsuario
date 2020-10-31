@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $(".student_button").click(function(){
         $(".list_students").show();
         $(".principal_page").hide();
@@ -26,9 +27,8 @@ $(document).ready(function(){
         $(".list_forum").hide();
         $(".list_grades").hide();
       });
-  });
+ 
 
-  $(document).ready(function() {
     $('#calendar_news').evoCalendar({
         'format': 'MM dd, yyyy',
         'language': 'en',
@@ -69,12 +69,10 @@ $('#calendar_news').evoCalendar('addCalendarEvent', [
           type: 'event'
      }
 ]);
-});
 
 
 //CAlendar events
 
-$(document).ready(function() {
     $('#calendar_events').evoCalendar({
         'format': 'MM dd, yyyy',
         'language': 'en',
@@ -115,10 +113,8 @@ $('#calendar_events').evoCalendar('addCalendarEvent', [
           type: 'event'
      }
 ]);
-});
 
 
-$(document).ready(function(){
  // Get the modal
  var modal = document.getElementById("myModal");
  var modal1 = document.getElementById("myModal1");
@@ -146,21 +142,5 @@ $(document).ready(function(){
  span1.onclick = function() {
     modal1.style.display = "none";
   }
-  
- // When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-   if (event.target == modal) {
-     modal.style.display = "none";
-   }
- }
-
- window.onclick = function(event) {
-    if (event.target == modal1) {
-      modal1.style.display = "none";
-    }
-  }
 
 });
-
-
-  

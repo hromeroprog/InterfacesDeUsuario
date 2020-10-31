@@ -1,16 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Mukta');
-body{
-  font-family: 'Mukta', sans-serif;
-	height:100vh;
-	min-height:550px;
-	background-image:url(../background-images/yellow\ smoke\ hard\ darkened\ bg.png);
-	background-position:center;
-	position:relative;
-    overflow-y: hidden;
-    color: #b9b9b9;
-}
 
+#login_page{
+  display: none;
+  color: #b9b9b9;
+  font-family: 'Mukta', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
 
 *,
 *:before,
@@ -19,12 +16,12 @@ body{
 }
 
 
-h4 {
+#login_page h4 {
     color: #ecbf17;
   }
   
 
-.login-panel{
+  .login-panel{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -36,7 +33,7 @@ h4 {
     background-color: rgba(30,30,30, 0.9);
 }
 
-.white-panel{
+#login_page .white-panel{
     background-color: rgba(255,255, 255, 1);
     height:500px;
     position:absolute;
@@ -49,7 +46,7 @@ h4 {
     overflow: auto;
 }
 
-.login-panel input[type="radio"]{
+#login_page .login-panel input[type="radio"]{
     position:relative;
     display:none;
 }
@@ -317,14 +314,7 @@ input:checked + label:before {
   transition: 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
-.container {
-  max-width: 38em;
-  padding: 1em 3em 2em 3em;
-  margin: 0em auto;
-  background-color: #fff;
-  border-radius: 4.2px;
-  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
-}
+
 .row {
   zoom: 1;
 }
@@ -351,61 +341,6 @@ input:checked + label:before {
 }
 .col-third:last-of-type {
   padding-right: 0;
-}
-
-
-/*-------------------------file------------------------*/
-
- input[type=button],
-.btn,
-input[type=submit] ,
-.element-file .button{
-	color: inherit;
-	padding: 5px;
-}
-
- .element-file .button {
-  background: #ecbf17;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border-color: #ecbf17;
-  font-size: 1em;
-	font-family: inherit;
-  color: #ffffff;
-  z-index: 1;
-  position: absolute;
-  padding: 0.92em;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 12px;
-}
-
- .element-file .button:hover,.element-file .button:active {
-  background-color: #bb9613;
-}
-
-#file-input {
-  opacity: 0;
-  position: absolute;
-}
-
-#file-name {
-  padding-left: 130px;
-  overflow: hidden;
-  color: #757575;
-  white-space: nowrap;
-}
-
-/*--------------------------Date----------------------------------*/
-
-input[type="date"]:before {
-  content: attr(placeholder) !important;
-  color: #757575;
-  margin-right: 0.5em;
-}
-
-input[type="date"]:focus:before,
-input[type="date"]:valid:before {
-  content: "";
 }
 
 /*------------------------------MEdia-Size--------------------------*/

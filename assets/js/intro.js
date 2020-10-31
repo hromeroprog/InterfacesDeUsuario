@@ -1,11 +1,13 @@
 
-function myFunction() {
+function RegisterRunction() {
     var $registerForm = $("#register_form");
     if ($registerForm.valid()){
-            saveCookies();
-            registre();
+      document.getElementById("login_page").style.display = "none";
+            document.getElementById("main_page").style.display = "block";
+            saveCookies(); //in cookie js
+
+            
     }
-    return false;
 }
 
 function registre(){

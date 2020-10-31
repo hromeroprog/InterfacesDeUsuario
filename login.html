@@ -13,6 +13,7 @@
     <script src="./assets/js/validate_form.js"></script>
     <script src="./assets/js/login.js"></script>
     <script src="./assets/js/cookie.js"></script>
+    <script src="./assets/js/intro.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style-login.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -25,6 +26,11 @@
 </head>
 
 <body>
+
+
+
+
+
     <div class="login-panel">
         <div class="login-info-box">
             <h2>Have an account?</h2>
@@ -63,7 +69,7 @@
 
             <div class="register-show">
                 <h2>REGISTER</h2>
-                <form action="" method="post" class="start_form" id="register_form" autocomplete="on" onsubmit="return myFunction()">
+                <form class="start_form" id="register_form" autocomplete="on" onsubmit="RegisterRunction(); return false;">
                     <h4>Account Information</h4>
 
                     <div class="input-group input-group-icon">
@@ -123,7 +129,7 @@
 
                     <div class="input-group input-group-icon">
                         <div id="rol_box">
-                            <select id="rol" name="rol" required>
+                            <select id="rol" name="rol" required onchange="RolChange()"> 
                                 <option disabled="disabled" value="" selected="selected">Rol...</option>
                                 <option value="student">STUDENT</option>
                                 <option value="teacher">TEACHER</option>
@@ -169,24 +175,15 @@
                     </div>
 
                     <input class="submit" id="save_button" type="submit" value="Save" />
-                   <!--  <input class="reset" id="reset_button" type="reset" value="Reset" />
-                    <button id="save_button" onclick="myFunction()" type="submit">Submit</button>-->
-
+                   <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()"/>
                 </form>
             </div>
         </div>
     </div>
+
+
+
+
+
 </body>
-<script>
-
-function myFunction() {
-    var $registerForm = $("#register_form");
-    if ($registerForm.valid()){
-            saveCookies();
-    }
-    return false;
-}
-
-</script>
-
 </html>
