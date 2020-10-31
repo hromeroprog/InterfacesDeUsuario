@@ -31,8 +31,6 @@ function saveCookies() {
         cookieString = key + "=" + myCookies[key] + expires;
         document.cookie = cookieString;
     }
-    //End Reuseable Section
-    document.getElementById("out").innerHTML = document.cookie;
 }
 
 function loadCookies() {

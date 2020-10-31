@@ -50,7 +50,6 @@ header {
 }
 
 .nav_top ul li a{
-    font-size: 13px;
     display: block;
     margin: 10px 3px;
     padding: 10px 20px;
@@ -58,8 +57,23 @@ header {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.nav_top ul li button{
+    letter-spacing: .35em;
+    margin: 10px 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    font-size: 1rem;
+}
+
 .nav_top ul li a.active,
-.nav_top ul li a:hover
+.nav_top ul li a:hover,
+.nav_top ul li button.active,
+.nav_top ul li button:hover
 {
     color: #ecbf17;
     background-color: #1A1A1A;
@@ -86,7 +100,6 @@ header {
 .nav_top{
     float: right;
     font-weight: 100;
-    font-size: 12px;
     letter-spacing: .35em;
     font-size: 0.94vw;
 }
@@ -107,4 +120,22 @@ header {
     vertical-align: top;
     text-decoration: none;
     color: white;
+}
+
+
+#user_img img{
+margin: 2px 10px 2px 10px;
+width: 50px;
+height: auto;
+flex-grow:2;
+}
+
+#user_name_menu{
+flex-grow: 8;
+text-align: right;
+padding: 3%;
+}
+
+#user_contact{
+    display: flex;
 }

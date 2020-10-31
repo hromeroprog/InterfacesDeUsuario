@@ -2,10 +2,11 @@
 function RegisterFunction() {
     var $registerForm = $("#register_form");
     if ($registerForm.valid()){
-      document.getElementById("login_page").style.display = "none";
+            saveCookies(); //in cookie js  
+            UsernameFunction();      
+            document.getElementById("login_page").style.display = "none";
       document.getElementById("main_page").style.display = "block";
-      document.getElementById("footer_main").style.display = "flex";
-            saveCookies(); //in cookie js          
+      document.getElementById("footer_main").style.display = "flex";  
     }
 }
 
@@ -17,15 +18,26 @@ function LoginFunction(){
     document.getElementById("login_page").style.display = "none";
     document.getElementById("main_page").style.display = "block";
     document.getElementById("footer_main").style.display = "flex";
+    UsernameFunction();
   }
   
   }
 }
 
-function registre(){
-    document.getElementById('login_page').style.display='none';
-    document.getElementById('main_page').style.display='block';
+function LogOutFunction(){
+  ResetForm();
+  ResetLogin();
+  document.getElementById("login_page").style.display = "block";
+    document.getElementById("main_page").style.display = "none";
+    document.getElementById("footer_main").style.display = "none";
 }
+
+
+function UsernameFunction(){
+  var username = getCookie("_user");
+  document.getElementById("user_name_menu").innerHTML = username;
+}
+
 
 function ResetForm() {
   document.getElementById("register_form").reset();
