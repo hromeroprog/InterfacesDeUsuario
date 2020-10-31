@@ -18,12 +18,12 @@ function saveCookies() {
     //myCookies["_uage"] = document.getElementById("age").value.toString();
 
     //Start Reuseable Section
-    document.cookie = "";
+   // document.cookie = "";
     //var expiresAttrib = new Date(Date.now()+60*1000).toString();
     var cookieString = "";
 
     var date = new Date();
-    date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+    date.setTime(date.getTime() + (2 * 24 * 60 * 60 * 1000));
     var expires = "; expires=" + date.toGMTString();
 
     for (var key in myCookies) {
@@ -120,6 +120,39 @@ function checkCookie() {
         if (username != "" && username != null) {
             setCookie("username", username, 365);
         }
+    }
+}
+
+function checkLogin() {
+    var email = getCookie("_email");
+    var password = getCookie("_password");
+    var newemail = document.getElementById("login_email").value;
+    var newpassword = document.getElementById("login_password").value;
+
+    if ((newemail == email) && (newpassword == password)){
+        return true;
+    } else {
+        document.getElementById("user_confirmation").innerHTML = "Wrong email or password"+email+password;
+        return false;
+        }
+    
+}
+
+function checkCookieStudent() {
+    var role = getCookie("_rol");
+    if (role == "student") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function checkCookieProfesor() {
+    var role = getCookie("_rol");
+    if (role == "teacher") {
+        return true;
+    } else {
+        return false;
     }
 }
 

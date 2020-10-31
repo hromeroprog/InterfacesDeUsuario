@@ -1,13 +1,25 @@
 
-function RegisterRunction() {
+function RegisterFunction() {
     var $registerForm = $("#register_form");
     if ($registerForm.valid()){
       document.getElementById("login_page").style.display = "none";
-            document.getElementById("main_page").style.display = "block";
-            saveCookies(); //in cookie js
-
-            
+      document.getElementById("main_page").style.display = "block";
+      document.getElementById("footer_main").style.display = "flex";
+            saveCookies(); //in cookie js          
     }
+}
+
+function LoginFunction(){
+  var $loginForm = $("#login_form");
+  if ($loginForm.valid()){
+  if (checkLogin()){
+    //MAs facil hacer funcion que compruebe estudiante o profesor
+    document.getElementById("login_page").style.display = "none";
+    document.getElementById("main_page").style.display = "block";
+    document.getElementById("footer_main").style.display = "flex";
+  }
+  
+  }
 }
 
 function registre(){
@@ -17,6 +29,10 @@ function registre(){
 
 function ResetForm() {
   document.getElementById("register_form").reset();
+}
+
+function ResetLogin() {
+  document.getElementById("login_form").reset();
 }
 
 function RolChange() {

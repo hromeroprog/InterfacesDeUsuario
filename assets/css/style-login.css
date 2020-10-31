@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta');
 
 #login_page{
-  display: none;
+  display: block;
   color: #b9b9b9;
   font-family: 'Mukta', sans-serif;
   font-size: 16px;
@@ -103,7 +103,8 @@
 margin-left: 20px;
 }
 
-.login-show input[type="submit"] {
+.login-show #login_submit,
+.login-show #login_reset {
     max-width: 150px;
     width: 100%;
     background: #444444;
@@ -114,6 +115,7 @@ margin-left: 20px;
     border-radius: 2px;
     float:right;
     cursor:pointer;
+    margin:10px;
 }
 .login-show a{
     display:inline-block;
@@ -134,7 +136,7 @@ select {
 }
 
 
-.register-show input[type="submit"] ,
+.register-show #save_button ,
 .register-show input[type="reset"]{
     max-width: 150px;
     width: 100%;

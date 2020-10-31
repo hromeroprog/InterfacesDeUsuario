@@ -34,8 +34,6 @@
     <script src="./assets/js/script.js"></script>
 
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="./assets/js/jquery.validate.js"></script>
@@ -46,6 +44,7 @@
     <script src="./assets/js/login.js"></script>
     <script src="./assets/js/cookie.js"></script>
     <script src="./assets/js/intro.js"></script>
+    <script src="./demo.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style-login.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -75,9 +74,7 @@
         <div class="white-panel">
             <div class="login-show">
                 <h2>LOGIN</h2>
-                <form class="start_form"  onsubmit="return false" id="login_form"
-                    autocomplete="on">
-
+                <form class="start_form"  onsubmit="return false;" id="login_form" autocomplete="on">
                     <div class="input-group input-group-icon">
                         <input id="login_email" type="email" name="email" placeholder="Email*" required />
                         <div class="input-icon"><i class="fas fa-envelope-square"></i></div>
@@ -87,13 +84,16 @@
                         <input id="login_password" type="password" name="password" placeholder="Password*" required />
                         <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
                     </div>
-                    <input class="submit" type="submit" value="Login" />
+                    <div id="user_confirmation"></div>
+      
+                    <button id="login_submit" type="button" onclick="LoginFunction()">Login</button>
+                    <input class="reset" id="login_reset" type="reset" value="Reset" onclick="ResetLogin()"/>    
                 </form>
             </div>
 
             <div class="register-show">
                 <h2>REGISTER</h2>
-                <form class="start_form" id="register_form" autocomplete="on" onsubmit="myFunction(); return false;">
+                <form class="start_form" id="register_form" autocomplete="on" onsubmit="return false;">
                     <h4>Account Information</h4>
 
                     <div class="input-group input-group-icon">
@@ -197,9 +197,7 @@
                                 class="checkbox" id="terms" name="terms" required>
                             I have read and agree to the Terms and Conditions</label>
                     </div>
-
-                    <button id="save_button" type="button" onclick="RegisterRunction()">Save</button>
-                    <input class="submit" id="save_button" type="submit" onclick="RegisterRunction()" value="Save" />
+                    <button id="save_button" type="button" onclick="RegisterFunction()">Save</button>
                    <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()"/>
                 </form>
             </div>
@@ -766,7 +764,6 @@
                     <div id="lastnews">
                         <!-- Trigger/Open pop up-->
                         <button id="myBtn"><i class="far fa-newspaper"></i>
-                            
                             <h4>LAST NEWS</h4>
                         </button>
                         <!-- The Pop Up -->

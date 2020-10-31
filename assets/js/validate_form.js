@@ -24,6 +24,13 @@ $().ready(function () {
         return this.optional(element) || /^[0-9]{8}[A-Z]{1}$/i.test(value);
     });
 
+
+    $.validator.addMethod("email_register", function (value, element) {
+        var  email_register = getCookie("_email"); 
+      //  var length = $.isArray(value) ? value.length : this.getLength(value, element);
+        return this.optional(element) || value != email_register;
+    });
+
     if ($registerForm.length) {
 
         $registerForm.validate({
@@ -62,7 +69,8 @@ $().ready(function () {
 
                 email: {
                     required: true,
-                    email: true
+                    email: true,
+                    email_register: true
                 },
 
                 date: {
@@ -121,7 +129,8 @@ $().ready(function () {
 
                 email: {
                     required: "Email address is required",
-                    email: "Your email address must be in the format of name@domain.extension"
+                    email: "Your email address must be in the format of name@domain.extension",
+                    email_register: "Email is already registered"
                 },
 
                 date: {
