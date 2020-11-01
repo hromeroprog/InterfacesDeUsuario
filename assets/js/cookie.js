@@ -153,9 +153,3 @@ function checkCookieProfesor() {
         return false;
     }
 }
-
-$(document).ready(function () {
-    if ($("#myform").valid()) {
-        saveCookies();
-    }
-});

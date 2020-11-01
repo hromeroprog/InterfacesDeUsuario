@@ -55,7 +55,7 @@
                         daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
                         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                         monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                        noEventForToday: "No event for today.. so take a rest! :)",
+                        noEventForToday: "No event for today..",
                         noEventForThisDay: "No event for this day.. so take a rest! :)",
                         previousYearText: "Previous year",
                         nextYearText: "Next year",
@@ -68,7 +68,7 @@
                         daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
                         months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
                         monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-                        noEventForToday: "No hay evento para hoy.. ¡así que descanse! :)",
+                        noEventForToday: "No hay evento para hoy..",
                         noEventForThisDay: "Ningún evento para este día.. ¡así que descanse! :)",
                         previousYearText: "Año anterior",
                         nextYearText: "El próximo año",
@@ -126,6 +126,19 @@
                         nextYearText: "Volgend jaar",
                         closeSidebarText: "Sluit de zijbalk",
                         closeEventListText: "Sluit de event lijst"
+                    },
+                    id: {
+                        days: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"],
+                        daysShort: ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"],
+                        daysMin: ["Mi", "Sn", "Sl", "Ra", "Ka", "Ju", "Sa"],
+                        months: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"],
+                        monthsShort: ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"],
+                        noEventForToday: "Tidak ada Acara untuk Sekarang.. Jadi Beristirahatlah! :)",
+                        noEventForThisDay: "Tidak ada Acara untuk Hari Ini.. Jadi Beristirahatlah! :)",
+                        previousYearText: "Tahun Sebelumnya",
+                        nextYearText: "Tahun Berikutnya",
+                        closeSidebarText: "Tutup Sidebar",
+                        closeEventListText: "Tutup Daftar Acara"
                     }
                 }
             }
