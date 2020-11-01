@@ -18,6 +18,7 @@ $(document).ready(function(){
         $(".principal_page").hide();
         $(".list_students").hide();
         $(".list_grades").hide();
+        $(".list_courses").hide();
     });
 
     $(".grades_button").click(function(){
@@ -25,6 +26,7 @@ $(document).ready(function(){
         $(".principal_page").hide();
         $(".list_forum").hide();
         $(".list_students").hide();
+        $(".list_courses").hide();
       });
 
       $(".main_button").click(function(){
@@ -32,6 +34,7 @@ $(document).ready(function(){
         $(".list_students").hide();
         $(".list_forum").hide();
         $(".list_grades").hide();
+        $(".list_courses").hide();
 
       });
 
@@ -40,6 +43,7 @@ $(document).ready(function(){
           $(".list_students").hide();
           $(".list_forum").hide();
           $(".list_grades").hide();
+          $(".list_courses").hide();
   });
 
 });

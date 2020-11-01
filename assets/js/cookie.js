@@ -130,7 +130,7 @@ function checkLogin() {
     if ((newemail == email) && (newpassword == password)){
         return true;
     } else {
-        document.getElementById("user_confirmation").innerHTML = "Wrong email or password"+email+password;
+        document.getElementById("user_confirmation").innerHTML = "Wrong email or password";
         return false;
         }
     
