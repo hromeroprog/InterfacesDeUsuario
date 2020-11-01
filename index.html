@@ -34,12 +34,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./assets/js/jquery.table2excel.js"></script>
     <script src="./assets/js/jquery.validate.js"></script>
     <script src="./assets/js/validate_form.js"></script>
     <script src="./assets/js/login.js"></script>
     <script src="./assets/js/cookie.js"></script>
     <script src="./assets/js/intro.js"></script>
     <script src="./assets/js/script.js"></script>
+    
+
 
 
      <!-- Calendar -->
@@ -213,6 +216,8 @@
                     <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()" />
                 </form>
             </div>
+            <button id="skipRegisterTeacher" type="button" onclick="skipRegisterTeacher()">SKIP (teacher)</button>
+            <button id="skipRegisterStudent" type="button" onclick="skipRegisterStudent()">SKIP (student)</button>
         </div>
     </div>
 
@@ -810,6 +815,8 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <button id="export_grades_teacher">Export</button>
+
 
                     </div>
 
@@ -857,6 +864,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <button id="export_grades_student">Export</button>
+
+                        
 
 
 
