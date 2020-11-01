@@ -1,47 +1,48 @@
 
-  myEvents = [
+  myEvents_News = [
     {
       id: "required-id-1",
-      name: "New Year",
-      date: "Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
-      type: "holiday",
-      everyYear: true
-    },
-    {
-      id: "required-id-2",
-      name: "Valentine's Day",
-      date: "Fri Feb 14 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
-      type: "holiday",
-      everyYear: true,
-      color: "#222"
-    },
-    {
-      id: "required-id-3",
-      name: "Custom Date",
-      badge: "08/03 - 08/05",
-      date: ["August/03/2020", "August/05/2020"],
-      description: "Description here",
+      name: "New videos uploaded",
+      date: "Tue Nov 10 2020 16:30:31 GMT+0100 (Central European Time)",
       type: "event",
     },
     {
-      id: 'kNybja6',
-      name: 'Mom\'s Birthday',
-      date: 'October 27, 1965',
-      type: 'birthday',
-      everyYear: true // optional
+      id: "required-id-2",
+      name: "New topic added",
+      date: "Mon Nov 16 2020 10:21:19 GMT+0100 (Central European Time)",
+      type: "event",
+      color: "#ffc107"
     },
     {
-      id: 'asDf87L',
-      name: 'Graduation Day!',
-      date: 'October 21, 2020',
-      type: 'event'
+      id: "required-id-3",
+      name: "New messages in the forum",
+      date: "Thu Nov 19 2020 20:54:03 GMT+0100 (Central European Time)",
+      type: "event",
+      color: "#3ca8ff"
+    }
+    // more events here
+  ],
+
+  myEvents_Events = [
+    {
+      id: "required-id-01",
+      name: "Assignment due date",
+      date: "Fri Nov 27 2020 23:59:00 GMT+0100 (Central European Time)",
+      type: "event",
     },
     {
-      id: 'kNybja6',
-      name: 'Mom\'s Birthday',
-      description: 'Lorem ipsum dolor sit..',
-      date: 'October 27, 2020',
-      type: 'birthday'
+      id: "required-id-02",
+      name: "Group meeting",
+      date: "Tue Dec 15 2020 11:30:00 GMT+0100 (Central European Time)",
+      type: "event",
+      color: "#ffc107"
+    },
+    {
+      id: "required-id-03",
+      name: "Exam topic 1",
+      date: "Mon Nov 30 2020 9:00:00 GMT+0100 (Central European Time)",
+      type: "event",
+      color: "#3ca8ff"
     }
     // more events here
   ],
@@ -53,12 +54,29 @@
         theme: 'Midnight Blue',
         titleFormat: 'MM',
         eventHeaderFormat: 'MM dd',
-        firstDayOfWeek: 0, // Sun// 0-6 (Sun-Sat)
+        firstDayOfWeek: 0, // Sun//
         todayHighlight: true,
         sidebarDisplayDefault: true,
         sidebarToggler: true,
         eventDisplayDefault: true,
         eventListToggler: true,
-        calendarEvents: myEvents,
+        calendarEvents: myEvents_News,
+      })
+    });
+
+    $(document).ready(function () {
+      $('#calendar_events').evoCalendar({
+        format: 'MM dd, yyyy',
+        language: 'en',
+        theme: 'Midnight Blue',
+        titleFormat: 'MM',
+        eventHeaderFormat: 'MM dd',
+        firstDayOfWeek: 0, // Sun//
+        todayHighlight: true,
+        sidebarDisplayDefault: true,
+        sidebarToggler: true,
+        eventDisplayDefault: true,
+        eventListToggler: true,
+        calendarEvents: myEvents_Events,
       })
     });
