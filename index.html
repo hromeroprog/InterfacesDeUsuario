@@ -54,6 +54,7 @@
 
 
 </head>
+
 <body>
 
     <div class="login-panel" id="login_page">
@@ -74,7 +75,7 @@
         <div class="white-panel">
             <div class="login-show">
                 <h2>LOGIN</h2>
-                <form class="start_form"  onsubmit="return false;" id="login_form" autocomplete="on">
+                <form class="start_form" onsubmit="return false;" id="login_form" autocomplete="on">
                     <div class="input-group input-group-icon">
                         <input id="login_email" type="email" name="email" placeholder="Email*" required />
                         <div class="input-icon"><i class="fas fa-envelope-square"></i></div>
@@ -85,9 +86,9 @@
                         <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
                     </div>
                     <div id="user_confirmation"></div>
-      
+
                     <button id="login_submit" type="button" onclick="LoginFunction()">Login</button>
-                    <input class="reset" id="login_reset" type="reset" value="Reset" onclick="ResetLogin()"/>    
+                    <input class="reset" id="login_reset" type="reset" value="Reset" onclick="ResetLogin()" />
                 </form>
             </div>
 
@@ -147,13 +148,13 @@
                     </div>
 
                     <div class="input-group">
-                        <input placeholder="Put your birthdate*" class="registerform-input" 
-                        id="register_date" type="text" onfocus = "(this.type = 'date')" name="date" required/>
+                        <input placeholder="Put your birthdate*" class="registerform-input" id="register_date"
+                            type="text" onfocus="(this.type = 'date')" name="date" required />
                     </div>
 
                     <div class="input-group input-group-icon">
                         <div id="rol_box">
-                            <select id="rol" name="rol" required onchange="RolChange()"> 
+                            <select id="rol" name="rol" required onchange="RolChange()">
                                 <option disabled="disabled" value="" selected="selected">Rol...</option>
                                 <option value="student">STUDENT</option>
                                 <option value="teacher">TEACHER</option>
@@ -198,14 +199,14 @@
                             I have read and agree to the Terms and Conditions</label>
                     </div>
                     <button id="save_button" type="button" onclick="RegisterFunction()">Save</button>
-                   <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()"/>
+                    <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()" />
                 </form>
             </div>
         </div>
     </div>
 
 
-    <!--                            MAin Page                                                -->
+    <!--MAin Page-->
     <div class="page" id="main_page">
         <header>
             <a href="./index.html" class="logo">
@@ -232,14 +233,14 @@
                                 EVENTS</span> </a> </li>
                 </ul>
             </nav>
-            <nav class="nav_top">  
+            <nav class="nav_top">
                 <div id="user_contact">
-                <div id="user_name_menu"></div>
-                <div id="user_img"><img src="./assets/images/default-user.png" alt="Image user"></div>   
-            </div>           
+                    <div id="user_name_menu"></div>
+                    <div id="user_img"><img src="./assets/images/default-user.png" alt="Image user"></div>
+                </div>
                 <ul>
                     <li><a href="./subject-references.html">REFERENCES</a></li>
-                   <!-- <li><a href="./add_content.html">ADD CONTENT</a></li>-->
+                    <!-- <li><a href="./add_content.html">ADD CONTENT</a></li>-->
                     <li><a href="./contact.html">CONTACT</a></li>
                     <li><button id="close_session" type="button" onclick="LogOutFunction()">Log out</button></li>
                 </ul>
@@ -259,9 +260,15 @@
                                 <span class="link-name">THEORY OF ERRORS</span></button>
                             <div class="white-line"></div>
                         </li>
-                        <li>
+                        <li id="my_students">
                             <button class="student_button"><i class="fa fa-users"></i>
                                 <span class="link-name">STUDENT LIST</span></button>
+                            <div class="white-line"></div>
+                        </li>
+
+                        <li id="my_courses">
+                            <button class="mycourses_button"><i class="fas fa-graduation-cap"></i>
+                                <span class="link-name">MY COURSES</span></button>
                             <div class="white-line"></div>
                         </li>
                         <li>
@@ -613,6 +620,34 @@
                     </table>
                 </div>
 
+                <!--  PAGINA DE CURSOS  -->
+                <div class="list_courses">
+                    <table class="table_courses" id="c_list">
+                        <thead>
+                            <tr>
+                                <th class="header-c0">COURSES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="c_courses" id="course_1">
+                                <td class="row_courses" data-label="COURSE">COURSE 1</td>
+                            </tr>
+                            <tr class="c_courses" id="course_2">
+                                <td class="row_courses" data-label="COURSE">COURSE 2</td>
+                            </tr>
+                            <tr class="c_courses" id="course_3">
+                                <td class="row_courses" data-label="COURSE">COURSE 3</td>
+                            </tr>
+                            <tr class="c_courses" id="course_4">
+                                <td class="row_courses" data-label="COURSE">COURSE 4</td>
+                            </tr>
+                            <tr class="c_courses" id="course_5">
+                                <td class="row_courses" data-label="COURSE">COURSE 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!--  PAGINA FORUM -->
                 <div class="list_forum">
                     <table class="table_forum" id="forum-messages">
@@ -660,106 +695,163 @@
 
                 <!--  PAGINA NOTAS  -->
                 <div class="list_grades" id="grades-act">
-                    <table class="table_grades">
-                        <thead>
-                            <tr>
-                                <th class="header-c0">STUDENT</th>
-                                <th class="header-c1">TASK 1</th>
-                                <th class="header-c2">TASK 2</th>
-                                <th class="header-c3">TASK 3</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="student" id="student-1">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg"
-                                        alt="Imagen de JUSTIN ALVAREZ SANCHEZ"
-                                        title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
-                                <td class="act-1" data-label="TASK 1">10.0</td>
-                                <td class="act-2" data-label="TASK 2">9.0</td>
-                                <td class="act-3" data-label="TASK 3">6.0</td>
-                            </tr>
-                            <tr class="student" id="student-2">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/emma.jpg"
-                                        alt="Imagen de EMMA ALVAREZ ALVAREZ" title="Imagen de EMMA ALVAREZ ALVAREZ" />
-                                    EMMA ALVAREZ ALVAREZ</td>
-                                <td class="act-1" data-label="TASK 1">9.0</td>
-                                <td class="act-2" data-label="TASK 2">10.0</td>
-                                <td class="act-3" data-label="TASK 3">9.8</td>
-                            </tr>
-                            <tr class="student" id="student-3">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/harry.jpg"
-                                        alt="Imagen de PEDRO ARMADO RODRIGUEZ"
-                                        title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
-                                <td class="act-1" data-label="TASK 1">8.0</td>
-                                <td class="act-2" data-label="TASK 2">8.3</td>
-                                <td class="act-3" data-label="TASK 3">7.8</td>
-                            </tr>
-                            <tr class="student" id="student-4">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/theo.jpg"
-                                        alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" />
-                                    THEO BERMUDEZ CALVO</td>
-                                <td class="act-1" data-label="TASK 1">7.3</td>
-                                <td class="act-2" data-label="TASK 2">6.2</td>
-                                <td class="act-3" data-label="TASK 3">7.3</td>
-                            </tr>
-                            <tr class="student" id="student-5">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/selena.jpg"
-                                        alt="Imagen de SABRINA BARRANCO BARRIO"
-                                        title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
-                                <td class="act-1" data-label="TASK 1">8.7</td>
-                                <td class="act-2" data-label="TASK 2">10.0</td>
-                                <td class="act-3" data-label="TASK 3">6.4</td>
-                            </tr>
-                            <tr class="student" id="student-6">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zack.jpg"
-                                        alt="Imagen de SERGIO CANO FERNÁNDEZ" title="Imagen de SERGIO CANO FERNÁNDEZ" />
-                                    SERGIO CANO FERNÁNDEZ</td>
-                                <td class="act-1" data-label="TASK 1">9.8</td>
-                                <td class="act-2" data-label="TASK 2">5.3</td>
-                                <td class="act-3" data-label="TASK 3">7.2</td>
-                            </tr>
-                            <tr class="student" id="student-7">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zendaya.jpg"
-                                        alt="Imagen de DANIELA CASADO SANCHEZ"
-                                        title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
-                                <td class="act-1" data-label="TASK 1">10.0</td>
-                                <td class="act-2" data-label="TASK 2">9.6</td>
-                                <td class="act-3" data-label="TASK 3">9.8</td>
-                            </tr>
-                            <tr class="student" id="student-8">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/elizabeth.jpg"
-                                        alt="Imagen de FERNANDA CONDE ALVAREZ"
-                                        title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
-                                <td class="act-1" data-label="TASK 1">4.0</td>
-                                <td class="act-2" data-label="TASK 2">3.6</td>
-                                <td class="act-3" data-label="TASK 3">1.9</td>
-                            </tr>
-                            <tr class="student" id="student-9">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/daniel.jpg"
-                                        alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" /> DANIEL
-                                    DÍAZ LOBO</td>
-                                <td class="act-1" data-label="TASK 1">7.2</td>
-                                <td class="act-2" data-label="TASK 2">9.0</td>
-                                <td class="act-3" data-label="TASK 3">5.7</td>
-                            </tr>
-                            <tr class="student" id="student-10">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/chase.jpg"
-                                        alt="Imagen de CHASE DOMINGUEZ GARRIDO"
-                                        title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
-                                <td class="act-1" data-label="TASK 1">6.0</td>
-                                <td class="act-2" data-label="TASK 2">7.5</td>
-                                <td class="act-3" data-label="TASK 3">1.2</td>
-                            </tr>
-                            <tr class="student" id="student-11">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/sofia.jpg"
-                                        alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA
-                                    PINO REYES</td>
-                                <td class="act-1" data-label="TASK 1">8.0</td>
-                                <td class="act-2" data-label="TASK 2">8.0</td>
-                                <td class="act-3" data-label="TASK 3">9.1</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                    <div id="grades_teacher">
+                        <table class="table_grades">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">STUDENT</th>
+                                    <th class="header-c1">TASK 1</th>
+                                    <th class="header-c2">TASK 2</th>
+                                    <th class="header-c3">TASK 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="student" id="student-1">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg"
+                                            alt="Imagen de JUSTIN ALVAREZ SANCHEZ"
+                                            title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
+                                    <td class="act-1" data-label="TASK 1">10.0</td>
+                                    <td class="act-2" data-label="TASK 2">9.0</td>
+                                    <td class="act-3" data-label="TASK 3">6.0</td>
+                                </tr>
+                                <tr class="student" id="student-2">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/emma.jpg"
+                                            alt="Imagen de EMMA ALVAREZ ALVAREZ"
+                                            title="Imagen de EMMA ALVAREZ ALVAREZ" />
+                                        EMMA ALVAREZ ALVAREZ</td>
+                                    <td class="act-1" data-label="TASK 1">9.0</td>
+                                    <td class="act-2" data-label="TASK 2">10.0</td>
+                                    <td class="act-3" data-label="TASK 3">9.8</td>
+                                </tr>
+                                <tr class="student" id="student-3">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/harry.jpg"
+                                            alt="Imagen de PEDRO ARMADO RODRIGUEZ"
+                                            title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
+                                    <td class="act-1" data-label="TASK 1">8.0</td>
+                                    <td class="act-2" data-label="TASK 2">8.3</td>
+                                    <td class="act-3" data-label="TASK 3">7.8</td>
+                                </tr>
+                                <tr class="student" id="student-4">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/theo.jpg"
+                                            alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" />
+                                        THEO BERMUDEZ CALVO</td>
+                                    <td class="act-1" data-label="TASK 1">7.3</td>
+                                    <td class="act-2" data-label="TASK 2">6.2</td>
+                                    <td class="act-3" data-label="TASK 3">7.3</td>
+                                </tr>
+                                <tr class="student" id="student-5">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/selena.jpg"
+                                            alt="Imagen de SABRINA BARRANCO BARRIO"
+                                            title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
+                                    <td class="act-1" data-label="TASK 1">8.7</td>
+                                    <td class="act-2" data-label="TASK 2">10.0</td>
+                                    <td class="act-3" data-label="TASK 3">6.4</td>
+                                </tr>
+                                <tr class="student" id="student-6">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zack.jpg"
+                                            alt="Imagen de SERGIO CANO FERNÁNDEZ"
+                                            title="Imagen de SERGIO CANO FERNÁNDEZ" />
+                                        SERGIO CANO FERNÁNDEZ</td>
+                                    <td class="act-1" data-label="TASK 1">9.8</td>
+                                    <td class="act-2" data-label="TASK 2">5.3</td>
+                                    <td class="act-3" data-label="TASK 3">7.2</td>
+                                </tr>
+                                <tr class="student" id="student-7">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zendaya.jpg"
+                                            alt="Imagen de DANIELA CASADO SANCHEZ"
+                                            title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
+                                    <td class="act-1" data-label="TASK 1">10.0</td>
+                                    <td class="act-2" data-label="TASK 2">9.6</td>
+                                    <td class="act-3" data-label="TASK 3">9.8</td>
+                                </tr>
+                                <tr class="student" id="student-8">
+                                    <td class="foto_student" data-label="STUDENT"><img
+                                            src="./assets/images/elizabeth.jpg" alt="Imagen de FERNANDA CONDE ALVAREZ"
+                                            title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
+                                    <td class="act-1" data-label="TASK 1">4.0</td>
+                                    <td class="act-2" data-label="TASK 2">3.6</td>
+                                    <td class="act-3" data-label="TASK 3">1.9</td>
+                                </tr>
+                                <tr class="student" id="student-9">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/daniel.jpg"
+                                            alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" />
+                                        DANIEL
+                                        DÍAZ LOBO</td>
+                                    <td class="act-1" data-label="TASK 1">7.2</td>
+                                    <td class="act-2" data-label="TASK 2">9.0</td>
+                                    <td class="act-3" data-label="TASK 3">5.7</td>
+                                </tr>
+                                <tr class="student" id="student-10">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/chase.jpg"
+                                            alt="Imagen de CHASE DOMINGUEZ GARRIDO"
+                                            title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
+                                    <td class="act-1" data-label="TASK 1">6.0</td>
+                                    <td class="act-2" data-label="TASK 2">7.5</td>
+                                    <td class="act-3" data-label="TASK 3">1.2</td>
+                                </tr>
+                                <tr class="student" id="student-11">
+                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/sofia.jpg"
+                                            alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA
+                                        PINO REYES</td>
+                                    <td class="act-1" data-label="TASK 1">8.0</td>
+                                    <td class="act-2" data-label="TASK 2">8.0</td>
+                                    <td class="act-3" data-label="TASK 3">9.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="grades_student">
+
+                        <table class="table_grades">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">TASKS</th>
+                                    <th class="header-c1">GRADE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="teacher_g" id="student-1">
+                                    <td class="row_grade" data-label="TASK">TASK 1</td>
+                                    <td class="act-1" data-label="GRADE">8.3</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-2">
+                                    <td class="row_grade" data-label="TASK">TASK 2</td>
+                                    <td class="act-1" data-label="GRADE">9.0</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-3">
+                                    <td class="row_grade" data-label="TASK">TASK 3</td>
+                                    <td class="act-1" data-label="GRADE">8.0</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-4">
+                                    <td class="row_grade" data-label="TASK">TASK 4</td>
+                                    <td class="act-1" data-label="GRADE">7.3</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-5">
+                                    <td class="row_grade" data-label="TASK">TASK 5</td>
+                                    <td class="act-1" data-label="GRADE">8.7</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-6">
+                                    <td class="row_grade" data-label="TASK">TASK 6</td>
+                                    <td class="act-1" data-label="GRADE">9.8</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-7">
+                                    <td class="row_grade" data-label="TASK">TASK 7</td>
+                                    <td class="act-1" data-label="GRADE">5.0</td>
+                                </tr>
+                                <tr class="teacher_g" id="student-8">
+                                    <td class="row_grade" data-label="TASK">TASK 8</td>
+                                    <td class="act-1" data-label="GRADE">4.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+                    </div>
                 </div>
 
             </main>

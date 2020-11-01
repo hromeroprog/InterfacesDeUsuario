@@ -8,14 +8,19 @@
 }
 .foto_student{
     text-align: left;
+    border: 1px solid #dee2e6;
+}
+.row_grade{
+    text-align:center;
 }
 
-.student{
+.student,.teacher_g{
     font-size: 15px;
     font-weight: 100;
     line-height : 25px;
     border: 1px solid #dee2e6;
 }
+
 
 .table_grades{
     width: calc(100% - 1px);
@@ -27,6 +32,7 @@
     border-spacing: 2px;
     text-align: center;
 }
+
 .list_grades{
     overflow: auto;
 }
@@ -53,10 +59,9 @@ thead {
 }
 
 .table_grades td {
-    padding: 4px;
     vertical-align: middle;
     padding: .75rem;
-    border-top: 1px solid #dee2e6;
+    border: 1px solid #dee2e6;
 }
 
 .act-1, .act-2, .act-3{

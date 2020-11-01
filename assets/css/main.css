@@ -101,6 +101,61 @@ main .subject-theme:hover h2{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.list_students, .list_forum, .list_grades {
+.list_students, .list_forum, .list_grades, .list_courses {
     display: none;
+}
+
+.row_courses{
+    text-align: left;
+    vertical-align: middle;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.c_courses {
+    font-size: 15px;
+    font-weight: 100;
+    line-height : 25px;
+}
+
+.table_courses{
+    width: calc(100% - 1px);
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    min-height: 10em;
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+}
+
+
+.list_courses::-webkit-scrollbar{
+    display: none;
+  }
+
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+}
+
+
+#c_list {
+    text-align: center;
+    overflow: auto;
+}
+
+#c_list th{
+    font-size: 90%;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+    display: table-cell;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    color: rgba(233, 200, 80, 0.8);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0,0,0,.2);
 }

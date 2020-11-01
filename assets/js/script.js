@@ -6,6 +6,13 @@ $(document).ready(function(){
         $(".list_grades").hide();
     });
 
+    $(".mycourses_button").click(function(){
+      $(".list_courses").show();
+      $(".principal_page").hide();
+      $(".list_forum").hide();
+      $(".list_grades").hide();
+  });
+
     $(".forum_button").click(function(){
         $(".list_forum").show();
         $(".principal_page").hide();
