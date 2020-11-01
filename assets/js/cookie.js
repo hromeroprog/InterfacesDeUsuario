@@ -28,7 +28,7 @@ function saveCookies() {
 
     for (var key in myCookies) {
         //  cookieString = key+"="+myCookies[key]+expires+"; path=/";
-        cookieString = key + "=" + myCookies[key] + expires;
+        cookieString = key + "=" + encodeURIComponent(myCookies[key]) + expires+"; path=/";
         document.cookie = cookieString;
     }
 }
@@ -66,7 +66,7 @@ function createCookie(name, value, days) {
     }
     else var expires = "";
     // document.cookie = name+"="+value+expires+"; path=/";
-    document.cookie = name + "=" + value + expires;
+    document.cookie = name + "=" + encodeURIComponent(value) + expires+"; path=/";
 }
 
 function readCookie(name) {

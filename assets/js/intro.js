@@ -8,6 +8,7 @@ function RegisterFunction() {
             document.getElementById("login_page").style.display = "none";
       document.getElementById("main_page").style.display = "block";
       document.getElementById("footer_main").style.display = "flex";  
+      document.getElementById("user_confirmation").innerHTML = "Wrong email or password"+email+password;
     }
 }
 

@@ -32,8 +32,17 @@ $(document).ready(function(){
         $(".list_students").hide();
         $(".list_forum").hide();
         $(".list_grades").hide();
+
       });
+
+        $(".logo").click(function(){
+          $(".principal_page").show();
+          $(".list_students").hide();
+          $(".list_forum").hide();
+          $(".list_grades").hide();
   });
+
+});
 
   $(document).ready(function() {
     $('#calendar_news').evoCalendar({

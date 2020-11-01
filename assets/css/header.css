@@ -11,6 +11,12 @@ header {
     border-color: rgba(255,255, 255, 0.5);
   }
 
+  header button {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
   .logo
 {
     font-family: Impact, Charcoal, sans-serif;
