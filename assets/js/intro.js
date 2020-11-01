@@ -1,5 +1,7 @@
 
 function skipRegisterStudent(){
+    //Funcion temporal. Para que sea mas sencillo el desarrollo
+
   var username = "StudentSkipped"
     document.getElementById("login_page").style.display = "none";
     document.getElementById("main_page").style.display = "block";
@@ -12,6 +14,8 @@ function skipRegisterStudent(){
 }
 
 function skipRegisterTeacher(){
+  //Funcion temporal. Para que sea mas sencillo el desarrollo
+
   var username = "TeacherSkipped"
   document.getElementById("login_page").style.display = "none";
   document.getElementById("main_page").style.display = "block";
