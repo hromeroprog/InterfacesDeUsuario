@@ -5,7 +5,7 @@ $(document).ready(function () {
   $('.login-show').addClass('show-log-panel');
 
   $('.login-panel input[type="radio"]').on('change', function () {
-    if ($('#log-login-show').is(':checked')) {
+    if ($('#log-login-show').is(':checked')  || $('#log-login-show-movil').is(':checked')) {
       $('.register-info-box').fadeOut();
       $('.login-info-box').fadeIn();
 
@@ -14,7 +14,8 @@ $(document).ready(function () {
       $('.login-show').removeClass('show-log-panel');
 
     }
-    else if ($('#log-reg-show').is(':checked')) {
+  
+    else if ($('#log-reg-show').is(':checked') || $('#log-reg-show-movil').is(':checked')) {
       $('.register-info-box').fadeIn();
       $('.login-info-box').fadeOut();
 
@@ -25,3 +26,4 @@ $(document).ready(function () {
     }  
   });
 });
+
