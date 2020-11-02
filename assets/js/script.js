@@ -5,6 +5,7 @@ $(document).ready(function () {
     $(".list_forum").hide();
     $(".list_grades").hide();
     $(".refences").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".mycourses_button").click(function () {
@@ -13,6 +14,7 @@ $(document).ready(function () {
     $(".list_forum").hide();
     $(".list_grades").hide();
     $(".refences").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".forum_button").click(function () {
@@ -22,6 +24,7 @@ $(document).ready(function () {
     $(".list_grades").hide();
     $(".list_courses").hide();
     $(".refences").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".grades_button").click(function () {
@@ -31,6 +34,7 @@ $(document).ready(function () {
     $(".list_students").hide();
     $(".list_courses").hide();
     $(".refences").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".main_button").click(function () {
@@ -40,6 +44,7 @@ $(document).ready(function () {
     $(".list_grades").hide();
     $(".list_courses").hide();
     $(".refences").hide();
+    $(".forum_topics .forum_topic").hide()
 
   });
 
@@ -54,6 +59,7 @@ $(document).ready(function () {
     $(".contact-main").hide();
     $(".copyright-main").hide();
     $(".privacy-main").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
 
@@ -68,6 +74,7 @@ $(document).ready(function () {
     $(".contact-main").hide();
     $(".copyright-main").hide();
     $(".privacy-main").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".contact_button").click(function () {
@@ -75,6 +82,7 @@ $(document).ready(function () {
     $(".container").hide();
     $(".copyright-main").hide();
     $(".privacy-main").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".copyright_button").click(function () {
@@ -82,6 +90,7 @@ $(document).ready(function () {
     $(".container").hide();
     $(".contact-main").hide();
     $(".privacy-main").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
   $(".privacy_button").click(function () {
@@ -89,6 +98,7 @@ $(document).ready(function () {
     $(".container").hide();
     $(".contact-main").hide();
     $(".copyright-main").hide();
+    $(".forum_topics .forum_topic").hide()
   });
 
 
@@ -121,10 +131,12 @@ $(document).ready(function () {
   //FORUM
   //switch page
   $(".table_forum tbody tr").unbind().click(function () {
-    var topic = $(this).children().first().text();
-    var topic_id = "#" + topic.replace(" ", "_");
     $(".list_forum").hide();
+
+    var topic = $(this).children().first().text();
+    var topic_id = "#" + topic.replaceAll(" ", "_");
     $(topic_id).show();
+
   });
 });
 
