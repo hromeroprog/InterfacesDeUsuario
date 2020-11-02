@@ -1,0 +1,71 @@
+.forum_topics .forum_topic h2
+{
+    display: inline;
+}
+
+.forum_topics .forum_topic #new_post{
+    display: inline;
+    background: transparent;
+    color: rgba(255,255,255, .8);
+    cursor: pointer;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    float: right;
+    padding: 10px;
+    border: solid 1px rgba(255,255,255,.6);
+    margin: 0 0 0 0;
+}
+
+.forum_topics .forum_topic #new_post:hover{
+    background: rgba(0, 0, 0, .6);
+}
+
+
+.forum_topics .forum_topic .topic_discussion{
+    margin-top: 40px;
+}
+.forum_topics .forum_topic .topic_discussion .topic_message{
+    min-height: 80px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    border: solid 1px rgba(255,255,255,.6);
+    padding: 15px 20px 10px 20px;
+}
+
+.forum_topics .forum_topic .topic_discussion .topic_message p{
+    font-size: 13px;
+    color: rgba(255,255,255,.8);
+    margin-bottom: 20px;
+    letter-spacing: .07em;
+}
+
+.forum_topics .forum_topic .topic_discussion .topic_message h3{
+    display: inline;
+}
+
+.forum_topics .forum_topic .topic_discussion .topic_message img{
+    width: 25px;
+    height: 25px;
+    opacity: .9;
+    border-radius: 50%;
+    border-style: none;
+    vertical-align: middle;
+}
+
+.forum_topics .forum_topic .topic_discussion .topic_message .author{
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(255, 255,255,.7);
+    letter-spacing: .1em;
+}
+
+.forum_topics .forum_topic .topic_discussion .topic_message .date{
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    color: rgba(255, 255,255,.5);
+    letter-spacing: .05em;
+}

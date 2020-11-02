@@ -44,6 +44,8 @@ $(document).ready(function(){
           $(".list_forum").hide();
           $(".list_grades").hide();
           $(".list_courses").hide();
+
+          
         });
 
 
@@ -71,6 +73,15 @@ $(document).ready(function(){
           var email = $(this).parent().prev().text();
           var emailto ="mailto:" + email;
           window.location = emailto;
+        });
+
+        //FORUM
+        //switch page
+        $(".table_forum tbody tr").unbind().click(function(){
+          var topic = $(this).children().first().text();
+          var topic_id = "#" + topic.replace(" ", "_");
+          $(".list_forum").hide();
+          $(topic_id).show();
         });
 });
 
