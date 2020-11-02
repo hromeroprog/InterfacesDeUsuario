@@ -129,11 +129,15 @@ function checkLogin() {
 
     if ((newemail == email) && (newpassword == password)){
         return true;
-    } else {
-        document.getElementById("user_confirmation").innerHTML = "Wrong email or password";
+    } 
+    else if ((newemail == email) && (newpassword != password)) {
+        document.getElementById("user_confirmation").innerHTML = "Wrong password";
         return false;
-        }
-    
+    }
+    else if ((newemail != email)) {
+        document.getElementById("user_confirmation").innerHTML = "Email "+newemail+" is not registered";
+        return false;
+    }
 }
 
 function checkCookieStudent() {

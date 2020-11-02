@@ -115,17 +115,17 @@ header {
     display: flex;
 }
 
-.asignatura-movil{
-    display: inline-block;
+.link-name-menu{
     text-align: center;
     margin: 15px 20px 10px 10px;
+    padding-bottom: 20px;
     text-decoration: none;
     font-size: 3.5vw;
     font-weight: 100;
     letter-spacing: .25em;
-    vertical-align: top;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 

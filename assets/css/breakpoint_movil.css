@@ -137,7 +137,6 @@
         position: relative;
         user-select: none;
         background-color: rgba(0, 0, 0, 0.3);
-        z-index: 2;
         display: inline-block;
         cursor: pointer;
         transition-property: opacity, filter;
@@ -228,7 +227,7 @@
 @media (min-width: 601px) {
 .nav-movil,
 #menu-btn,
-.nav-toggle,#nav,.nav-bar,.hamburger {
+.nav-toggle,#nav,.nav-bar,.hamburger,.link-name-menu {
     display: none;
 }
 #grades-act .act-1,
