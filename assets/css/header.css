@@ -32,6 +32,7 @@ header {
     color: #ecbf17;
     margin-top: -5px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .logo:hover #bug_report,
@@ -55,7 +56,9 @@ header {
     height: 60px;
 }
 
-.nav_top ul li a{
+.nav_top ul li a, .nav_top ul li button span{
+    letter-spacing: .35em;
+    font-size: 0.94vw;
     display: block;
     margin: 10px 3px;
     padding: 10px 20px;
@@ -63,23 +66,15 @@ header {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.nav_top ul li button{
-    letter-spacing: .35em;
-    margin: 10px 3px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-    font-size: 1rem;
+.nav_top ul li button span{
+    padding: 12px 20px;
+    cursor: pointer;
 }
 
 .nav_top ul li a.active,
 .nav_top ul li a:hover,
-.nav_top ul li button.active,
-.nav_top ul li button:hover
+.nav_top ul li button span.active,
+.nav_top ul li button span:hover
 {
     color: #ecbf17;
     background-color: #1A1A1A;
@@ -105,9 +100,7 @@ header {
 
 .nav_top{
     float: right;
-    font-weight: 100;
-    letter-spacing: .35em;
-    font-size: 0.94vw;
+    font-weight: 100;  
 }
 .nav_top ul{
     margin: 0;

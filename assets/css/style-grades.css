@@ -6,9 +6,11 @@
     border-style: none;
     vertical-align: middle;
 }
-.foto_student{
-    text-align: left;
+.foto_student,.act-1, .act-2, .act-3{
+    text-align: center;
+    vertical-align: middle;
 }
+
 .row_grade{
     text-align:center;
 }
@@ -17,7 +19,6 @@
     font-size: 15px;
     font-weight: 100;
     line-height : 25px;
-    border: 1px solid #dee2e6;
 }
 
 #grades_student,#grades_teacher{
@@ -89,19 +90,8 @@ thead {
 .table_grades td {
     vertical-align: middle;
     padding: .75rem;
-}
-
-tbody{
     border: 1px solid #dee2e6;
 }
-
-
-.act-1, .act-2, .act-3{
-    text-align: center; 
-    vertical-align: middle;
-    border: 1px solid #dee2e6;
-}
-
 
 tr:nth-child(even) {
     background-color: rgba(0,0,0,.2);

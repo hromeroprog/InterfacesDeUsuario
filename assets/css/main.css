@@ -102,7 +102,7 @@ main .subject-theme:hover h2{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.list_students, .list_forum, .list_grades, .list_courses {
+.list_students, .list_forum, .list_grades, .list_courses, .refences {
     display: none;
 }
 

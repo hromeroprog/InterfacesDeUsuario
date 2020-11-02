@@ -216,7 +216,7 @@
                     <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()" />
                 </form>
                 <p class="signup">
-                    Already have an account ?
+                    Already have an account?
                     <label id="label-register-movil" for="log-reg-show-movil">Login</label>
                     <input type="radio" name="active-log-panel" id="log-reg-show-movil" checked="checked">
                 </p>
@@ -225,7 +225,6 @@
             <button id="skipRegisterStudent" type="button" onclick="skipRegisterStudent()">SKIP (student)</button>
         </div>
     </div>
-
 
     <!--MAin Page-->
     <div class="page" id="main_page">
@@ -278,10 +277,9 @@
                     <div id="user_img"><img src="./assets/images/default-user.png" alt="Image user"></div>
                 </div>
                 <ul>
-                    <li><a href="./subject-references.html">REFERENCES</a></li>
-                    <!-- <li><a href="./add_content.html">ADD CONTENT</a></li>-->
-                    <li><a href="./contact.html">CONTACT</a></li>
-                    <li><button id="close_session" type="button" onclick="LogOutFunction()">Log out</button></li>
+                    <li><button class="reference_button" type="button"><span>REFERENCES</span></button></li>
+                    <li><button class="contact_button" type="button"><span>CONTACT</span></button></li>
+                    <li><button id="close_session" type="button" onclick="LogOutFunction()"><span>LOG OUT</span></button></li>
                 </ul>
             </nav>
             <div class="clearfix"></div>
@@ -885,15 +883,80 @@
                             </tbody>
                         </table>
                         <button id="export_grades_student"><i class="fas fa-file-download"></i></button>
-
-
-
-
-
-
                     </div>
                 </div>
 
+                <!-- Pagina de referencias -->
+                <div id="page_reference" class="refences">
+                    <div class="list_references">
+                        <table class="table_references" id="link-used">
+                            <thead>
+                                <tr>
+                                    <th class="header-c0">RESOURCE</th>
+                                    <th class="header-c1">DESCRIPTION</th>
+                                    <th class="header-c2">LINK</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="resources" id="link-1">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-book"></i> SUBJECT BOOK REFERENCE</td>
+                                    <td data-label="DESCRIPTION">Blahut, R. (2003). Performance of Error-Control Codes. In Algebraic Codes for Data Transmission (pp. 375-417). Cambridge: Cambridge University Press. doi:10.1017/CBO9780511800467.014</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.cambridge.org/core/books/algebraic-codes-for-data-transmission/2F606F75ABE1BAA014A1DE0F5D62F498"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-2">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-book"></i> EXPAND KNOWLEDGE</td>
+                                    <td data-label="DESCRIPTION">Blahut, R. (2003). The Art of Error Correcting Coding, Second Edition. John Wiley & Sons, Ltd. doi:10.1002/0470035706</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/0470035706"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-3">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">TYPES OF ERRORS: VIDEO 1. Syntax, Runtime and Logical Errors in Python</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=ToPP5UGgJUM&t=1s&ab_channel=LearnLearnScratchTutorials"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-4">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">TYPES OF ERRORS: VIDEO 2. Errors in Programs Part 1 - Types of Errors & Debugging Tips</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=4kYtCVneais&t=2s&ab_channel=MrLongIT%26CAT"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-5">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">TYPES OF ERRORS: VIDEO 3. 3 types of programming error and their implications? Coding Interview Question</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=5u1pu6II8-Y&t=168s&ab_channel=IAmDevGrant"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-6">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">ERROR HANDLING: VIDEO 1. Python Tutorial: Using Try/Except Blocks for Error Handling</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=NIWwJbo-9_8&t=52s&ab_channel=CoreySchafer"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-7">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">ERROR HANDLING: VIDEO 2. RPA Quick Tips #2: Error Handling Basics | Automation Anywhere</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=czY5fABAa-w&t=6s&ab_channel=AutomationAnywhere"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-8">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">ERROR HANDLING: VIDEO 3. Exceptions in Python || Python Tutorial || Learn Python Programming</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=nlCKrKGHSSk&t=4s&ab_channel=Socratica"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-9">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">DEBUGGING: VIDEO 1. What is Debugging?</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=rf1abcD0KDo&t=1s&ab_channel=TechWiseAcademy"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-10">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">DEBUGGING: VIDEO 2. Debugging Tips - What is bug and debugging?</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=kRL6hjWOKWI&t=1s&ab_channel=codebasics"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                                <tr class="resources" id="link-11">
+                                    <td class="resources_data" data-label="RESOURCE"><i class="fas fa-video"></i> VIDEO SUPPORT</td>
+                                    <td data-label="DESCRIPTION">DEBUGGING: VIDEO 3. Debugging with the Step Button (Course A-B)</td>
+                                    <td class="message_link" data-label="LINK"> <a href="https://www.youtube.com/watch?v=AtbqIF4gOb8&ab_channel=Code.org"><i class="fas fa-link"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </main>
             <!--  RIGHT ASIDE  -->
             <aside>
@@ -901,7 +964,7 @@
                     <div id="lastnews">
                         <!-- Trigger/Open pop up-->
                         <button id="myBtn"><i class="far fa-newspaper"></i>
-                            <h4>LAST NEWS</h4>
+                            <span class="span_news">LAST NEWS</span>
                         </button>
                         <!-- The Pop Up -->
 
@@ -923,7 +986,7 @@
                         <!-- Trigger/Open pop up-->
                         <button id="myBtn1">
                             <i class="far fa-calendar-alt"></i>
-                            <h4>NEW EVENTS</h4>
+                            <span class="span_news">NEW EVENTS</span>
                         </button>
                         <!-- The Pop Up -->
                         <div id="myModal1" class="modal">
@@ -944,16 +1007,29 @@
                 </div>
             </aside>
         </div>
+        <div class="contact-main">
+            HUGO ROMERO RICO <br><br>100386322@alumnos.uc3m.es  <br> <br> <br> <br>
+            MARIBEL MEDRANO FERNÁNDEZ <br><br>100386149@alumnos.uc3m.es
+        </div>
+        <div class="copyright-main">
+            COPYRIGHT © 2020 HUGO ROMERO RICO and MARIBEL MEDRANO FERNÁNDEZ
+        </div>
+        <div class="privacy-main">
+            YOUR PRIVACY IS VERY IMPORTANT FOR US.<br><br>
+            CUSTOMER INFORMATION WILL NOT BE COLLECTED WITHOUT YOUR EXPRESS CONSENT.<br><br> 
+            ALL THE FUNDAMENTAL RIGHTS OF DATA PRIVACY INCLUDED IN THE LAW OF USERS AND CONSUMERS,<br> 
+            SUCH AS THE RIGHT TO BE FORGOTTEN, GOVERN THIS PLATFORM.
+        </div>
     </div>
     <footer id="footer_main">
-        <div><a href="copyright.html">COPYRIGHT</a></div>
+        <div><button class="copyright_button" type="button"><span>COPYRIGHT</span></button></div>
         <div class="line-vert"></div>
         <div> <a href="https://www.uc3m.es">
                 <img src="assets/images/universidad-carlos-iii-white.png" alt="uc3m-logo" class="uc3m-logo" />
             </a>
         </div>
         <div class="line-vert"></div>
-        <div><a href="privacy-policy.html">PRIVACY</a></div>
+        <div><button class="privacy_button" type="button"><span>PRIVACY</span></button></div>
     </footer>
 
 </body>
