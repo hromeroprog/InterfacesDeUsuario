@@ -3,6 +3,10 @@
     display: inline;
 }
 
+.forum_topics .forum_topic{
+    display: none;
+}
+
 .forum_topics .forum_topic #new_post{
     display: inline;
     background: transparent;
