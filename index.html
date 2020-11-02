@@ -234,49 +234,27 @@
                 <nav id="logo_errors">ERRORS</nav>
             </button>
 
+<button class="hamburger hamburger--spin" id="burguer" type="button" onclick="MenuMovil()">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
 
-            <!--
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <a href="./index.html">
-                <h2 class="asignatura-movil">INTRO</h2>
-            </a>
 
-            <nav class="nav-movil">
-                <ul>
-                    <li> <a href="./students.html"> <i class="fa fa-users"></i> <span class="link-name">STUDENT
-                                LIST</span> </a> </li>
-                    <li> <a href="./forum.html"> <i class="far fa-comment-dots"></i> <span
-                                class="link-name">FORUM</span> </a></li>
-                    <li> <a href="./grades.html"> <i class="fas fa-table"></i> <span
-                                class="link-name">CALIFICATIONS</span> </a></li>
-                    <li> <a href="#lastnews"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span>
-                        </a> </li>
-                    <li> <a href="#newevents"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW
-                                EVENTS</span> </a> </li>
-                </ul>
-            </nav>
--->
+	<nav class="nav-bar" id="nav-bar-movil">
 
-<div class="container">
-	<nav class="nav-bar">
-		<div class="toggle-menu">
-			<div class="line line1"></div>
-			<div class="line line2"></div>
-			<div class="line line3"></div>
-		</div>
-		<ul class="nav-list">
+		<ul class="nav-list" id="myLinks"> 
             <li>
                 <button class="main_button"><i class="fas fa-home"></i>
                     <span class="link-name">THEORY OF ERRORS</span></button>
             </li>
     
-            <li id="my_students">
+            <li id="my_students_movil">
                 <button class="student_button"><i class="fa fa-users"></i>
                     <span class="link-name">STUDENT LIST</span></button>
             </li>
     
-            <li id="my_courses">
+            <li id="my_courses_movil">
                 <button class="mycourses_button"><i class="fas fa-graduation-cap"></i>
                     <span class="link-name">MY COURSES</span></button>
             </li>
@@ -296,32 +274,6 @@
                         EVENTS</span> </a> </li>
 		</ul>
 	</nav>
-</div>
-
-
-
-<script>
-var toggleButton = document.querySelector('.toggle-menu');
-var navBar = document.querySelector('.nav-bar');
-toggleButton.addEventListener('click', function () {
-	navBar.classList.toggle('toggle');
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
             <nav class="nav_top">
                 <div id="user_contact">
                     <div id="user_name_menu"></div>

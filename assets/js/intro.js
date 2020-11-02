@@ -11,6 +11,7 @@ function skipRegisterStudent(){
     document.getElementById("user_grade").innerHTML = username;
     //RolFunction
     document.getElementById("my_students").style.display = "none";
+    document.getElementById("my_students_movil").style.display = "none";
     document.getElementById("grades_teacher").style.display = "none";
 }
 
@@ -25,6 +26,7 @@ function skipRegisterTeacher(){
   document.getElementById("user_name_menu").innerHTML = username;
   //RolFunction
   document.getElementById("my_courses").style.display = "none";
+  document.getElementById("my_courses_movil").style.display = "none";
   document.getElementById("grades_student").style.display = "none";
 }
 
@@ -67,10 +69,12 @@ function RolFunction(){
   var student = "student";
   if(student == rol){
     document.getElementById("my_students").style.display = "none";
+    document.getElementById("my_students_movil").style.display = "none";
     document.getElementById("grades_teacher").style.display = "none";
   }
   else{
     document.getElementById("my_courses").style.display = "none";
+    document.getElementById("my_courses_movil").style.display = "none";
     document.getElementById("grades_student").style.display = "none";
   }
 
@@ -105,8 +109,37 @@ else{
 }
 
 
-var toggleButton = document.querySelector('.toggle-menu');
-var navBar = document.querySelector('.nav-bar');
-toggleButton.addEventListener('click', function () {
-	navBar.classList.toggle('toggle');
+function MenuMovil() {
+  var hamburger = document.querySelector(".hamburger");
+  var x = document.getElementById("nav-bar-movil");
+
+  if (hamburger.classList.contains('is-active')) {
+    x.style.display = "none";
+    hamburger.classList.remove('is-active');
+  }
+
+  else{
+    hamburger.classList.add("is-active");
+    x.style.display = "block";
+  }
+
+};
+
+window.addEventListener('click', function(e){
+  console.log(e.target);
+
+  var nav_movil = document.getElementById("nav-bar-movil");
+  var hamburger = document.querySelector(".hamburger");
+  var hamburger_inner = document.querySelector(".hamburger-inner");
+  var myLinks = document.getElementById("myLinks");
+  if ((e.target.parentNode != hamburger) && (e.target != hamburger) && (e.target != hamburger_inner) && (e.target.parentNode != myLinks)){
+  nav_movil.style.display = "none";
+  hamburger.classList.remove('is-active');
+} 
+
+
+
 });
+
+
+

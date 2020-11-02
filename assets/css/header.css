@@ -145,3 +145,7 @@ padding: 3%;
 #user_contact{
     display: flex;
 }
+
+#nav-bar-movil{
+    display: none;
+}
