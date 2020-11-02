@@ -79,16 +79,16 @@ tr:nth-child(even) {
     background-color: rgba(0,0,0,.2);
 }
 
-.table_students .message .fas,
-.table_references .message_link .fas{
+.table_students .message .fab,
+.table_references .message_link .fab{
     color: rgba(255,255,255,0.9);
-    font-size: 20px;
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.table_students .message .fas:hover,
-.table_references .message_link .fas:hover{
+.table_students .message .fab:hover,
+.table_references .message_link .fab:hover{
     color: rgba(233, 200, 80);
-    font-size: 20px;
 }
 
 

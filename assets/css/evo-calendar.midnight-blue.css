@@ -95,8 +95,18 @@
     color: #ecbf17;
 }
 .midnight-blue tr.calendar-body .calendar-day .day.calendar-today {
-    background: #ecbf17;
+    background: linear-gradient(270deg, #FFE580 -15.83%, #FF7571 -4.97%, #FF7270 15.69%, #EA5DAD 32.43%, #C2A0FD 50.09%, #9867F0 67.47%, #3BF0E4 84.13%, #33CE43 105.13%, #B2F4B6 123.24%);
+    background-size: 800% 800%;
+
+    animation: ColorShift 9s ease infinite;
 }
+
+@keyframes ColorShift {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 .midnight-blue tr.calendar-body .calendar-day .day {
     border-width: 2px;
     border-radius: 0;

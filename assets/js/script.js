@@ -44,27 +44,36 @@ $(document).ready(function(){
           $(".list_forum").hide();
           $(".list_grades").hide();
           $(".list_courses").hide();
-  });
+        });
 
-$("#export_grades_teacher").click(function(){
-  $("#grades_teacher .table_grades").table2excel({
-    exclude:".noExl",
-    name:"Worksheet Name",
-    filename:"theory_of_errors_grades_teacherFormat",
-    fileext:".xls"
-  });
+
+        //EXPORT TO EXCEL
+        $("#export_grades_student").unbind().click(function(){
+          $("#grades_student .table_grades").table2excel({
+            exclude:".noExl",
+            name:"Worksheet Name",
+            filename:"theory_of_errors_grades_studentFormat",
+            fileext:".xls"
+          });
+        });
+        
+        $("#export_grades_teacher").unbind().click(function(){
+          $("#grades_teacher .table_grades").table2excel({
+            exclude:".noExl",
+            name:"Worksheet Name",
+            filename:"theory_of_errors_grades_teacherFormat",
+            fileext:".xls"
+          });
+        });
+
+        //EMAIL STUDENT
+        $(".student .message i").unbind().click(function(){
+          var email = $(this).parent().prev().text();
+          var emailto ="mailto:" + email;
+          window.location = emailto;
+        });
 });
 
-$("#export_grades_student").click(function(){
-  $("#grades_student .table_grades").table2excel({
-    exclude:".noExl",
-    name:"Worksheet Name",
-    filename:"theory_of_errors_grades_studentFormat",
-    fileext:".xls"
-  });
-});
-
-});
 $(document).ready(function(){
  // Get the modal
  var modal = document.getElementById("myModal");

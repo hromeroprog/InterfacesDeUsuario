@@ -33,6 +33,32 @@
     text-align: center;
 }
 
+#grades_student button,
+#grades_teacher button{
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grades_student button .fas,
+#grades_teacher button .fas{
+    color: #026D41;
+    font-size:25px;
+}
+
+#grades_student button .fas:hover,
+#grades_teacher button .fas:hover{
+    color: #209E62;
+}
+
+
+
 .list_grades{
     overflow: auto;
 }
