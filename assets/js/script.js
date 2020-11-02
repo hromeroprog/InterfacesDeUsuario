@@ -4,6 +4,7 @@ $(document).ready(function(){
         $(".principal_page").hide();
         $(".list_forum").hide();
         $(".list_grades").hide();
+        $(".refences").hide();
     });
 
     $(".mycourses_button").click(function(){
@@ -11,6 +12,7 @@ $(document).ready(function(){
       $(".principal_page").hide();
       $(".list_forum").hide();
       $(".list_grades").hide();
+      $(".refences").hide();
   });
 
     $(".forum_button").click(function(){
@@ -19,6 +21,7 @@ $(document).ready(function(){
         $(".list_students").hide();
         $(".list_grades").hide();
         $(".list_courses").hide();
+        $(".refences").hide();
     });
 
     $(".grades_button").click(function(){
@@ -27,6 +30,7 @@ $(document).ready(function(){
         $(".list_forum").hide();
         $(".list_students").hide();
         $(".list_courses").hide();
+        $(".refences").hide();
       });
 
       $(".main_button").click(function(){
@@ -35,15 +39,56 @@ $(document).ready(function(){
         $(".list_forum").hide();
         $(".list_grades").hide();
         $(".list_courses").hide();
+        $(".refences").hide();
 
       });
 
         $(".logo").click(function(){
           $(".principal_page").show();
+          $(".container").show();
           $(".list_students").hide();
           $(".list_forum").hide();
           $(".list_grades").hide();
           $(".list_courses").hide();
+          $(".refences").hide();
+          $(".contact-main").hide();
+          $(".copyright-main").hide();
+          $(".privacy-main").hide();
+        });
+
+
+        $(".reference_button").click(function(){
+          $(".refences").show();
+          $(".container").show();
+          $(".list_students").hide();
+          $(".list_forum").hide();
+          $(".list_grades").hide();
+          $(".list_courses").hide();
+          $(".principal_page").hide();
+          $(".contact-main").hide();
+          $(".copyright-main").hide();
+          $(".privacy-main").hide();
+        });
+        
+        $(".contact_button").click(function(){
+          $(".contact-main").show();
+          $(".container").hide();
+          $(".copyright-main").hide();
+          $(".privacy-main").hide();
+        });
+
+        $(".copyright_button").click(function(){
+          $(".copyright-main").show();
+          $(".container").hide();
+          $(".contact-main").hide();
+          $(".privacy-main").hide();
+        });
+
+        $(".privacy_button").click(function(){
+          $(".privacy-main").show();
+          $(".container").hide();
+          $(".contact-main").hide();
+          $(".copyright-main").hide();
         });
 
 

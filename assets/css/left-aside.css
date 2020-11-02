@@ -26,6 +26,7 @@
     color: rgba(255,255, 255, 0.7);
     letter-spacing: .04em;
     text-align: center;
+    cursor: pointer;
   }
   
   .nav_left button:hover, .nav_left li a:hover {

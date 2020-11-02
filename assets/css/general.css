@@ -79,3 +79,12 @@
   display: none;
 }
 
+.re .contact-main, .copyright-main, .privacy-main{
+  display: none;
+  width: 100%;
+  margin: 10% 10px;
+  overflow:hidden;
+  height:1%;
+  font-family: Plain,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  text-align: center;
+}

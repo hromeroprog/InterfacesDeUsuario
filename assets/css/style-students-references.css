@@ -81,14 +81,14 @@ tr:nth-child(even) {
 }
 
 .table_students .message .fab,
-.table_references .message_link .fab{
+.table_references .message_link .fas{
     color: rgba(255,255,255,0.9);
     font-size: 25px;
     cursor: pointer;
 }
 
 .table_students .message .fab:hover,
-.table_references .message_link .fab:hover{
+.table_references .message_link .fas:hover{
     color: rgba(233, 200, 80);
 }
 

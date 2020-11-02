@@ -24,7 +24,6 @@ aside .far{
     font-weight: 100;
     text-decoration: none;
     display: block;
-
     animation-name: news_1;
     animation-duration: 2s;
     animation-delay: 1.25s;
@@ -33,22 +32,22 @@ aside .far{
 
 #lastnews #myBtn,
 #newevents #myBtn1{
-  background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
   font-size: 1rem;
+  background: transparent;
   width: 80%;
   margin: 20px auto;
+  padding-bottom: 5px;
   color: rgba(255,255, 255, 0.7);
   letter-spacing: .04em;
+  cursor: pointer;
+  border: solid;
+  border-width: 0 0 1px 0;
+  border-color: rgba(255, 255, 255, 0.8);
 }
 
 #lastnews #myBtn:hover,
 #newevents #myBtn1:hover{
   background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
   text-shadow: 0px 0px 0px transparent;
   color: #ecbf17;
   transition: 0.5s;
@@ -88,16 +87,13 @@ aside .far{
   text-align: center;
 }
 
-#lastnews h4,
-#newevents h4{
+#lastnews .span_news,
+#newevents .span_news{
 font-weight: 100;
  text-align: center;
  margin: 0;
  padding-top: 10px;
  padding-bottom: 10px;
- border: solid;
- border-width: 0 0 1px 0;
- border-color: rgba(255, 255, 255, 0.8);
 }
 /*
 @keyframes news_1{
