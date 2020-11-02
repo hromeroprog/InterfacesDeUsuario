@@ -15,12 +15,10 @@
   box-sizing: border-box;
 }
 
-
 #login_page h4 {
     color: #ecbf17;
   }
   
-
   .login-panel{
     position: relative;
     top: 50%;
@@ -52,7 +50,9 @@
 }
 
 .login-panel #label-login, 
-.login-panel #label-register{
+.login-panel #label-register,
+#label-login-movil,
+#label-register-movil{
     border:1px solid #9E9E9E;
     padding:0 5px;
     width:150px;
@@ -79,6 +79,10 @@
     right:0;
     position:absolute;
     text-align:left;
+}
+
+.signup{
+  display:none;
 }
 
 .right-log{right:50px !important;}
@@ -329,30 +333,5 @@ input:checked + label:before {
 }
 .row:after {
   clear: both;
-}
-.col-half {
-  padding-right: 10px;
-  float: left;
-  width: 50%;
-}
-.col-half:last-of-type {
-  padding-right: 0;
-}
-.col-third {
-  padding-right: 10px;
-  float: left;
-  width: 33.33333333%;
-}
-.col-third:last-of-type {
-  padding-right: 0;
-}
-
-/*------------------------------MEdia-Size--------------------------*/
-
-@media only screen and (max-width: 540px) {
-  .col-half {
-    width: 100%;
-    padding-right: 0;
-  }
 }
 

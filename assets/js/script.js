@@ -46,8 +46,6 @@ $(document).ready(function(){
           $(".list_courses").hide();
   });
 
-});
-
 $("#export_grades_teacher").click(function(){
   $("#grades_teacher .table_grades").table2excel({
     exclude:".noExl",
@@ -66,7 +64,7 @@ $("#export_grades_student").click(function(){
   });
 });
 
-
+});
 $(document).ready(function(){
  // Get the modal
  var modal = document.getElementById("myModal");

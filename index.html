@@ -98,6 +98,11 @@
                     <button id="login_submit" type="button" onclick="LoginFunction()">Login</button>
                     <input class="reset" id="login_reset" type="reset" value="Reset" onclick="ResetLogin()" />
                 </form>
+                <p class="signup">
+                    Don't have an account ?
+                    <label id="label-login-movil" for="log-login-show-movil">Register</label>
+                    <input type="radio" name="active-log-panel-movil" id="log-login-show-movil">
+                  </p>
             </div>
 
             <div class="register-show">
@@ -209,6 +214,11 @@
                     <button id="save_button" type="button" onclick="RegisterFunction()">Save</button>
                     <input class="reset" id="reset_button" type="reset" value="Reset" onclick="ResetForm()" />
                 </form>
+                <p class="signup">
+                    Already have an account ?
+                    <label id="label-register-movil" for="log-reg-show-movil">Login</label>
+                    <input type="radio" name="active-log-panel" id="log-reg-show-movil" checked="checked">
+                  </p>
             </div>
             <button id="skipRegisterTeacher" type="button" onclick="skipRegisterTeacher()">SKIP (teacher)</button>
             <button id="skipRegisterStudent" type="button" onclick="skipRegisterStudent()">SKIP (student)</button>

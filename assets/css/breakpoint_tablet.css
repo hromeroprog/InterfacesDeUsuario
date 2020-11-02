@@ -159,47 +159,21 @@
 }
 
 @media (max-width: 920px) {
-    #login_page .register-info-box{
-        z-index: 1;
-        top: 70%;
-        color: #444444;
-        right: 10%;
-        padding: 0;
-        float: left;
-    }
 
-    #login_page .register-info-box h2{
-        font-size: 2.7vw;
+    #login_page .login-info-box,#login_page .register-info-box{
+    display: none !important;
     }
-    #login_page .register-info-box p{
-        font-size: 1.7vw;
-    }
-
-    #label-login {
-    max-width: 150px;
-    background: #444444;
-    color: #f9f9f9;
-    text-transform: uppercase;
-    margin:1%;
-
-    }
-   
-    #login_page .login-info-box{
-     z-index: 1;
-     top: -30%;
-     left: 60%;
-     color: #444444;
-    }
-    
 
     body #login_page .white-panel{
-        width: 80%;
-        right: calc(20% - 80px);
+        width: 70vw;
+        right: 10vw;
     }
-    .register-white{
+
+    #login_page .signup{
         display: block;
+        margin-top: 8vh;
     }
-    
+
 }
 
 

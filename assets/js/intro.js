@@ -59,8 +59,6 @@ function LogOutFunction(){
   if (confirm('Are you sure you want to Logout?')) {
     window.location.reload();
   }
-
-
 }
 
 function RolFunction(){
