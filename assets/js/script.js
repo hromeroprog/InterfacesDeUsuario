@@ -65,6 +65,13 @@ $(document).ready(function(){
             fileext:".xls"
           });
         });
+
+        //EMAIL STUDENT
+        $(".student .message i").unbind().click(function(){
+          var email = $(this).parent().prev().text();
+          var emailto ="mailto:" + email;
+          window.location = emailto;
+        });
 });
 
 
