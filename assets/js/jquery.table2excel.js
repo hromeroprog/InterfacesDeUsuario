@@ -225,12 +225,7 @@
     function exclude_img(string) {
         var _patt = /(\s+alt\s*=\s*"([^"]*)"|\s+alt\s*=\s*'([^']*)')/i;
         return string.replace(/<img[^>]*>/gi, function myFunction(x){
-            var res = _patt.exec(x);
-            if (res !== null && res.length >=2) {
-                return res[2];
-            } else {
-                return "";
-            }
+            return "";
         });
     }
 
