@@ -136,9 +136,66 @@ $(document).ready(function () {
     var topic = $(this).children().first().text();
     var topic_id = "#" + topic.replaceAll(" ", "_");
     $(topic_id).show();
+  });
+
+  //post message
+  $(".forum_topic .topic_discussion .form button").unbind().click(function () {
+    var message = $(this).prev().val();
+    var date = new Date($.now());
+    //date format example MON, october 5th 2020, 19:40
+    var formatted_date = getCorrectFormat(date);
+    var image_source = "./assets/images/default-user.png";
+    var html_to_inyect = '<div class = "topic_message"><p>'+ message+'</p><img class = "author_pic" src="' + image_source+ '" alt="Imagen de THEO BERMUDEZ CALVO"/><h3 class = "author">THEO BERMUDEZ CALVO</h3><h3 class = "date">' + formatted_date +'</h3></div>';
+
+    var object_topic_message = $(this).parent().next();
+    $(object_topic_message).before(html_to_inyect);
 
   });
 });
+
+//FUNCIONES PARA EL FORMATO DE LA FECHA
+
+function getCorrectFormat(date){
+  var day_of_week = getWeekDay(date);
+  var month = getMonth(date);
+  var day_of_month = date.getDate();
+  var ordinal = getOrdinal(day_of_month);
+  var year = date.getFullYear();
+  var hour = date.getHours();
+  var minutes = date.getMinutes();
+
+  var result = day_of_week + ", " + month + " " + day_of_month + ordinal + " " + year +", " + hour + ":" + minutes;
+  return result;
+}
+
+function getOrdinal(d) {
+  if (d > 3 && d < 21) return 'th';
+  switch (d % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
+}
+
+function getWeekDay(date){
+  var weekdays = new Array(
+      "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"
+  );
+  var day = date.getDay();
+  return weekdays[day];
+}
+
+function getMonth(date){
+  var months = new Array(
+      "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"
+  );
+  var month = date.getMonth();
+  return months[month];
+}
+
+// FIN FUNCIONES PARA EL FORMATO DE LA FECHA
+
 
 $(document).ready(function () {
   // Get the modal
@@ -182,4 +239,8 @@ $(document).ready(function () {
     }
   });
 
+
+
 });
+
+
