@@ -8,6 +8,7 @@ function skipRegisterStudent(){
     document.getElementById("footer_main").style.display = "flex";
 
     document.getElementById("user_name_menu").innerHTML = username;
+    document.getElementById("user_grade").innerHTML = username;
     //RolFunction
     document.getElementById("my_students").style.display = "none";
     document.getElementById("grades_teacher").style.display = "none";
@@ -34,7 +35,7 @@ function RegisterFunction() {
             saveCookies(); //in cookie js  
             UsernameFunction();  
             RolFunction();    
-            document.getElementById("login_page").style.display = "none";
+        document.getElementById("login_page").style.display = "none";
       document.getElementById("main_page").style.display = "block";
       document.getElementById("footer_main").style.display = "flex";  
     }
@@ -79,6 +80,7 @@ function RolFunction(){
 function UsernameFunction(){
   var username = getCookie("_user");
   document.getElementById("user_name_menu").innerHTML = username;
+  document.getElementById("user_grade").innerHTML = username;
 }
 
 
@@ -101,3 +103,10 @@ else{
     document.getElementById('grade_box').style.display='none';
 }
 }
+
+
+var toggleButton = document.querySelector('.toggle-menu');
+var navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+	navBar.classList.toggle('toggle');
+});

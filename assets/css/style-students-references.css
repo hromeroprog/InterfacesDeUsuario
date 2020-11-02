@@ -27,6 +27,7 @@
     min-height: 10em;
     border-collapse: collapse;
     border-spacing: 2px;
+    margin-left: 1px;
 }
 .list_students,
 .list_references {

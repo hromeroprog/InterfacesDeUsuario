@@ -109,7 +109,7 @@ main .subject-theme:hover h2{
     text-align: left;
     vertical-align: middle;
     padding: 1rem;
-    border-top: 1px solid #dee2e6;
+    border: 1px solid #dee2e6;
 }
 
 .c_courses {
@@ -125,7 +125,6 @@ main .subject-theme:hover h2{
     background-color: transparent;
     min-height: 10em;
     border-collapse: collapse;
-    border: 1px solid #dee2e6;
 }
 
 

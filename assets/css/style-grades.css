@@ -8,7 +8,6 @@
 }
 .foto_student{
     text-align: left;
-    border: 1px solid #dee2e6;
 }
 .row_grade{
     text-align:center;
@@ -21,9 +20,13 @@
     border: 1px solid #dee2e6;
 }
 
+#grades_student,#grades_teacher{
+    margin: 1px;
+}
+
 
 .table_grades{
-    width: calc(100% - 1px);
+    width: calc(100% - 5px);
     max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent;
@@ -58,7 +61,6 @@
 }
 
 
-
 .list_grades{
     overflow: auto;
 }
@@ -87,8 +89,12 @@ thead {
 .table_grades td {
     vertical-align: middle;
     padding: .75rem;
+}
+
+tbody{
     border: 1px solid #dee2e6;
 }
+
 
 .act-1, .act-2, .act-3{
     text-align: center; 
@@ -101,7 +107,9 @@ tr:nth-child(even) {
     background-color: rgba(0,0,0,.2);
 }
 
-
+#user_grade{
+    display: inline;
+}
 
 
 

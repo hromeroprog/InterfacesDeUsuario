@@ -40,13 +40,13 @@
     <script src="./assets/js/cookie.js"></script>
     <script src="./assets/js/intro.js"></script>
     <script src="./assets/js/script.js"></script>
-    
 
-     <!-- Calendar -->
-  <script src="./assets/js/evo-calendar.js"></script>
-  <script src="./assets/js/my_calendar.js"></script>
 
-   
+    <!-- Calendar -->
+    <script src="./assets/js/evo-calendar.js"></script>
+    <script src="./assets/js/my_calendar.js"></script>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
 
@@ -102,7 +102,7 @@
                     Don't have an account ?
                     <label id="label-login-movil" for="log-login-show-movil">Register</label>
                     <input type="radio" name="active-log-panel-movil" id="log-login-show-movil">
-                  </p>
+                </p>
             </div>
 
             <div class="register-show">
@@ -218,7 +218,7 @@
                     Already have an account ?
                     <label id="label-register-movil" for="log-reg-show-movil">Login</label>
                     <input type="radio" name="active-log-panel" id="log-reg-show-movil" checked="checked">
-                  </p>
+                </p>
             </div>
             <button id="skipRegisterTeacher" type="button" onclick="skipRegisterTeacher()">SKIP (teacher)</button>
             <button id="skipRegisterStudent" type="button" onclick="skipRegisterStudent()">SKIP (student)</button>
@@ -231,13 +231,17 @@
         <header>
             <button class="logo"><i class="material-icons" id="bug_report">bug_report</i>
                 <nav id="logo_theory_of">THEORY OF</nav>
-                <nav id="logo_errors">ERRORS</nav></button>
+                <nav id="logo_errors">ERRORS</nav>
+            </button>
 
+
+            <!--
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <a href="./index.html">
                 <h2 class="asignatura-movil">INTRO</h2>
             </a>
+
             <nav class="nav-movil">
                 <ul>
                     <li> <a href="./students.html"> <i class="fa fa-users"></i> <span class="link-name">STUDENT
@@ -252,6 +256,72 @@
                                 EVENTS</span> </a> </li>
                 </ul>
             </nav>
+-->
+
+<div class="container">
+	<nav class="nav-bar">
+		<div class="toggle-menu">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+		<ul class="nav-list">
+            <li>
+                <button class="main_button"><i class="fas fa-home"></i>
+                    <span class="link-name">THEORY OF ERRORS</span></button>
+            </li>
+    
+            <li id="my_students">
+                <button class="student_button"><i class="fa fa-users"></i>
+                    <span class="link-name">STUDENT LIST</span></button>
+            </li>
+    
+            <li id="my_courses">
+                <button class="mycourses_button"><i class="fas fa-graduation-cap"></i>
+                    <span class="link-name">MY COURSES</span></button>
+            </li>
+            <li>
+                <button class="forum_button"><i class="far fa-comment-dots"></i>
+                    <span class="link-name">FORUM</span></button>
+            </li>
+            <li>
+                <button class="grades_button"> <i class="fas fa-table"></i>
+                    <span class="link-name">CALIFICATIONS</span></button>
+            </li>
+    
+            <li> <a href="#lastnews"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span>
+                </a> </li>
+    
+            <li> <a href="#newevents"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW
+                        EVENTS</span> </a> </li>
+		</ul>
+	</nav>
+</div>
+
+
+
+<script>
+var toggleButton = document.querySelector('.toggle-menu');
+var navBar = document.querySelector('.nav-bar');
+toggleButton.addEventListener('click', function () {
+	navBar.classList.toggle('toggle');
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
             <nav class="nav_top">
                 <div id="user_contact">
                     <div id="user_name_menu"></div>
@@ -279,6 +349,7 @@
                                 <span class="link-name">THEORY OF ERRORS</span></button>
                             <div class="white-line"></div>
                         </li>
+
                         <li id="my_students">
                             <button class="student_button"><i class="fa fa-users"></i>
                                 <span class="link-name">STUDENT LIST</span></button>
@@ -297,7 +368,6 @@
 
                         </li>
                         <li>
-
                             <button class="grades_button"> <i class="fas fa-table"></i>
                                 <span class="link-name">CALIFICATIONS</span></button>
                             <div class="white-line"></div>
@@ -560,7 +630,7 @@
                         <tbody>
                             <tr class="student" id="user-1">
                                 <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg"
-                                        alt = "Imagen de JUSTIN ALVAREZ SANCHEZ"
+                                        alt="Imagen de JUSTIN ALVAREZ SANCHEZ"
                                         title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
                                 <td data-label="EMAIL">100386347@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
@@ -729,7 +799,7 @@
                                 <tr class="student" id="student-1">
                                     <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg"
                                             alt="Imagen de JUSTIN ALVAREZ SANCHEZ"
-                                            title="Imagen de JUSTIN ALVAREZ SANCHEZ"/> JUSTIN ALVAREZ SANCHEZ</td>
+                                            title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
                                     <td class="act-1" data-label="TASK 1">10.0</td>
                                     <td class="act-2" data-label="TASK 2">9.0</td>
                                     <td class="act-3" data-label="TASK 3">6.0</td>
@@ -820,8 +890,6 @@
                             </tbody>
                         </table>
                         <button id="export_grades_teacher"><i class="fas fa-file-download"></i></button>
-
-
                     </div>
 
                     <div id="grades_student">
@@ -829,48 +897,28 @@
                         <table class="table_grades">
                             <thead>
                                 <tr>
-                                    <th class="header-c0">TASKS</th>
-                                    <th class="header-c1">GRADE</th>
+                                    <th class="header-c0">STUDENT</th>
+                                    <th class="header-c1">TASK 1</th>
+                                    <th class="header-c2">TASK 2</th>
+                                    <th class="header-c3">TASK 3</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="teacher_g" id="student-1">
-                                    <td class="row_grade" data-label="TASK">TASK 1</td>
-                                    <td class="act-1" data-label="GRADE">8.3</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-2">
-                                    <td class="row_grade" data-label="TASK">TASK 2</td>
-                                    <td class="act-1" data-label="GRADE">9.0</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-3">
-                                    <td class="row_grade" data-label="TASK">TASK 3</td>
-                                    <td class="act-1" data-label="GRADE">8.0</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-4">
-                                    <td class="row_grade" data-label="TASK">TASK 4</td>
-                                    <td class="act-1" data-label="GRADE">7.3</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-5">
-                                    <td class="row_grade" data-label="TASK">TASK 5</td>
-                                    <td class="act-1" data-label="GRADE">8.7</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-6">
-                                    <td class="row_grade" data-label="TASK">TASK 6</td>
-                                    <td class="act-1" data-label="GRADE">9.8</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-7">
-                                    <td class="row_grade" data-label="TASK">TASK 7</td>
-                                    <td class="act-1" data-label="GRADE">5.0</td>
-                                </tr>
-                                <tr class="teacher_g" id="student-8">
-                                    <td class="row_grade" data-label="TASK">TASK 8</td>
-                                    <td class="act-1" data-label="GRADE">4.0</td>
+                                <tr class="student" id="student-user-1">
+                                    <td class="foto_student" data-label="STUDENT"><img
+                                            src="./assets/images/default-user.png" alt="Imagen de STUDENT USER"
+                                            title="Imagen de STUDENT USER" />
+                                        <div id="user_grade"></div>
+                                    </td>
+                                    <td class="act-1" data-label="TASK 1">10.0</td>
+                                    <td class="act-2" data-label="TASK 2">9.0</td>
+                                    <td class="act-3" data-label="TASK 3">6.0</td>
                                 </tr>
                             </tbody>
                         </table>
                         <button id="export_grades_student"><i class="fas fa-file-download"></i></button>
 
-                        
+
 
 
 
