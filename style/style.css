@@ -144,7 +144,7 @@ header {
 
 .login-panel #label-login,
 .login-panel #label-register {
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
     margin-top: 8px;
     border: 1px solid #9E9E9E;
     padding: 5px 5px;
@@ -1644,6 +1644,13 @@ tr:nth-child(even) {
         left: unset;
         right: unset;
     }
+}
+
+#log-login-show,
+#log-login-show-movil,
+#log-reg-show,
+#log-reg-show-movil {
+    opacity: 0;
 }
 
 @media (max-width: 1184px) {

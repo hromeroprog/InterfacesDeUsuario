@@ -4,24 +4,49 @@ $(document).ready(function() {
     $('.login-info-box').fadeOut();
     $('.login-show').addClass('show-log-panel');
 
-    $('.login-panel input[type="radio"]').on('change', function() {
-        if ($('#log-login-show').is(':checked') || $('#log-login-show-movil').is(':checked')) {
-            $('.register-info-box').fadeOut();
-            $('.login-info-box').fadeIn();
+    $("#log-login-show").click(function() {
 
-            $('.white-panel').addClass('right-log');
-            $('.register-show').addClass('show-log-panel');
-            $('.login-show').removeClass('show-log-panel');
+        $('.register-info-box').fadeOut();
+        $('.login-info-box').fadeIn();
 
-        } else if ($('#log-reg-show').is(':checked') || $('#log-reg-show-movil').is(':checked')) {
-            $('.register-info-box').fadeIn();
-            $('.login-info-box').fadeOut();
+        $('.white-panel').addClass('right-log');
+        $('.register-show').addClass('show-log-panel');
+        $('.login-show').removeClass('show-log-panel');
 
-            $('.white-panel').removeClass('right-log');
+    });
 
-            $('.login-show').addClass('show-log-panel');
-            $('.register-show').removeClass('show-log-panel');
-        }
+    $("#log-login-show-movil").click(function() {
+
+        $('.register-info-box').fadeOut();
+        $('.login-info-box').fadeIn();
+
+        $('.white-panel').addClass('right-log');
+        $('.register-show').addClass('show-log-panel');
+        $('.login-show').removeClass('show-log-panel');
+
+    });
+
+    $("#log-reg-show").click(function() {
+
+        $('.register-info-box').fadeIn();
+        $('.login-info-box').fadeOut();
+
+        $('.white-panel').removeClass('right-log');
+
+        $('.login-show').addClass('show-log-panel');
+        $('.register-show').removeClass('show-log-panel');
+
+    });
+    $("#log-reg-show-movil").click(function() {
+
+        $('.register-info-box').fadeIn();
+        $('.login-info-box').fadeOut();
+
+        $('.white-panel').removeClass('right-log');
+
+        $('.login-show').addClass('show-log-panel');
+        $('.register-show').removeClass('show-log-panel');
+
     });
 });
 
@@ -33,9 +58,13 @@ function RegisterFunction() {
         saveCookies();
         UsernameFunction();
         RolFunction();
+        ResetForm();
+        ResetLogin();
+        document.getElementById("log-login-show").checked = true;
         document.getElementById("login_page").style.display = "none";
         document.getElementById("main_page").style.display = "block";
         document.getElementById("footer_main").style.display = "flex";
+
     }
 }
 
@@ -49,6 +78,8 @@ function LoginFunction() {
             document.getElementById("footer_main").style.display = "flex";
             UsernameFunction();
             RolFunction();
+            ResetForm();
+            ResetLogin();
         }
 
     }
