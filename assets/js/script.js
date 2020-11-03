@@ -145,10 +145,23 @@ $(document).ready(function () {
     //date format example MON, october 5th 2020, 19:40
     var formatted_date = getCorrectFormat(date);
     var image_source = "./assets/images/default-user.png";
-    var html_to_inyect = '<div class = "topic_message"><p>'+ message+'</p><img class = "author_pic" src="' + image_source+ '" alt="Imagen de THEO BERMUDEZ CALVO"/><h3 class = "author">THEO BERMUDEZ CALVO</h3><h3 class = "date">' + formatted_date +'</h3></div>';
 
-    var object_topic_message = $(this).parent().next();
-    $(object_topic_message).before(html_to_inyect);
+    var author = getCookie("_name").toUpperCase() + " " + getCookie("_lastname").toUpperCase();
+    var html_to_inyect = '<div class = "topic_message"><p>'+ message+'</p><img class = "author_pic" src="' + image_source+ '" alt="Imagen de DEFAULT"/><h3 class = "author">' + author + '</h3><h3 class = "date">' + formatted_date +'</h3></div>';
+
+    var object_topic_message = $(this).parent();
+    $(object_topic_message).after(html_to_inyect);
+
+    //cambiar "ultima fecha del topic"
+    var changed_post = $(this).parent().parent().parent().attr('id');
+    var changed_topic_id = "#" + changed_post + "_TOPIC";
+    $(changed_topic_id).children().last().html(formatted_date);
+
+    //cambiar "numero de mensajes del topic"
+    var topic_messages = $(changed_topic_id).children("td.num-message");
+    var num_messages = parseInt(topic_messages.text());
+    num_messages++;
+    topic_messages.html(num_messages);
 
   });
 });
