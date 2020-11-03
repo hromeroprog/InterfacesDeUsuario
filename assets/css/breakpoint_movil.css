@@ -235,9 +235,14 @@
 #grades-act .act-3{
   width: 15%;
 }
-.table_grade .foto_student,#grades_student .foto_student{
+.table_grade .foto_student{
   width: 45%;
   text-align: left;
+  vertical-align: middle;
+}
+#grades_student .foto_student{
+  width: 45%;
+  text-align: center;
   vertical-align: middle;
 }
 
