@@ -701,7 +701,7 @@
                             </tr>
                             <tr class="messages" id="OTHER_PERSPECTIVE_TOPIC">
                                 <td class="forums" data-label="TITLE">OTHER PERSPECTIVE</td>
-                                <td class="num-message" data-label="TOTAL MESSAGES">11</td>
+                                <td class="num-message" data-label="TOTAL MESSAGES">2</td>
                                 <td class="time-message" data-label="LAST POST">SAT, october 3rd 2020, 15:49</td>
                             </tr>
                             <tr class="messages" id="WHAT_IS_HANDLING_ERRORS?_TOPIC">
@@ -717,7 +717,7 @@
                             <tr class="messages" id="ERRORS_IN_PYTHON_TOPIC">
                                 <td class="forums" data-label="TITLE">ERRORS IN PYTHON</td>
                                 <td class="num-message" data-label="TOTAL MESSAGES">1</td>
-                                <td class="time-message" data-label="LAST POST">WED, septemebr 16th 2020, 20:37 </td>
+                                <td class="time-message" data-label="LAST POST">WED, september 16th 2020, 20:37 </td>
                             </tr>
                         </tbody>
                     </table>
@@ -785,22 +785,142 @@
                                 <button>PUBLISH</button>
                             </div>
                             <div class = "topic_message">
-                                <p>Wow, using the tools presented on the video made my debugging at least twice as fast as it used to be. Does anyone have any more tips to accelerate the process of programming? I would love to use more tools</p>
+                                <p>I still don't understan wether we are supposed to debug by using different print statements or using a step by step debug tool. Is the teacher going to tell us anything or we should just apply whatever we prefer?</p>
                                 <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
                                 <h3 class = "author">THEO BERMUDEZ CALVO</h3>
-                                <h3 class = "date">MON, october 5th 2020, 19:40</h3>
+                                <h3 class = "date">SUN, october 4th 2020, 16:50</h3>
                             </div>
                             <div class = "topic_message">
-                                <p>A debugger is a very powerful tool for helping diagnose problems with programs. And debuggers are available for all practical programming languages. Therefore being able to use a debugger is considered a basic skill of any professional or enthusiast programmer. And using a debugger yourself is considered basic work you should do yourself before asking others for help.</p>
+                                <p>That's just sick!</p>
                                 <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
                                 <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
                                 <h3 class = "date">SAT, october 3rd 2020, 15:35</h3>
                             </div>
                             <div class = "topic_message">
-                                <p>Can anyone explain what the hell is a debugger?</p>
+                                <p>I found this about debugging in JavaScript:<br><br>"Debugging is not easy. But fortunately, all modern browsers have a built-in JavaScript debugger.
+
+                                    <br><br>Built-in debuggers can be turned on and off, forcing errors to be reported to the user.
+                                    
+                                    <br><br>With a debugger, you can also set breakpoints (places where code execution can be stopped), and examine variables while the code is executing.
+                                    
+                                    <br><br>Normally, otherwise follow the steps at the bottom of this page, you activate debugging in your browser with the F12 key, and select "Console" in the debugger menu."</p>
                                 <img class = "author_pic" src="./assets/images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ"/>
                                 <h3 class = "author">SERGIO CANO FERNÁNDEZ</h3>
-                                <h3 class = "date">SAT, october 3rd 2020, 09:21</h3>
+                                <h3 class = "date">SAT, october 43rd 2020, 11:10</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  TEMA 3  -->
+                    <div class="forum_topic" id = "OTHER_PERSPECTIVE">
+                        <h2>OTHER PERSPECTIVE</h2>
+                        <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
+                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class = "topic_discussion">
+                            <div class="form">
+                                <label for="event-text">NEW POST</label>
+                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <button>PUBLISH</button>
+                            </div>
+                            <div class = "topic_message">
+                                <p>Haha! that's such a cool way to think about it.</p>
+                                <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
+                                <h3 class = "author">THEO BERMUDEZ CALVO</h3>
+                                <h3 class = "date">SAT, october 3rd 2020, 15:49</h3>
+                            </div>
+                            <div class = "topic_message">
+                                <p>The usual talk about "great programmers" sounds like kung fu film myths about the chosen one who is so at one with the universe that they make no error, are faster than everyone else, etc. etc. Meanwhile, in the real world, great programmers tend not to be godlike meditating entities, but people who get things done by a mix of all sorts of techniques, including knowing both how to design and how to debug. Which itself sounds a bit kung fu ;-)</p>
+                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
+                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class = "date">SAT, october 3rd 2020, 10:52</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  TEMA 4  -->
+                    <div class="forum_topic" id = "WHAT_IS_HANDLING_ERRORS?">
+                        <h2>WHAT IS HANDLING ERRORS?</h2>
+                        <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
+                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class = "topic_discussion">
+                            <div class="form">
+                                <label for="event-text">NEW POST</label>
+                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <button>PUBLISH</button>
+                            </div>
+                            <div class = "topic_message">
+                                <p>Well handling errors is nothing more than surrounding the part of your code that might generate an error with some structure that takes care of it.
+                                    <br><br> Here you have an example:
+                                    <br><br>try{ a = x/y;<br>}catch{
+                                    <br>  //Here you deal with the exception  
+                                    <br>}
+                                    <br><br>:)
+                                </p>
+                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
+                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class = "date">TUES, september 29th 2020, 12:42</h3>
+                            </div>
+                            <div class = "topic_message">
+                                <p>hello mates. Can someone please explain what is handling errors and how I should be doing it?</p>
+                                <img class = "author_pic" src="./assets/images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ"/>
+                                <h3 class = "author">DANIELA CASADO SANCHEZ</h3>
+                                <h3 class = "date">TUES, september 29th 2020, 09:25</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  TEMA 5  -->
+                    <div class="forum_topic" id = "DIFFERENT_ERRORS">
+                        <h2>DIFFERENT ERRORS</h2>
+                        <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
+                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class = "topic_discussion">
+                            <div class="form">
+                                <label for="event-text">NEW POST</label>
+                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <button>PUBLISH</button>
+                            </div>
+                            <div class = "topic_message">
+                                <p>Okay my turn:
+                                    <br><br> YOU
+                                </p>
+                                <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
+                                <h3 class = "author">THEO BERMUDEZ CALVO</h3>
+                                <h3 class = "date">MON, september 28th 2020, 11:21</h3>
+                            </div>
+                            <div class = "topic_message">
+                                <p>I'll start:
+                                    <br><br>ERROR 404
+                                </p>
+                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
+                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class = "date">MON, september 28th 2020, 09:16</h3>
+                            </div>
+                            <div class = "topic_message">
+                                <p>HELLO WORLD! Drop in this topic every error you know, so we can have a perspective on how big is the amount of different errors there are.</p>
+                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
+                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class = "date">MON, september 28th 2020, 09:15</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  TEMA 6  -->
+                    <div class="forum_topic" id = "ERRORS_IN_PYTHON">
+                        <h2>ERRORS IN PYTHON</h2>
+                        <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
+                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class = "topic_discussion">
+                            <div class="form">
+                                <label for="event-text">NEW POST</label>
+                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <button>PUBLISH</button>
+                            </div>
+                            <div class = "topic_message">
+                                <p>HELLO WORLD! I would like to let you know that a condition in python such as<br><br> if x||y||z: <br><br>is no longer an error!</p>
+                                <img class = "author_pic" src="./assets/images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO"/>
+                                <h3 class = "author">SABRINA BARRANCO BARRIO</h3>
+                                <h3 class = "date">WED, september 16th 2020, 20:37</h3>
                             </div>
                         </div>
                     </div>
