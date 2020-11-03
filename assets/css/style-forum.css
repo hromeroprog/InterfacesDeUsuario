@@ -51,10 +51,7 @@ thead {
 .table_forum tbody tr:hover{
     background-color: rgba(0,0,0,.6);
 }
-.table_forum .header-c1{
-    width: 25%;
-    
-}
+
 
 .table_forum td {
     padding: 4px;
