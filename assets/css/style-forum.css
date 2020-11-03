@@ -2,24 +2,24 @@
     font-size: 15px;
     font-weight: 100;
     line-height : 25px;
-    border: 1px solid #dee2e6;
+    border: 3px solid #dee2e6;
 }
 
 .table_forum{
-    width: calc(100% - 1px);
+    width: 100%;
     max-width: 100%;
-    margin-bottom: 1rem;
+    margin: 1rem;
     background-color: transparent;
     min-height: 10em;
     border-collapse: collapse;
     border-spacing: 2px;
     text-align: center;
-    margin-left: 1px;
     
 }
 
 .list_forum{
     overflow: auto;
+    scrollbar-width: none;
 }
 
 .list_forum::-webkit-scrollbar {
@@ -40,7 +40,7 @@ thead {
     padding: 4px;
     display: table-cell;
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 4px solid #dee2e6;
     color: rgba(233, 200, 80, 0.8);
 }
 
@@ -60,13 +60,13 @@ thead {
     padding: 4px;
     vertical-align: middle;
     padding: .75rem;
-    border-top: 1px solid #dee2e6;
+    border-top: 3px solid #dee2e6;
 }
 
 .forums, .num-message, .time-message{
     text-align: center; 
     vertical-align: middle;
-    border: 1px solid #dee2e6;
+    border: 3px solid #dee2e6;
 }
 
 tr:nth-child(even) {

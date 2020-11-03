@@ -110,7 +110,7 @@ main .subject-theme:hover h2{
     text-align: left;
     vertical-align: middle;
     padding: 1rem;
-    border: 1px solid #dee2e6;
+    border: 3px solid #dee2e6;
 }
 
 .c_courses {
@@ -120,7 +120,7 @@ main .subject-theme:hover h2{
 }
 
 .table_courses{
-    width: calc(100% - 1px);
+    width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
     background-color: transparent;

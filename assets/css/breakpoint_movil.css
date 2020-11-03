@@ -195,12 +195,12 @@
   z-index: 1;
   position: absolute;
 	background: rgba(20, 21, 23, 0.9);
-	top: 10%;
+	top: 80px;
 	height: 420px;
 	width: 50vw;
 	justify-content: center;
 	align-items: center;
-  left: 3%;
+  left: 20px;
   border-right: 1.5px solid #ecbf17;
 }
 

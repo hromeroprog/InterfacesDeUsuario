@@ -23,7 +23,7 @@
 }
 
 #grades_student,#grades_teacher{
-    margin: 1px;
+    margin: 1rem;
 }
 
 
@@ -84,14 +84,14 @@ thead {
     padding: 4px;
     display: table-cell;
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
+    border-bottom: 4px solid #dee2e6;
     color: rgba(233, 200, 80, 0.8);
 }
 
 .table_grades td {
     vertical-align: middle;
     padding: .75rem;
-    border: 1px solid #dee2e6;
+    border: 3px solid #dee2e6;
 }
 
 tr:nth-child(even) {

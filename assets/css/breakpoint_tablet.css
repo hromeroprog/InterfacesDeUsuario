@@ -154,10 +154,8 @@
 @media (max-width: 1184px) {
     #login_page {
         width: 90%;
-    }
-    
+    }   
 }
-
 @media (max-width: 920px) {
 
     #login_page .login-info-box,#login_page .register-info-box{
