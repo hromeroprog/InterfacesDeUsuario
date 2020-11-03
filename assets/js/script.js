@@ -20,7 +20,7 @@ $(document).ready(function () {
     $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
-  $(".forum_button").click(function () {
+  $(".forum_button, .forum_topic_back").click(function () {
     $(".list_forum").show();
     $(".principal_page").hide();
     $(".list_students").hide();
@@ -151,7 +151,7 @@ $(document).ready(function () {
 
   //show message poster
   $(".forum_topic .new_post").unbind().click(function(){
-    $(this).next().children("div.form").fadeToggle();
+    $(this).parent().children("div.topic_discussion").children("div.form").fadeToggle();
   });
 
   //post message
