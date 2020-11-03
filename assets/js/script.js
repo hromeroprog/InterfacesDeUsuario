@@ -6,6 +6,8 @@ $(document).ready(function () {
     $(".list_grades").hide();
     $(".refences").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
+
   });
 
   $(".mycourses_button").click(function () {
@@ -15,6 +17,7 @@ $(document).ready(function () {
     $(".list_grades").hide();
     $(".refences").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
   $(".forum_button").click(function () {
@@ -25,6 +28,7 @@ $(document).ready(function () {
     $(".list_courses").hide();
     $(".refences").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
   $(".grades_button").click(function () {
@@ -35,6 +39,7 @@ $(document).ready(function () {
     $(".list_courses").hide();
     $(".refences").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
   $(".main_button").click(function () {
@@ -45,6 +50,7 @@ $(document).ready(function () {
     $(".list_courses").hide();
     $(".refences").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
 
   });
 
@@ -60,6 +66,7 @@ $(document).ready(function () {
     $(".copyright-main").hide();
     $(".privacy-main").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
 
@@ -75,6 +82,7 @@ $(document).ready(function () {
     $(".copyright-main").hide();
     $(".privacy-main").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
   $(".contact_button").click(function () {
@@ -83,6 +91,7 @@ $(document).ready(function () {
     $(".copyright-main").hide();
     $(".privacy-main").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
   $(".copyright_button").click(function () {
@@ -91,6 +100,7 @@ $(document).ready(function () {
     $(".contact-main").hide();
     $(".privacy-main").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
   $(".privacy_button").click(function () {
@@ -99,6 +109,7 @@ $(document).ready(function () {
     $(".contact-main").hide();
     $(".copyright-main").hide();
     $(".forum_topics .forum_topic").hide()
+    $(".forum_topics .forum_topic .topic_discussion .form").hide();
   });
 
 
@@ -155,6 +166,7 @@ $(document).ready(function () {
     var html_to_inyect = '<div class = "topic_message"><p>'+ message+'</p><img class = "author_pic" src="' + image_source+ '" alt="Imagen de DEFAULT"/><h3 class = "author">' + author + '</h3><h3 class = "date">' + formatted_date +'</h3></div>';
 
     var object_topic_message = $(this).parent();
+    $(this).prev().val("");
     $(object_topic_message).after(html_to_inyect);
 
     //cambiar "ultima fecha del topic"
