@@ -939,13 +939,11 @@ aside .far {
     transition: 0.5s;
 }
 
-#lastnews #myBtn:active,
 #newevents #myBtn1:active {
     outline: none;
     border: none;
 }
 
-#lastnews #myBtn:focus,
 #newevents #myBtn1:focus {
     outline: 0;
 }
