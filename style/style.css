@@ -1196,9 +1196,9 @@ tr:nth-child(even) {
 }
 
 .table_forum {
-    width: 100%;
+    width: 98%;
     max-width: 100%;
-    margin: 1rem;
+    margin: 0px 5px;
     background-color: transparent;
     min-height: 10em;
     border-collapse: collapse;
@@ -1227,7 +1227,7 @@ thead {
     padding: 4px;
     display: table-cell;
     vertical-align: bottom;
-    border-bottom: 4px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
     color: rgba(233, 200, 80, 0.8);
 }
 
