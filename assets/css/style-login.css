@@ -50,9 +50,7 @@
 }
 
 .login-panel #label-login, 
-.login-panel #label-register,
-#label-login-movil,
-#label-register-movil{
+.login-panel #label-register{
     border:1px solid #9E9E9E;
     padding:0 5px;
     width:150px;
@@ -62,6 +60,16 @@
     cursor:pointer;
 }
 
+#label-login-movil,
+#label-register-movil{
+  border: none;
+    padding:0 5px;
+    width:150px;
+    text-align:center;
+    border-radius:3px;
+    cursor:pointer;
+    color: #ecbf17;
+}
 
 .login-info-box{
     width:40%;
@@ -107,10 +115,9 @@
 margin-left: 20px;
 }
 
-.login-show #login_submit,
-.login-show #login_reset {
+.login-show #login_submit,.register-show #save_button {
     max-width: 150px;
-    width: 100%;
+    width: 20vw;
     background: #444444;
     color: #f9f9f9;
     border: none;
@@ -121,6 +128,23 @@ margin-left: 20px;
     cursor:pointer;
     margin:1%;
 }
+
+
+.register-show input[type="reset"],
+.login-show #login_reset {
+    max-width: 150px;
+    width: 20vw;
+    background: transparent;
+    border: 1px solid #444444;
+    color: #444444;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    float:right;
+    cursor:pointer;
+    margin: 1%;
+}
+
 .login-show a{
     display:inline-block;
     padding:10px 0;
@@ -139,20 +163,6 @@ select {
   border-radius: 12px;
 }
 
-.register-show #save_button ,
-.register-show input[type="reset"]{
-    max-width: 150px;
-    width: 100%;
-    background: #444444;
-    color: #f9f9f9;
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    border-radius: 2px;
-    float:right;
-    cursor:pointer;
-    margin: 5px;
-}
 
 #grade_box{
     display: none;
@@ -179,6 +189,7 @@ select {
     color: red;
     font-size: 15px;
 }
+
 
 #rol_box{
 	max-width: 250px;

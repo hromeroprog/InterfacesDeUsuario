@@ -54,7 +54,7 @@ $(document).ready(function () {
 
   });
 
-  $(".logo").click(function () {
+  $(".logo,#bug_report").click(function () {
     $(".principal_page").show();
     $(".container").show();
     $(".list_students").hide();

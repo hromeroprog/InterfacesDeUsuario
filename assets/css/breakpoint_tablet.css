@@ -168,10 +168,9 @@
         width: 70vw;
         right: 10vw;
     }
-
     #login_page .signup{
         display: block;
-        margin-top: 8vh;
+        margin-top: 12vh;
     }
 
 }
