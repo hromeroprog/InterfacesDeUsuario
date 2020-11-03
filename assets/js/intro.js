@@ -1,36 +1,4 @@
 
-function skipRegisterStudent() {
-  //Funcion temporal. Para que sea mas sencillo el desarrollo
-
-  var username = "StudentSkipped"
-  document.getElementById("login_page").style.display = "none";
-  document.getElementById("main_page").style.display = "block";
-  document.getElementById("footer_main").style.display = "flex";
-
-  document.getElementById("user_name_menu").innerHTML = username;
-  document.getElementById("user_grade").innerHTML = username;
-  //RolFunction
-  document.getElementById("my_students").style.display = "none";
-  document.getElementById("my_students_movil").style.display = "none";
-  document.getElementById("grades_teacher").style.display = "none";
-}
-
-function skipRegisterTeacher() {
-  //Funcion temporal. Para que sea mas sencillo el desarrollo
-
-  var username = "TeacherSkipped"
-  document.getElementById("login_page").style.display = "none";
-  document.getElementById("main_page").style.display = "block";
-  document.getElementById("footer_main").style.display = "flex";
-
-  document.getElementById("user_name_menu").innerHTML = username;
-  //RolFunction
-  document.getElementById("my_courses").style.display = "none";
-  document.getElementById("my_courses_movil").style.display = "none";
-  document.getElementById("grades_student").style.display = "none";
-}
-
-
 function RegisterFunction() {
   var $registerForm = $("#register_form");
   if ($registerForm.valid()) {
