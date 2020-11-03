@@ -57,6 +57,8 @@ function LoginFunction() {
 //Salir de la pagina al formulario
 function LogOutFunction() {
     if (confirm('Are you sure you want to Logout?')) {
+        ResetForm();
+        ResetLogin();
         window.location.reload();
     }
 }

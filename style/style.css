@@ -528,7 +528,7 @@ header button {
 .nav_top ul li a,
 .nav_top ul li button span {
     letter-spacing: .35em;
-    font-size: 0.94vw;
+    font-size: 12px;
     display: block;
     margin: 10px 3px;
     padding: 10px 20px;
@@ -582,7 +582,7 @@ header button {
     margin: 15px 20px 10px 10px;
     padding-bottom: 20px;
     text-decoration: none;
-    font-size: 3.5vw;
+    font-size: 20px;
     font-weight: 100;
     letter-spacing: .25em;
     text-decoration: none;
@@ -1414,9 +1414,6 @@ table {
 }
 
 
-/*----------------------------------A*/
-
-
 /*---------------------------------Grades-----------------------------------*/
 
 .foto_student img {
@@ -1567,7 +1564,8 @@ tr:nth-child(even) {
     #main-white-line {
         display: none;
     }
-    .nav_top {
+    .reference_button,
+    .contact_button {
         display: none;
     }
     .container {
@@ -1579,6 +1577,14 @@ tr:nth-child(even) {
     .container main {
         width: calc(80% - 15px);
         margin: 5px 5px 10px 5px;
+    }
+    .nav_top {
+        display: flex;
+        flex-direction: row-reverse;
+        float: right;
+    }
+    #user_contact {
+        margin-top: 10px;
     }
     .nav_left {
         width: 20%;
@@ -1914,6 +1920,9 @@ tr:nth-child(even) {
     }
     .asignatura-movil {
         display: none;
+    }
+    .logo {
+        height: 120px;
     }
     #logo_errors,
     #logo_theory_of {
