@@ -192,7 +192,9 @@ function getCorrectFormat(date){
   var year = date.getFullYear();
   var hour = date.getHours();
   var minutes = date.getMinutes();
-
+  if (parseInt(minutes)<10){
+    minutes = "0" + minutes;
+  }
   var result = day_of_week + ", " + month + " " + day_of_month + ordinal + " " + year +", " + hour + ":" + minutes;
   return result;
 }
