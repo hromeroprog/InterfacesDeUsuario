@@ -57,8 +57,6 @@ function LoginFunction() {
 //Salir de la pagina al formulario
 function LogOutFunction() {
     if (confirm('Are you sure you want to Logout?')) {
-        ResetForm();
-        ResetLogin();
         window.location.reload();
     }
 }
@@ -608,7 +606,7 @@ $(document).ready(function() {
         var date = new Date($.now());
         //date format example MON, october 5th 2020, 19:40
         var formatted_date = getCorrectFormat(date);
-        var image_source = "./assets/images/default-user.png";
+        var image_source = "./images/default-user.png";
 
         var author = getCookie("_name").toUpperCase() + " " + getCookie("_lastname").toUpperCase();
         var html_to_inyect = '<div class = "topic_message"><p>' + message + '</p><img class = "author_pic" src="' + image_source + '" alt="Imagen de DEFAULT"/><h3 class = "author">' + author + '</h3><h3 class = "date">' + formatted_date + '</h3></div>';
