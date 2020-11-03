@@ -138,6 +138,11 @@ $(document).ready(function () {
     $(topic_id).show();
   });
 
+  //show message poster
+  $(".forum_topic .new_post").unbind().click(function(){
+    $(this).next().children("div.form").fadeToggle();
+  });
+
   //post message
   $(".forum_topic .topic_discussion .form button").unbind().click(function () {
     var message = $(this).prev().val();
@@ -162,7 +167,6 @@ $(document).ready(function () {
     var num_messages = parseInt(topic_messages.text());
     num_messages++;
     topic_messages.html(num_messages);
-
   });
 });
 

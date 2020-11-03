@@ -7,7 +7,7 @@
     display: none;
 }
 
-.forum_topics .forum_topic #new_post{
+.forum_topics .forum_topic .new_post{
     display: inline;
     background: transparent;
     color: rgba(255,255,255, .8);
@@ -21,7 +21,7 @@
     margin: 0 0 0 0;
 }
 
-.forum_topics .forum_topic #new_post:hover{
+.forum_topics .forum_topic .new_post:hover{
     background: rgba(0, 0, 0, .6);
 }
 
@@ -92,6 +92,7 @@
     padding: 20px;
     margin: 10px 0 40px 0;
     border: solid 1px rgba(233, 200, 80, 0.8);
+    display: none;
 }
 
 .forum_topic textarea{
