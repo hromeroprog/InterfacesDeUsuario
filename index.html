@@ -5,64 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theory of Errors</title>
-    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
 
     <!-- STYLES -->
-    <link type="text/css" rel="stylesheet" href="./assets/css/general.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/header.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/left-aside.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/main.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/right-aside.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/footer.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_tablet.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/breakpoint_movil.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/material-icons.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/all.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/style-students-references.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/style-forum.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/style-forum-topic.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/style-grades.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="./style/style.css">
+
+    <!-- CSS descargados de paginas de iconos por seguridad-->
+    <link type="text/css" rel="stylesheet" href="./style/material-icons.css">
+    <link type="text/css" rel="stylesheet" href="./style/all.css">
+
+    <!-- CSS online de los antes descargados-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="./assets/css/evo-calendar.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/evo-calendar.midnight-blue.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-    <!-- SCRIPTS -->
-    <script src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- CSS del calendario-->
+    <link rel="stylesheet" type="text/css" href="./style/evo-calendar.css" />
+    <link rel="stylesheet" type="text/css" href="./style/evo-calendar.midnight-blue.css" />
+
+    <!-- SCRIPTS  Plugin descargado-->
+    <script src="./script/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
-    <script src="./assets/js/jquery.table2excel.js"></script>
-    <script src="./assets/js/jquery.validate.js"></script>
-    <script src="./assets/js/validate_form.js"></script>
-    <script src="./assets/js/login.js"></script>
-    <script src="./assets/js/cookie.js"></script>
-    <script src="./assets/js/intro.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- SCRIPTS  Plugin Excel-->
+    <script src="./script/jquery.table2excel.js"></script>
+    <!-- SCRIPTS  Plugin Validate Form-->
+    <script src="./script/jquery.validate.js"></script>
+    <!-- Script Calendar plugin descargado -->
+    <script src="./script/evo-calendar.js"></script>
+
+    <!-- My Script-->
+    <script src="./script/script.js"></script>
 
 
-    <!-- Calendar -->
-    <script src="./assets/js/evo-calendar.js"></script>
-    <script src="./assets/js/my_calendar.js"></script>
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
-
-    <script src="./assets/js/jquery.validate.js"></script>
-
-    <script src="./assets/js/validate_form.js"></script>
-    <script src="./assets/js/login.js"></script>
-    <script src="./assets/js/cookie.js"></script>
-    <script src="./assets/js/intro.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/style-login.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -112,58 +86,49 @@
                     <h4>Account Information</h4>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_user" name="user" type="text"
-                            placeholder="User Name*" required />
+                        <input class="registerform-input" id="register_user" name="user" type="text" placeholder="User Name*" required />
                         <div class="input-icon"><i class="fa fa-user"></i></div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_nia" name="nia" type="text" placeholder="NIA*"
-                            required />
+                        <input class="registerform-input" id="register_nia" name="nia" type="text" placeholder="NIA*" required />
                         <div class="input-icon"><i class="fas fa-id-badge"></i></div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_password" name="password" type="password"
-                            placeholder="Password*" required />
+                        <input class="registerform-input" id="register_password" name="password" type="password" placeholder="Password*" required />
                         <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_confirm_password" name="confirm_password"
-                            type="password" placeholder="Confirm Password*" required />
+                        <input class="registerform-input" id="register_confirm_password" name="confirm_password" type="password" placeholder="Confirm Password*" required />
                         <div class="input-icon"><i class="fas fa-unlock-alt"></i></div>
                     </div>
 
                     <h4>Personal Information</h4>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_first_name" name="first_name" type="text"
-                            placeholder="Name*" required />
+                        <input class="registerform-input" id="register_first_name" name="first_name" type="text" placeholder="Name*" required />
                         <div class="input-icon"><i class="fa fa-user"></i></div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_last_name" name="last_name" type="text"
-                            placeholder="Last Name*" required />
+                        <input class="registerform-input" id="register_last_name" name="last_name" type="text" placeholder="Last Name*" required />
                         <div class="input-icon"><i class="fa fa-user"></i></div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_email" name="email" type="email"
-                            placeholder="Email*" required />
+                        <input class="registerform-input" id="register_email" name="email" type="email" placeholder="Email*" required />
                         <div class="input-icon"><i class="fas fa-envelope"></i></div>
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_dni" name="dni" type="text" placeholder="DNI*"
-                            required />
+                        <input class="registerform-input" id="register_dni" name="dni" type="text" placeholder="DNI*" required />
                         <div class="input-icon"><i class="fas fa-id-card"></i></div>
                     </div>
 
                     <div class="input-group">
-                        <input placeholder="Put your birthdate*" class="registerform-input" id="register_date"
-                            type="text" onfocus="(this.type = 'date')" name="date" required />
+                        <input placeholder="Put your birthdate*" class="registerform-input" id="register_date" type="text" onfocus="(this.type = 'date')" name="date" required />
                     </div>
 
                     <div class="input-group input-group-icon">
@@ -189,8 +154,7 @@
                     </div>
 
                     <div class="input-group input-group-icon">
-                        <input class="registerform-input" id="register_university" name="university" type="text"
-                            placeholder="university" value="Carlos III" readonly required />
+                        <input class="registerform-input" id="register_university" name="university" type="text" placeholder="university" value="Carlos III" readonly required />
                         <div class="input-icon"><i class="fas fa-school"></i></div>
                     </div>
 
@@ -231,47 +195,51 @@
                 <nav id="logo_errors">ERRORS</nav>
             </button>
 
-<button class="hamburger hamburger--spin" id="burguer" type="button" onclick="MenuMovil()">
+            <button class="hamburger hamburger--spin" id="burguer" type="button" onclick="MenuMovil()">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
 
-  <button class="main_button"><span class="link-name-menu">INTRO</span></button>
+            <button class="main_button"><span class="link-name-menu">INTRO</span></button>
 
-	<nav class="nav-bar" id="nav-bar-movil">
+            <nav class="nav-bar" id="nav-bar-movil">
 
-		<ul class="nav-list" id="myLinks"> 
-    
-            <li id="my_students_movil">
-                <button class="student_button"><i class="fa fa-users"></i>
+                <ul class="nav-list" id="myLinks">
+
+                    <li id="my_students_movil">
+                        <button class="student_button"><i class="fa fa-users"></i>
                     <span class="link-name">STUDENT LIST</span></button>
-            </li>
-    
-            <li id="my_courses_movil">
-                <button class="mycourses_button"><i class="fas fa-graduation-cap"></i>
+                    </li>
+
+                    <li id="my_courses_movil">
+                        <button class="mycourses_button"><i class="fas fa-graduation-cap"></i>
                     <span class="link-name">MY COURSES</span></button>
-            </li>
-            <li>
-                <button class="forum_button"><i class="far fa-comment-dots"></i>
+                    </li>
+                    <li>
+                        <button class="forum_button"><i class="far fa-comment-dots"></i>
                     <span class="link-name">FORUM</span></button>
-            </li>
-            <li>
-                <button class="grades_button"> <i class="fas fa-table"></i>
+                    </li>
+                    <li>
+                        <button class="grades_button"> <i class="fas fa-table"></i>
                     <span class="link-name">CALIFICATIONS</span></button>
-            </li>
-    
-            <li> <a href="#lastnews"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span>
-                </a> </li>
-    
-            <li> <a href="#newevents"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW
-                        EVENTS</span> </a> </li>
-		</ul>
-	</nav>
+                    </li>
+
+                    <li>
+                        <a href="#lastnews"> <i class="far fa-newspaper"></i> <span class="link-name">LAST NEWS</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#newevents"> <i class="far fa-calendar-alt"></i> <span class="link-name">NEW
+                        EVENTS</span> </a>
+                    </li>
+                </ul>
+            </nav>
             <nav class="nav_top">
                 <div id="user_contact">
                     <div id="user_name_menu"></div>
-                    <div id="user_img"><img src="./assets/images/default-user.png" alt="Image user"></div>
+                    <div id="user_img"><img src="./images/default-user.png" alt="Image user"></div>
                 </div>
                 <ul>
                     <li><button class="reference_button" type="button"><span>REFERENCES</span></button></li>
@@ -335,8 +303,7 @@
                         </li>
                     </ul>
                 </div>
-                <img class="bug-looking-darken" src="./assets/images/bug-looking-darken.png"
-                    alt="Looking for bugs" />
+                <img class="bug-looking-darken" src="./images/bug-looking-darken.png" alt="Looking for bugs" />
             </nav>
             <main>
                 <div class="principal_page">
@@ -344,22 +311,18 @@
                     <div class="subject-theme">
                         <h2>TYPES OF ERRORS</h2>
                         <div class="box-image">
-                            <img class="left-image" src="./assets/images/Types-of-errors-Image.png"
-                                alt="Types-of-errors-Image" />
+                            <img class="left-image" src="./images/Types-of-errors-Image.png" alt="Types-of-errors-Image" />
                             <div class="right-text">
                                 <h4>DIFFERENT ERRORS</h4>
                                 <p>
-                                    While programming, we may encounter different kinds of errors. In this course we are
-                                    going to focus on the three main ones: Syntax, Run-time, and Logical Errors.
-                                    How to detect them, and then how to handle them.
+                                    While programming, we may encounter different kinds of errors. In this course we are going to focus on the three main ones: Syntax, Run-time, and Logical Errors. How to detect them, and then how to handle them.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec" id="line-foto1"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/syntax-runtime-and-logical-errors-in-python-poster.jpg">
-                                <source src="./assets/images/syntax-runtime-and-logical-errors-in-python.mp4"
+                            <video class="left-video" controls preload="none" poster="./images/syntax-runtime-and-logical-errors-in-python-poster.jpg">
+                                <source src="./images/syntax-runtime-and-logical-errors-in-python.mp4"
                                     type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
@@ -368,17 +331,15 @@
                             <div class="right-text-video">
                                 <h4>ERRORS IN PYTHON</h4>
                                 <p>
-                                    In this video we will cover the main types of errors from a Python perspective. It
-                                    will be a great help in identifying a bug in our code.
+                                    In this video we will cover the main types of errors from a Python perspective. It will be a great help in identifying a bug in our code.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/errors-in-programs-part-1-types-of-errors-debugging-tips-poster.jpg">
+                            <video class="left-video" controls preload="none" poster="./images/errors-in-programs-part-1-types-of-errors-debugging-tips-poster.jpg">
                                 <source
-                                    src="./assets/images/errors-in-programs-part-1-types-of-errors-debugging-tips.mp4"
+                                    src="./images/errors-in-programs-part-1-types-of-errors-debugging-tips.mp4"
                                     type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
@@ -387,17 +348,14 @@
                             <div class="right-text-video">
                                 <h4>GENERAL PERSPECTIVE</h4>
                                 <p>
-                                    Take a look at the different type of errors from a general perspective. Once you get
-                                    the general point of a topic, you gain the ability to apply it to several fields
-                                    that might or might not be related. Don't lose this opportunity.
+                                    Take a look at the different type of errors from a general perspective. Once you get the general point of a topic, you gain the ability to apply it to several fields that might or might not be related. Don't lose this opportunity.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/programming-errors-and-implications-poster.png">
-                                <source src="./assets/images/programming-errors-and-implications.mp4" type='video/mp4'>
+                            <video class="left-video" controls preload="none" poster="./images/programming-errors-and-implications-poster.png">
+                                <source src="./images/programming-errors-and-implications.mp4" type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
                                         target="_blank">supports HTML5 video</a></p>
@@ -405,9 +363,7 @@
                             <div class="right-text-video">
                                 <h4>JUST IGNORE THEM?</h4>
                                 <p>
-                                    What if I just deal with errors by not dealing with them at all? Well in this video
-                                    you can learn the dangers of this "non-handle" path, while reviewing once again the
-                                    main errors we can get in our programms.
+                                    What if I just deal with errors by not dealing with them at all? Well in this video you can learn the dangers of this "non-handle" path, while reviewing once again the main errors we can get in our programms.
                                 </p>
                             </div>
                         </div>
@@ -418,22 +374,19 @@
                     <div class="subject-theme">
                         <h2>ERROR HANDLING</h2>
                         <div class="box-image">
-                            <img class="left-image" src="./assets/images/Debugging.jpg" alt="Debugging Image" />
+                            <img class="left-image" src="./images/Debugging.jpg" alt="Debugging Image" />
                             <div class="right-text">
                                 <h4>WHAT IS HANDLING ERRORS?</h4>
                                 <p>
-                                    In this lesson, we will learn what to do once a spot of possible errors has been
-                                    spotted. We will surround the section with some code that achieves our goal of
-                                    capturing the type of error we got, while not disturbing the normal program flow
-                                    when the error does not spoil. FOLLOW ALONG!
+                                    In this lesson, we will learn what to do once a spot of possible errors has been spotted. We will surround the section with some code that achieves our goal of capturing the type of error we got, while not disturbing the normal program flow when the error
+                                    does not spoil. FOLLOW ALONG!
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec" id="line-foto2"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/python-try-catch-poster.jpg">
-                                <source src="./assets/images/python-try-catch-video.mp4" type='video/mp4'>
+                            <video class="left-video" controls preload="none" poster="./images/python-try-catch-poster.jpg">
+                                <source src="./images/python-try-catch-video.mp4" type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
                                         target="_blank">supports HTML5 video</a></p>
@@ -441,18 +394,15 @@
                             <div class="right-text-video">
                                 <h4>HOW TO?</h4>
                                 <p>
-                                    Take a look to the basic error handling methods! This Python-oriented tutorial will
-                                    make you understand how to deal with errors when programming by using the classic
-                                    try-catch structure.
+                                    Take a look to the basic error handling methods! This Python-oriented tutorial will make you understand how to deal with errors when programming by using the classic try-catch structure.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/rpa-poster.jpg">
+                            <video class="left-video" controls preload="none" poster="./images/rpa-poster.jpg">
                                 <source
-                                    src="./assets/images/rpa-quick-tips-2-error-handling-basics-automation-anywhere.mp4"
+                                    src="./images/rpa-quick-tips-2-error-handling-basics-automation-anywhere.mp4"
                                     type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
@@ -461,17 +411,14 @@
                             <div class="right-text-video">
                                 <h4>OTHER PERSPECTIVE</h4>
                                 <p>
-                                    In this video we will give a step forward towards a real application of programming:
-                                    robotics. This approach of the topic get more visual and intuitive when we enter
-                                    this beautiful field of knowledge.
+                                    In this video we will give a step forward towards a real application of programming: robotics. This approach of the topic get more visual and intuitive when we enter this beautiful field of knowledge.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/exceptions.jpg">
-                                <source src="./assets/images/exceptions.mp4" type='video/mp4'>
+                            <video class="left-video" controls preload="none" poster="./images/exceptions.jpg">
+                                <source src="./images/exceptions.mp4" type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
                                         target="_blank">supports HTML5 video</a></p>
@@ -479,9 +426,7 @@
                             <div class="right-text-video">
                                 <h4>ALWAYS THE SAME?</h4>
                                 <p>
-                                    We already know how to handle an error, okay but...What then? What do I do with the
-                                    catched exception? Different exceptions require different treatments. Learn the
-                                    Exceptions there are in Python and then extrapolate to any other language.
+                                    We already know how to handle an error, okay but...What then? What do I do with the catched exception? Different exceptions require different treatments. Learn the Exceptions there are in Python and then extrapolate to any other language.
                                 </p>
                             </div>
                         </div>
@@ -492,22 +437,19 @@
                     <div class="subject-theme">
                         <h2>DEBUGGING</h2>
                         <div class="box-image">
-                            <img class="left-image" src="./assets/images/Debugging.jpg" alt="Debugging Image" />
+                            <img class="left-image" src="./images/Debugging.jpg" alt="Debugging Image" />
                             <div class="right-text">
                                 <h4>DEBUG THE PROPER WAY</h4>
                                 <p>
-                                    In this section of Theory Of Errors you will learn the whole path you should follow
-                                    to deal with errors as a programmer. Starting with finding the errors and then
-                                    resolving them. There are several tactics we can follow for this proccess, in this
-                                    lesson we will primarly apply "control flow analysis" and "interactive debugging".
+                                    In this section of Theory Of Errors you will learn the whole path you should follow to deal with errors as a programmer. Starting with finding the errors and then resolving them. There are several tactics we can follow for this proccess, in this lesson
+                                    we will primarly apply "control flow analysis" and "interactive debugging".
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec" id="line-foto3"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/what-is-debugging-poster.jpg">
-                                <source src="./assets/images/what-is-debugging.mp4" type='video/mp4'>
+                            <video class="left-video" controls preload="none" poster="./images/what-is-debugging-poster.jpg">
+                                <source src="./images/what-is-debugging.mp4" type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
                                         target="_blank">supports HTML5 video</a></p>
@@ -515,17 +457,14 @@
                             <div class="right-text-video">
                                 <h4>LET'S FOCUS</h4>
                                 <p>
-                                    Big constructions start with a single stone. Let's learn debugging step by step,
-                                    starting with understanding what is it. Can't solve a problem if we dont have the
-                                    statement.
+                                    Big constructions start with a single stone. Let's learn debugging step by step, starting with understanding what is it. Can't solve a problem if we dont have the statement.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/debugging-tips.jpg">
-                                <source src="./assets/images/debugging-tips-what-is-bug-and-debugging.mp4"
+                            <video class="left-video" controls preload="none" poster="./images/debugging-tips.jpg">
+                                <source src="./images/debugging-tips-what-is-bug-and-debugging.mp4"
                                     type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
@@ -534,17 +473,14 @@
                             <div class="right-text-video">
                                 <h4>GET SOME HELP</h4>
                                 <p>
-                                    Keep understanding what a bug and debugging is and give another step. Let's face it,
-                                    we all love tips and tricks when doing a labour, well let's get some usefull tips on
-                                    debugging.
+                                    Keep understanding what a bug and debugging is and give another step. Let's face it, we all love tips and tricks when doing a labour, well let's get some usefull tips on debugging.
                                 </p>
                             </div>
                         </div>
                         <div class="line-dec"></div>
                         <div class="box-video">
-                            <video class="left-video" controls preload="none"
-                                poster="./assets/images/debug-tool.jpg">
-                                <source src="./assets/images/debugging-with-the-step-button-course-a-b.mp4"
+                            <video class="left-video" controls preload="none" poster="./images/debug-tool.jpg">
+                                <source src="./images/debugging-with-the-step-button-course-a-b.mp4"
                                     type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading
                                     to a web browser that <a href="http://videojs.com/html5-video-support/"
@@ -553,9 +489,7 @@
                             <div class="right-text-video">
                                 <h4>DON'T INVENT THE WHEEL</h4>
                                 <p>
-                                    There is no need to start from the very start and alone in this road. Why not using
-                                    a car? In this video we will know about a very usefull tool we can use to debug our
-                                    code easily. Don't go barefoot!
+                                    There is no need to start from the very start and alone in this road. Why not using a car? In this video we will know about a very usefull tool we can use to debug our code easily. Don't go barefoot!
                                 </p>
                             </div>
                         </div>
@@ -574,79 +508,57 @@
                         </thead>
                         <tbody>
                             <tr class="student" id="user-1">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg"
-                                        alt="Imagen de JUSTIN ALVAREZ SANCHEZ"
-                                        title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/justin.jpg" alt="Imagen de JUSTIN ALVAREZ SANCHEZ" title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
                                 <td data-label="EMAIL">100386347@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-2">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/emma.jpg"
-                                        alt="Imagen de EMMA ALVAREZ ALVAREZ" title="Imagen de EMMA ALVAREZ ALVAREZ" />
-                                    EMMA ALVAREZ ALVAREZ</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/emma.jpg" alt="Imagen de EMMA ALVAREZ ALVAREZ" title="Imagen de EMMA ALVAREZ ALVAREZ" /> EMMA ALVAREZ ALVAREZ</td>
                                 <td data-label="EMAIL">100386127@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-3">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/harry.jpg"
-                                        alt="Imagen de PEDRO ARMADO RODRIGUEZ"
-                                        title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
                                 <td data-label="EMAIL">100383227@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-4">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/theo.jpg"
-                                        alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" />
-                                    THEO BERMUDEZ CALVO</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" /> THEO BERMUDEZ CALVO</td>
                                 <td data-label="EMAIL">100386483@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-5">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/selena.jpg"
-                                        alt="Imagen de SABRINA BARRANCO BARRIO"
-                                        title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO" title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
                                 <td data-label="EMAIL">100386483@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-6">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zack.jpg"
-                                        alt="Imagen de SERGIO CANO FERNÁNDEZ" title="Imagen de SERGIO CANO FERNÁNDEZ" />
-                                    SERGIO CANO FERNÁNDEZ</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ" title="Imagen de SERGIO CANO FERNÁNDEZ" /> SERGIO CANO FERNÁNDEZ</td>
                                 <td data-label="EMAIL">100386292@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-7">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zendaya.jpg"
-                                        alt="Imagen de DANIELA CASADO SANCHEZ"
-                                        title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ" title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
                                 <td data-label="EMAIL">100384723@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-8">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/elizabeth.jpg"
-                                        alt="Imagen de FERNANDA CONDE ALVAREZ"
-                                        title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/elizabeth.jpg" alt="Imagen de FERNANDA CONDE ALVAREZ" title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
                                 <td data-label="EMAIL">100386498@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-9">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/daniel.jpg"
-                                        alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" /> DANIEL
-                                    DÍAZ LOBO</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/daniel.jpg" alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" /> DANIEL DÍAZ LOBO</td>
                                 <td data-label="EMAIL">100382245@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-10">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/chase.jpg"
-                                        alt="Imagen de CHASE DOMINGUEZ GARRIDO"
-                                        title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/chase.jpg" alt="Imagen de CHASE DOMINGUEZ GARRIDO" title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
                                 <td data-label="EMAIL">10038890@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
                             <tr class="student" id="user-11">
-                                <td class="foto_student" data-label="STUDENT"><img src="./assets/images/sofia.jpg"
-                                        alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA
-                                    PINO REYES</td>
+                                <td class="foto_student" data-label="STUDENT"><img src="./images/sofia.jpg" alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA PINO REYES</td>
                                 <td data-label="EMAIL">100389086@alumnos.uc3m.es</td>
                                 <td class="message" data-label="MESSAGE"><i class="fab fa-telegram-plane"></i></td>
                             </tr>
@@ -722,203 +634,207 @@
                 </div>
 
                 <!--  TEMAS DE FORO  -->
-                <div class = "forum_topics">
+                <div class="forum_topics">
                     <!--  TEMA 1  -->
-                    <div class="forum_topic" id = "DONT_INVENT_THE_WHEEL">
+                    <div class="forum_topic" id="DONT_INVENT_THE_WHEEL">
                         <h2>DONT INVENT THE WHEEL</h2>
                         <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
-                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
-                        <div class = "topic_discussion">
+                        <button class="forum_topic_back"><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class="topic_discussion">
                             <div class="form">
                                 <label for="event-text">NEW POST</label>
-                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <textarea id="event-text" name="textarea" placeholder="Write your message here..."></textarea>
                                 <button>PUBLISH</button>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>Wow, using the tools presented on the video made my debugging at least twice as fast as it used to be. Does anyone have any more tips to accelerate the process of programming? I would love to use more tools</p>
-                                <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
-                                <h3 class = "author">THEO BERMUDEZ CALVO</h3>
-                                <h3 class = "date">MON, october 5th 2020, 19:40</h3>
+                                <img class="author_pic" src="./images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" />
+                                <h3 class="author">THEO BERMUDEZ CALVO</h3>
+                                <h3 class="date">MON, october 5th 2020, 19:40</h3>
                             </div>
-                            <div class = "topic_message">
-                                <p>A debugger is a very powerful tool for helping diagnose problems with programs. And debuggers are available for all practical programming languages. Therefore being able to use a debugger is considered a basic skill of any professional or enthusiast programmer. And using a debugger yourself is considered basic work you should do yourself before asking others for help.</p>
-                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
-                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
-                                <h3 class = "date">SAT, october 3rd 2020, 15:35</h3>
+                            <div class="topic_message">
+                                <p>A debugger is a very powerful tool for helping diagnose problems with programs. And debuggers are available for all practical programming languages. Therefore being able to use a debugger is considered a basic skill of
+                                    any professional or enthusiast programmer. And using a debugger yourself is considered basic work you should do yourself before asking others for help.</p>
+                                <img class="author_pic" src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" />
+                                <h3 class="author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class="date">SAT, october 3rd 2020, 15:35</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>Can anyone explain what the hell is a debugger?</p>
-                                <img class = "author_pic" src="./assets/images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ"/>
-                                <h3 class = "author">SERGIO CANO FERNÁNDEZ</h3>
-                                <h3 class = "date">SAT, october 3rd 2020, 09:21</h3>
+                                <img class="author_pic" src="./images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ" />
+                                <h3 class="author">SERGIO CANO FERNÁNDEZ</h3>
+                                <h3 class="date">SAT, october 3rd 2020, 09:21</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>I want to add that a debugger isn't always the perfect solution, and shouldn't always be the go-to solution to debugging. Here are a few cases where a debugger might not work for you:
 
                                     <br><br>·The part of your program which fails is really large (poor modularization, perhaps?) and you're not exactly sure where to start stepping through the code. Stepping through all of it might be too time-consuming.
                                     <br><br>·Your program uses a lot of callbacks and other non-linear flow control methods, which makes the debugger confused when you step through it.
                                     <br><br>·Your program is multi-threaded. Or even worse, your problem is caused by a race condition.</p>
-                                <img class = "author_pic" src="./assets/images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO"/>
-                                <h3 class = "author">SABRINA BARRANCO BARRIO</h3>
-                                <h3 class = "date">FRY, october 2nd 2020, 12:57</h3>
+                                <img class="author_pic" src="./images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO" />
+                                <h3 class="author">SABRINA BARRANCO BARRIO</h3>
+                                <h3 class="date">FRY, october 2nd 2020, 12:57</h3>
                             </div>
-                            <div class = "topic_message">
-                                <p>I think debugging using print statements is a lost art, and very important for every developer to learn. Once you know how to do that, certain classes of bugs become much easier to debug that way than through an IDE. Programmers who know this technique also have a really good feel of what's useful information to put in a log message (not to mention you'll actually end up reading the log) for non-debugging purposes as well.</p>
-                                <img class = "author_pic" src="./assets/images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ"/>
-                                <h3 class = "author">DANIELA CASADO SANCHEZ</h3>
-                                <h3 class = "date">WED, september 31st 2020, 18:34</h3>
+                            <div class="topic_message">
+                                <p>I think debugging using print statements is a lost art, and very important for every developer to learn. Once you know how to do that, certain classes of bugs become much easier to debug that way than through an IDE. Programmers
+                                    who know this technique also have a really good feel of what's useful information to put in a log message (not to mention you'll actually end up reading the log) for non-debugging purposes as well.</p>
+                                <img class="author_pic" src="./images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ" />
+                                <h3 class="author">DANIELA CASADO SANCHEZ</h3>
+                                <h3 class="date">WED, september 31st 2020, 18:34</h3>
                             </div>
                         </div>
                     </div>
 
                     <!--  TEMA 2  -->
-                    <div class="forum_topic" id = "DEBUG_THE_PROPER_WAY">
+                    <div class="forum_topic" id="DEBUG_THE_PROPER_WAY">
                         <h2>DEBUG THE PROPER WAY</h2>
                         <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
-                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
-                        <div class = "topic_discussion">
+                        <button class="forum_topic_back"><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class="topic_discussion">
                             <div class="form">
                                 <label for="event-text">NEW POST</label>
-                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <textarea id="event-text" name="textarea" placeholder="Write your message here..."></textarea>
                                 <button>PUBLISH</button>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>I still don't understan wether we are supposed to debug by using different print statements or using a step by step debug tool. Is the teacher going to tell us anything or we should just apply whatever we prefer?</p>
-                                <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
-                                <h3 class = "author">THEO BERMUDEZ CALVO</h3>
-                                <h3 class = "date">SUN, october 4th 2020, 16:50</h3>
+                                <img class="author_pic" src="./images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" />
+                                <h3 class="author">THEO BERMUDEZ CALVO</h3>
+                                <h3 class="date">SUN, october 4th 2020, 16:50</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>That's just sick!</p>
-                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
-                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
-                                <h3 class = "date">SAT, october 3rd 2020, 15:35</h3>
+                                <img class="author_pic" src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" />
+                                <h3 class="author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class="date">SAT, october 3rd 2020, 15:35</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>I found this about debugging in JavaScript:<br><br>"Debugging is not easy. But fortunately, all modern browsers have a built-in JavaScript debugger.
 
                                     <br><br>Built-in debuggers can be turned on and off, forcing errors to be reported to the user.
-                                    
+
                                     <br><br>With a debugger, you can also set breakpoints (places where code execution can be stopped), and examine variables while the code is executing.
-                                    
+
                                     <br><br>Normally, otherwise follow the steps at the bottom of this page, you activate debugging in your browser with the F12 key, and select "Console" in the debugger menu."</p>
-                                <img class = "author_pic" src="./assets/images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ"/>
-                                <h3 class = "author">SERGIO CANO FERNÁNDEZ</h3>
-                                <h3 class = "date">SAT, october 43rd 2020, 11:10</h3>
+                                <img class="author_pic" src="./images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ" />
+                                <h3 class="author">SERGIO CANO FERNÁNDEZ</h3>
+                                <h3 class="date">SAT, october 43rd 2020, 11:10</h3>
                             </div>
                         </div>
                     </div>
 
                     <!--  TEMA 3  -->
-                    <div class="forum_topic" id = "OTHER_PERSPECTIVE">
+                    <div class="forum_topic" id="OTHER_PERSPECTIVE">
                         <h2>OTHER PERSPECTIVE</h2>
                         <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
-                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
-                        <div class = "topic_discussion">
+                        <button class="forum_topic_back"><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class="topic_discussion">
                             <div class="form">
                                 <label for="event-text">NEW POST</label>
-                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <textarea id="event-text" name="textarea" placeholder="Write your message here..."></textarea>
                                 <button>PUBLISH</button>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>Haha! that's such a cool way to think about it.</p>
-                                <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
-                                <h3 class = "author">THEO BERMUDEZ CALVO</h3>
-                                <h3 class = "date">SAT, october 3rd 2020, 15:49</h3>
+                                <img class="author_pic" src="./images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" />
+                                <h3 class="author">THEO BERMUDEZ CALVO</h3>
+                                <h3 class="date">SAT, october 3rd 2020, 15:49</h3>
                             </div>
-                            <div class = "topic_message">
-                                <p>The usual talk about "great programmers" sounds like kung fu film myths about the chosen one who is so at one with the universe that they make no error, are faster than everyone else, etc. etc. Meanwhile, in the real world, great programmers tend not to be godlike meditating entities, but people who get things done by a mix of all sorts of techniques, including knowing both how to design and how to debug. Which itself sounds a bit kung fu ;-)</p>
-                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
-                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
-                                <h3 class = "date">SAT, october 3rd 2020, 10:52</h3>
+                            <div class="topic_message">
+                                <p>The usual talk about "great programmers" sounds like kung fu film myths about the chosen one who is so at one with the universe that they make no error, are faster than everyone else, etc. etc. Meanwhile, in the real world,
+                                    great programmers tend not to be godlike meditating entities, but people who get things done by a mix of all sorts of techniques, including knowing both how to design and how to debug. Which itself sounds a bit kung
+                                    fu ;-)</p>
+                                <img class="author_pic" src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" />
+                                <h3 class="author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class="date">SAT, october 3rd 2020, 10:52</h3>
                             </div>
                         </div>
                     </div>
 
                     <!--  TEMA 4  -->
-                    <div class="forum_topic" id = "WHAT_IS_HANDLING_ERRORS?">
+                    <div class="forum_topic" id="WHAT_IS_HANDLING_ERRORS?">
                         <h2>WHAT IS HANDLING ERRORS?</h2>
                         <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
-                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
-                        <div class = "topic_discussion">
+                        <button class="forum_topic_back"><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class="topic_discussion">
                             <div class="form">
                                 <label for="event-text">NEW POST</label>
-                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <textarea id="event-text" name="textarea" placeholder="Write your message here..."></textarea>
                                 <button>PUBLISH</button>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>Well handling errors is nothing more than surrounding the part of your code that might generate an error with some structure that takes care of it.
                                     <br><br> Here you have an example:
                                     <br><br>try{ a = x/y;<br>}catch{
-                                    <br>  //Here you deal with the exception  
+                                    <br> //Here you deal with the exception
                                     <br>}
                                     <br><br>:)
                                 </p>
-                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
-                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
-                                <h3 class = "date">TUES, september 29th 2020, 12:42</h3>
+                                <img class="author_pic" src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" />
+                                <h3 class="author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class="date">TUES, september 29th 2020, 12:42</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>hello mates. Can someone please explain what is handling errors and how I should be doing it?</p>
-                                <img class = "author_pic" src="./assets/images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ"/>
-                                <h3 class = "author">DANIELA CASADO SANCHEZ</h3>
-                                <h3 class = "date">TUES, september 29th 2020, 09:25</h3>
+                                <img class="author_pic" src="./images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ" />
+                                <h3 class="author">DANIELA CASADO SANCHEZ</h3>
+                                <h3 class="date">TUES, september 29th 2020, 09:25</h3>
                             </div>
                         </div>
                     </div>
 
                     <!--  TEMA 5  -->
-                    <div class="forum_topic" id = "DIFFERENT_ERRORS">
+                    <div class="forum_topic" id="DIFFERENT_ERRORS">
                         <h2>DIFFERENT ERRORS</h2>
                         <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
-                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
-                        <div class = "topic_discussion">
+                        <button class="forum_topic_back"><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class="topic_discussion">
                             <div class="form">
                                 <label for="event-text">NEW POST</label>
-                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <textarea id="event-text" name="textarea" placeholder="Write your message here..."></textarea>
                                 <button>PUBLISH</button>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>Okay my turn:
                                     <br><br> YOU
                                 </p>
-                                <img class = "author_pic" src="./assets/images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO"/>
-                                <h3 class = "author">THEO BERMUDEZ CALVO</h3>
-                                <h3 class = "date">MON, september 28th 2020, 11:21</h3>
+                                <img class="author_pic" src="./images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" />
+                                <h3 class="author">THEO BERMUDEZ CALVO</h3>
+                                <h3 class="date">MON, september 28th 2020, 11:21</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>I'll start:
                                     <br><br>ERROR 404
                                 </p>
-                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
-                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
-                                <h3 class = "date">MON, september 28th 2020, 09:16</h3>
+                                <img class="author_pic" src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" />
+                                <h3 class="author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class="date">MON, september 28th 2020, 09:16</h3>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>HELLO WORLD! Drop in this topic every error you know, so we can have a perspective on how big is the amount of different errors there are.</p>
-                                <img class = "author_pic" src="./assets/images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ"/>
-                                <h3 class = "author">PEDRO ARMADO RODRIGUEZ</h3>
-                                <h3 class = "date">MON, september 28th 2020, 09:15</h3>
+                                <img class="author_pic" src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" />
+                                <h3 class="author">PEDRO ARMADO RODRIGUEZ</h3>
+                                <h3 class="date">MON, september 28th 2020, 09:15</h3>
                             </div>
                         </div>
                     </div>
 
                     <!--  TEMA 6  -->
-                    <div class="forum_topic" id = "ERRORS_IN_PYTHON">
+                    <div class="forum_topic" id="ERRORS_IN_PYTHON">
                         <h2>ERRORS IN PYTHON</h2>
                         <button class="new_post"><i class="fas fa-plus-circle"></i> NEW POST</button>
-                        <button class="forum_topic_back" ><i class="fas fa-chevron-circle-left"></i></button>
-                        <div class = "topic_discussion">
+                        <button class="forum_topic_back"><i class="fas fa-chevron-circle-left"></i></button>
+                        <div class="topic_discussion">
                             <div class="form">
                                 <label for="event-text">NEW POST</label>
-                                <textarea id="event-text" name="textarea" placeholder= "Write your message here..."></textarea>
+                                <textarea id="event-text" name="textarea" placeholder="Write your message here..."></textarea>
                                 <button>PUBLISH</button>
                             </div>
-                            <div class = "topic_message">
+                            <div class="topic_message">
                                 <p>HELLO WORLD! I would like to let you know that a condition in python such as<br><br> if x||y||z: <br><br>is no longer an error!</p>
-                                <img class = "author_pic" src="./assets/images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO"/>
-                                <h3 class = "author">SABRINA BARRANCO BARRIO</h3>
-                                <h3 class = "date">WED, september 16th 2020, 20:37</h3>
+                                <img class="author_pic" src="./images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO" />
+                                <h3 class="author">SABRINA BARRANCO BARRIO</h3>
+                                <h3 class="date">WED, september 16th 2020, 20:37</h3>
                             </div>
                         </div>
                     </div>
@@ -941,92 +857,67 @@
                             </thead>
                             <tbody>
                                 <tr class="student" id="student-1">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/justin.jpg"
-                                            alt="Imagen de JUSTIN ALVAREZ SANCHEZ"
-                                            title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/justin.jpg" alt="Imagen de JUSTIN ALVAREZ SANCHEZ" title="Imagen de JUSTIN ALVAREZ SANCHEZ" /> JUSTIN ALVAREZ SANCHEZ</td>
                                     <td class="act-1" data-label="TASK 1">10.0</td>
                                     <td class="act-2" data-label="TASK 2">9.0</td>
                                     <td class="act-3" data-label="TASK 3">6.0</td>
                                 </tr>
                                 <tr class="student" id="student-2">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/emma.jpg"
-                                            alt="Imagen de EMMA ALVAREZ ALVAREZ"
-                                            title="Imagen de EMMA ALVAREZ ALVAREZ" />
-                                        EMMA ALVAREZ ALVAREZ</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/emma.jpg" alt="Imagen de EMMA ALVAREZ ALVAREZ" title="Imagen de EMMA ALVAREZ ALVAREZ" /> EMMA ALVAREZ ALVAREZ</td>
                                     <td class="act-1" data-label="TASK 1">9.0</td>
                                     <td class="act-2" data-label="TASK 2">10.0</td>
                                     <td class="act-3" data-label="TASK 3">9.8</td>
                                 </tr>
                                 <tr class="student" id="student-3">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/harry.jpg"
-                                            alt="Imagen de PEDRO ARMADO RODRIGUEZ"
-                                            title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/harry.jpg" alt="Imagen de PEDRO ARMADO RODRIGUEZ" title="Imagen de PEDRO ARMADO RODRIGUEZ" /> PEDRO ARMADO RODRIGUEZ</td>
                                     <td class="act-1" data-label="TASK 1">8.0</td>
                                     <td class="act-2" data-label="TASK 2">8.3</td>
                                     <td class="act-3" data-label="TASK 3">7.8</td>
                                 </tr>
                                 <tr class="student" id="student-4">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/theo.jpg"
-                                            alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" />
-                                        THEO BERMUDEZ CALVO</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/theo.jpg" alt="Imagen de THEO BERMUDEZ CALVO" title="Imagen de THEO BERMUDEZ CALVO" /> THEO BERMUDEZ CALVO</td>
                                     <td class="act-1" data-label="TASK 1">7.3</td>
                                     <td class="act-2" data-label="TASK 2">6.2</td>
                                     <td class="act-3" data-label="TASK 3">7.3</td>
                                 </tr>
                                 <tr class="student" id="student-5">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/selena.jpg"
-                                            alt="Imagen de SABRINA BARRANCO BARRIO"
-                                            title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/selena.jpg" alt="Imagen de SABRINA BARRANCO BARRIO" title="Imagen de SABRINA BARRANCO BARRIO" /> SABRINA BARRANCO BARRIO</td>
                                     <td class="act-1" data-label="TASK 1">8.7</td>
                                     <td class="act-2" data-label="TASK 2">10.0</td>
                                     <td class="act-3" data-label="TASK 3">6.4</td>
                                 </tr>
                                 <tr class="student" id="student-6">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zack.jpg"
-                                            alt="Imagen de SERGIO CANO FERNÁNDEZ"
-                                            title="Imagen de SERGIO CANO FERNÁNDEZ" />
-                                        SERGIO CANO FERNÁNDEZ</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/zack.jpg" alt="Imagen de SERGIO CANO FERNÁNDEZ" title="Imagen de SERGIO CANO FERNÁNDEZ" /> SERGIO CANO FERNÁNDEZ</td>
                                     <td class="act-1" data-label="TASK 1">9.8</td>
                                     <td class="act-2" data-label="TASK 2">5.3</td>
                                     <td class="act-3" data-label="TASK 3">7.2</td>
                                 </tr>
                                 <tr class="student" id="student-7">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/zendaya.jpg"
-                                            alt="Imagen de DANIELA CASADO SANCHEZ"
-                                            title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/zendaya.jpg" alt="Imagen de DANIELA CASADO SANCHEZ" title="Imagen de DANIELA CASADO SANCHEZ" /> DANIELA CASADO SANCHEZ</td>
                                     <td class="act-1" data-label="TASK 1">10.0</td>
                                     <td class="act-2" data-label="TASK 2">9.6</td>
                                     <td class="act-3" data-label="TASK 3">9.8</td>
                                 </tr>
                                 <tr class="student" id="student-8">
-                                    <td class="foto_student" data-label="STUDENT"><img
-                                            src="./assets/images/elizabeth.jpg" alt="Imagen de FERNANDA CONDE ALVAREZ"
-                                            title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/elizabeth.jpg" alt="Imagen de FERNANDA CONDE ALVAREZ" title="Imagen de FERNANDA CONDE ALVAREZ" /> FERNANDA CONDE ALVAREZ</td>
                                     <td class="act-1" data-label="TASK 1">4.0</td>
                                     <td class="act-2" data-label="TASK 2">3.6</td>
                                     <td class="act-3" data-label="TASK 3">1.9</td>
                                 </tr>
                                 <tr class="student" id="student-9">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/daniel.jpg"
-                                            alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" />
-                                        DANIEL
-                                        DÍAZ LOBO</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/daniel.jpg" alt="Imagen de DANIEL DÍAZ LOBO" title="Imagen de DANIEL DÍAZ LOBO" /> DANIEL DÍAZ LOBO</td>
                                     <td class="act-1" data-label="TASK 1">7.2</td>
                                     <td class="act-2" data-label="TASK 2">9.0</td>
                                     <td class="act-3" data-label="TASK 3">5.7</td>
                                 </tr>
                                 <tr class="student" id="student-10">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/chase.jpg"
-                                            alt="Imagen de CHASE DOMINGUEZ GARRIDO"
-                                            title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/chase.jpg" alt="Imagen de CHASE DOMINGUEZ GARRIDO" title="Imagen de CHASE DOMINGUEZ GARRIDO" /> CHASE DOMINGUEZ GARRIDO</td>
                                     <td class="act-1" data-label="TASK 1">6.0</td>
                                     <td class="act-2" data-label="TASK 2">7.5</td>
                                     <td class="act-3" data-label="TASK 3">1.2</td>
                                 </tr>
                                 <tr class="student" id="student-11">
-                                    <td class="foto_student" data-label="STUDENT"><img src="./assets/images/sofia.jpg"
-                                            alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA
-                                        PINO REYES</td>
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/sofia.jpg" alt="Imagen de SOFIA PINO REYES" title="Imagen de SOFIA PINO REYES" /> SOFIA PINO REYES</td>
                                     <td class="act-1" data-label="TASK 1">8.0</td>
                                     <td class="act-2" data-label="TASK 2">8.0</td>
                                     <td class="act-3" data-label="TASK 3">9.1</td>
@@ -1049,9 +940,7 @@
                             </thead>
                             <tbody>
                                 <tr class="student" id="student-user-1">
-                                    <td class="foto_student" data-label="STUDENT"><img
-                                            src="./assets/images/default-user.png" alt="Imagen de STUDENT USER"
-                                            title="Imagen de STUDENT USER" />
+                                    <td class="foto_student" data-label="STUDENT"><img src="./images/default-user.png" alt="Imagen de STUDENT USER" title="Imagen de STUDENT USER" />
                                         <div id="user_grade"></div>
                                     </td>
                                     <td class="act-1" data-label="TASK 1">10.0</td>
@@ -1186,23 +1075,21 @@
             </aside>
         </div>
         <div class="contact-main">
-            HUGO ROMERO RICO <br><br>100386322@alumnos.uc3m.es  <br> <br> <br> <br>
-            MARIBEL MEDRANO FERNÁNDEZ <br><br>100386149@alumnos.uc3m.es
+            HUGO ROMERO RICO <br><br>100386322@alumnos.uc3m.es <br> <br> <br> <br> MARIBEL MEDRANO FERNÁNDEZ <br><br>100386149@alumnos.uc3m.es
         </div>
         <div class="copyright-main">
             COPYRIGHT © 2020 HUGO ROMERO RICO and MARIBEL MEDRANO FERNÁNDEZ
         </div>
         <div class="privacy-main">
-            YOUR PRIVACY IS VERY IMPORTANT FOR US.<br><br>
-            CUSTOMER INFORMATION WILL NOT BE COLLECTED WITHOUT YOUR EXPRESS CONSENT.<br><br> 
-            ALL THE FUNDAMENTAL RIGHTS OF DATA PRIVACY INCLUDED IN THE LAW OF USERS AND CONSUMERS,<br> 
-            SUCH AS THE RIGHT TO BE FORGOTTEN, GOVERN THIS PLATFORM.
+            YOUR PRIVACY IS VERY IMPORTANT FOR US.<br><br> CUSTOMER INFORMATION WILL NOT BE COLLECTED WITHOUT YOUR EXPRESS CONSENT.<br><br> ALL THE FUNDAMENTAL RIGHTS OF DATA PRIVACY INCLUDED IN THE LAW OF USERS AND CONSUMERS,<br> SUCH AS THE RIGHT TO
+            BE FORGOTTEN, GOVERN THIS PLATFORM.
         </div>
     </div>
     <footer id="footer_main">
         <div><button class="copyright_button" type="button"><span>COPYRIGHT</span></button></div>
         <div class="line-vert"></div>
-        <div> <a href="https://www.uc3m.es">
+        <div>
+            <a href="https://www.uc3m.es">
                 <img src="assets/images/universidad-carlos-iii-white.png" alt="uc3m-logo" class="uc3m-logo" />
             </a>
         </div>
